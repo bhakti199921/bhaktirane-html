@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: $primary-font;
+    src: url('#{$fonts-path}/circular/CircularStd-Bold.woff2') format('woff2'),
+        url('#{$fonts-path}/circular/CircularStd-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $primary-font;
+    src: url('#{$fonts-path}/circular/CircularStd-Book.woff2') format('woff2'),
+        url('#{$fonts-path}/circular/CircularStd-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $primary-font;
+    src: url('#{$fonts-path}/circular/CircularStd-Black.woff2') format('woff2'),
+        url('#{$fonts-path}/circular/CircularStd-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:$primary-font;
+    src: url('#{$fonts-path}/circular/CircularStd-Medium.woff2') format('woff2'),
+        url('#{$fonts-path}/circular/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:$secondary-font;
+    src: url('#{$fonts-path}/roboto/Roboto-Medium.woff2') format('woff2'),
+        url('#{$fonts-path}/roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:$secondary-font;
+    src: url('#{$fonts-path}/roboto/Roboto-Light.woff2') format('woff2'),
+        url('#{$fonts-path}/roboto/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $ternery-font;
+    src: url('#{$fonts-path}/metropolis/Metropolis-Medium.woff2') format('woff2'),
+        url('#{$fonts-path}a/metropolis/Metropolis-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
