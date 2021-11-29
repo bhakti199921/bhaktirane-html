@@ -36,6 +36,23 @@
         background-color: $color-old-brick;
         padding: 16px 39px 16px 39px;
         cursor: pointer;
+
+        @include breakpoint(portrait-mobile-max){
+            padding: 10px 20px 10px 20px;
+        }
+
+        @include breakpoint(custom-small-mobile-max){
+            padding: 8px 11px 8px 11px;
+        }
+    }
+
+    &--read{
+        color: $color-blue-charcoal;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: $color-white;
+        border-radius: 32px;
+        padding: 14px 44px 14px 44px;
     }
 
 }

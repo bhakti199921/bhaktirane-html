@@ -149,6 +149,10 @@
         margin-left: 9px;
         margin-right: 110px;
 
+        @include breakpoint(medium-large-desktop-max){
+            margin-right: 35px;
+        }
+
         @include breakpoint(desktop-max) {
             width: 119px;
             display: inline-block;
