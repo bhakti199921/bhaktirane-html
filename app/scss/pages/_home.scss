@@ -40,7 +40,11 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
+            top: 0;
             width: 332px;
+            padding-top: 58px;
+
+
         }
 
         @include breakpoint(custom-small-mobile-max) {
@@ -84,6 +88,10 @@
         bottom: 0;
         right: 0;
         z-index: 1;
+
+        @include breakpoint(portrait-mobile-max){
+         
+        }
     }
 
     &__hero-banner-student {
@@ -96,11 +104,14 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
-            height: 293px;
+            height: 350px;
+            width: 600px;
         }
 
         @include breakpoint(custom-small-mobile-max) {
             height: 293px;
+            width: 530px;
+            
         }
 
     }
