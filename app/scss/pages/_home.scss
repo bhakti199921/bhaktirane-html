@@ -360,15 +360,15 @@
         // }
 
         @include breakpoint(portrait-mobile-max) {
-            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+            // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 
 
-            height: 1300px;
+            // height: 1300px;
         }
 
         @include breakpoint(custom-small-mobile-max) {
             clip: unset;
-            height: 1334px;
+            // height: 1334px;
         }
     }
 
@@ -430,11 +430,13 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
-            top: 337px;
+            // top: 337px;
+            display: none;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            top: 367px;
+            // top: 367px;
+            display: none;
         }
     }
 
@@ -642,11 +644,12 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
-            top: 672px;
+            // top: 672px;
+            top: 378px;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            top: 690px;
+            top: 404px;
         }
 
     }
@@ -685,12 +688,14 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
-            top: 996px;
-            right: unset;
+            // top: 996px;
+            // right: unset;
+            display: none;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            top: 1011px;
+            // top: 1011px;
+            display: none;
         }
     }
 
