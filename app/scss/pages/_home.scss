@@ -380,7 +380,7 @@
 
         &::before {
             content: "";
-            background-image: url("E:/office/training/HW School/app/images/mission-dot.png");
+            background-image: url("../images/mission-dot.png");
             width: 181px;
             height: 312px;
             position: absolute;
@@ -535,7 +535,7 @@
             top: 511px;
             right: 97px;
             position: absolute;
-            background-image: url("E:/office/training/HW School/app/images/vission-dot.png");
+            background-image: url("../images/vission-dot.png");
 
             @include breakpoint(desktop-max) {
                 left: 805px;
