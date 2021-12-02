@@ -13,9 +13,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @include breakpoint(ipad-max) {
-            justify-content: start;
-        }
     }
 
     &__contacts {
@@ -30,20 +27,11 @@
     &__buttons-wrapper {
         display: flex;
 
-        @include breakpoint(ipad-max) {
-            margin-left: 133px;
-        }
-
-        @include breakpoint(mobile-max) {
-            margin-left: 106px;
-        }
-
-        @include breakpoint(portrait-mobile-max){
-            margin-left: 10px;
+        @include breakpoint(portrait-mobile-max) {
             padding-top: 5px;
         }
 
-        @include breakpoint(custom-small-mobile-max){
+        @include breakpoint(custom-small-mobile-max) {
             margin: 0;
         }
     }
@@ -104,8 +92,10 @@
     }
 
     &__bottom {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         @include breakpoint(desktop-max) {
             display: flex;
@@ -120,25 +110,42 @@
 
     &__logo {
         width: 46px;
-        height: 45px;
+        height: 46px;
+        margin-bottom: 0;
 
         @include breakpoint(desktop-max) {
-            width: 37px;
-            height: 40px;
-            margin-bottom: 18px;
+            width: 38px;
+            height: 51px;
+            padding-bottom: 10px;
+            // margin-bottom: 20px;
         }
 
         @include breakpoint(ipad-max) {
-            margin-bottom: 26px;
+            width: 38px;
+            height: 46px;
+            padding: 5px 0 5px 0;
+            margin-bottom: 0;
         }
 
-        @include breakpoint(mobile-max){
-            margin: 0;
+        @include breakpoint(mobile-max) {
+            width: 38px;
+            height: 46px;
+            padding: 5px 0 5px 0;
+            margin-bottom: 0;
         }
 
-        @include breakpoint(custom-small-mobile-max){
-            width: 33px;
-            height: 31px;
+        @include breakpoint(portrait-mobile-max) {
+            width: 38px;
+            height: 46px;
+            padding: 5px 0 5px 0;
+            margin-bottom: 0;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 38px;
+            height: 46px;
+            padding: 5px 0 5px 0;
+            margin-bottom: 0;
         }
     }
 
@@ -147,9 +154,8 @@
         font-size: 17px;
         font-weight: 900;
         margin-left: 9px;
-        margin-right: 110px;
 
-        @include breakpoint(medium-large-desktop-max){
+        @include breakpoint(medium-large-desktop-max) {
             margin-right: 35px;
         }
 
@@ -157,11 +163,11 @@
             width: 119px;
             display: inline-block;
             margin-right: 0;
-            margin-left: 6px;
+            margin-left: 7px;
         }
 
         @include breakpoint(ipad-max) {
-            width: 119px;
+            width: 191px;
             display: inline-block;
         }
 
@@ -171,11 +177,12 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
+            width: 191px;
             margin: 0;
         }
 
         &:hover {
-            color: $color-tomato;
+            color: unset;
         }
     }
 
@@ -186,6 +193,10 @@
         @include breakpoint(ipad-max) {
             padding: 5px 0 0 0;
         }
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
     }
 
     &__nav-link {
@@ -218,15 +229,15 @@
         margin-left: 19px;
 
         &:first-child {
-            margin-right: 0;
+            margin-left: 0;
         }
 
         @include breakpoint(desktop-max) {
-            margin-left: 10px;
+            margin-left: 11px;
         }
 
         @include breakpoint(ipad-max) {
-            margin-left: 0;
+            margin-left: 6px;
             margin-bottom: 5px;
         }
     }
@@ -241,8 +252,10 @@
         margin-left: 20px;
 
         @include breakpoint(desktop-max) {
-            margin-left: 12px;
+            margin-left: 0;
         }
+
+
     }
 
     #myInput {
@@ -295,24 +308,19 @@
         font-size: 17px;
     }
 
+
     .navbar-toggler {
         border: none;
         padding: 0;
 
         @include breakpoint(ipad-max) {
-            margin-left: 542px;
+            margin-left: auto;
+            display: inline-block;
         }
 
         @include breakpoint(mobile-max) {
-            margin-left: 268px;
-        }
-
-        @include breakpoint(portrait-mobile-max) {
-            margin-left: 52px;
-        }
-
-        @include breakpoint(custom-small-mobile-max) {
-            margin-left: 16px;
+            margin-left: auto;
+            display: inline-block;
         }
 
         &:focus {
@@ -328,7 +336,7 @@
         }
 
         .top-bar {
-            transform: rotate(45deg);
+            transform: rotate(40deg);
             transform-origin: 10% 10%;
         }
 
