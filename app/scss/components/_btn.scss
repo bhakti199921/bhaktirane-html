@@ -82,8 +82,8 @@
             background-color: $color-yellow-orange;
         }
 
-        @include breakpoint(ipad-max){
-            width: 138px;
+        @include breakpoint(mobile-max){
+            padding: 6px 17px 6px 17px;
         }
     }
 

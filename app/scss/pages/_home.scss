@@ -334,146 +334,141 @@
 
 .missionvission {
     position: relative;
-    height: 794px;
+    width: 100%;
+    background-color: $color-old-brick;
+    z-index: 1;
     margin-top: 140px;
-    margin-bottom: 140px;
-    // z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        height: 40px;
+        z-index: -1;
+
+    }
 
     &::before {
         content: "";
-        background-color: $color-old-brick;
-        // clip-path: polygon(53% 5%, 67% 4%, 100% 0, 100% 100%, 66% 97%, 53% 97%, 0 100%, 0 0, 41% 4%);
-        // clip-path: polygon(38% 4%, 76% 4%, 100% 0, 100% 100%, 73% 96%, 40% 95%, 0 100%, 0 0);
-        // clip-path: polygon(38% 4%, 76% 4%, 100% 0, 100% 100%, 74% 97%, 0 100%, 0 0);
-        // clip-path: polygon(40% 3%, 89% 2%, 100% 0, 100% 100%, 74% 97%, 0 100%, 0 0);
-        clip-path: polygon(52% 3%, 51% 3%, 100% 0, 100% 100%, 44% 97%, 0 100%, 0 0);
-
         position: absolute;
-        width: 100%;
-        height: 794px;
         top: 0;
-        margin-bottom: 150px;
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: -1;
+    }
 
+    &__about-mission {
+        margin: 119px 0 0 37px;
 
-        // @include breakpoint(mobile-max){
-        //     height: 1292px;
-        // }
-
-        @include breakpoint(portrait-mobile-max) {
-            // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-
-
-            // height: 1300px;
+        @include breakpoint(ipad-max) {
+            margin: 91px 0 0 37px;
         }
 
-        @include breakpoint(custom-small-mobile-max) {
-            clip: unset;
-            // height: 1334px;
+        @include breakpoint(mobile-max) {
+            margin: 67px 0 0 37px;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            margin: 20px 0 0 0;
         }
     }
 
     &__mission-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        position: relative;
+        justify-content: flex-start;
+        margin-left: 108px;
 
-        &::before {
-            content: "";
-            background-image: url("../images/mission-dot.png");
-            width: 181px;
-            height: 312px;
-            position: absolute;
-            top: 228px;
-            left: 13px;
+        @include breakpoint(ipad-max) {
+            flex-wrap: nowrap;
+            margin-left: 79px;
+        }
 
-            @include breakpoint(desktop-max) {
-                width: 138px;
-            }
+        @include breakpoint(mobile-max) {
+            margin-left: 0;
+            justify-content: center;
+        }
 
-            @include breakpoint(ipad-max) {
-                width: 50px;
-                height: 252px;
-                top: 200px;
-            }
-
-            @include breakpoint(mobile-max) {
-                display: none;
-            }
+        @include breakpoint(portrait-mobile-max) {
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
     &__mission-img {
-        position: absolute;
+        position: relative;
         width: 315px;
-        top: -55px;
-        left: 78px;
-        // right: -492px;
         height: 394px;
         border-radius: 25px;
-        box-shadow: 5px 3px 10px 8px rgb(0, 0, 0, 0.2);
-
-        @include breakpoint(desktop-max) {
-            width: 300px;
-        }
+        box-shadow: 5px 3px 10px 8px rgba(0, 0, 0, 0.2);
+        z-index: 20;
 
         @include breakpoint(ipad-max) {
-            width: 250px;
-            height: 300px;
-            top: -20px;
+            width: 296px;
+            height: 350px;
         }
 
         @include breakpoint(mobile-max) {
             width: 250px;
-            height: 300px;
-            left: 0;
+            height: 322px;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            // top: 337px;
-            display: none;
+            width: 315px;
+            height: 318px;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            // top: 367px;
-            display: none;
+            width: 263px;
+            height: 280px;
         }
     }
 
     &__mission-img-wrapper {
         position: relative;
+        z-index: 1;
 
         &::after {
-            content: '';
-            top: 64px;
-            left: 5px;
-            width: 44px;
-            height: 43px;
+            content: "";
+            top: 42%;
             position: absolute;
+            left: -25%;
+            width: 270px;
+            height: 270px;
             border-radius: 50%;
             border: 3px solid $color-koromilk;
+            z-index: 2;
+
+            @include breakpoint(ipad-max) {
+                width: 221px;
+                height: 218px;
+            }
 
             @include breakpoint(mobile-max) {
                 display: none;
             }
-
         }
 
         &::before {
             content: "";
-            top: 94px;
-            left: 13px;
-            // right: -412px;
-            width: 278px;
-            height: 278px;
+            top: 30%;
             position: absolute;
+            left: -27%;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             border: 3px solid $color-koromilk;
 
             @include breakpoint(ipad-max) {
-                top: 78px;
-                width: 240px;
-                height: 240px;
+                width: 40px;
+                height: 40px;
             }
 
             @include breakpoint(mobile-max) {
@@ -482,111 +477,128 @@
         }
     }
 
-    &__about-mission {
+    &__mission-dot-wrapper {
+        width: 117px;
         position: absolute;
-        right: 374px;
-        // left: 430px;
-        top: 77px;
+        top: 32%;
+        left: 6%;
+        line-height: 2;
 
         @include breakpoint(desktop-max) {
-            // right: 0;
-            left: 426px;
+            left: 3%;
+            top: 28%;
         }
 
         @include breakpoint(ipad-max) {
-            left: 357px;
+            left: 3%;
+            top: 22%;
+            width: 95px;
         }
 
         @include breakpoint(mobile-max) {
-            top: 66px;
-            right: 0;
-            left: 272px;
-
-        }
-
-        @include breakpoint(portrait-mobile-max) {
-            top: 69px;
-            right: unset;
-            left: unset;
-        }
-
-        @include breakpoint(custom-small-mobile-max) {
-            top: 50px;
+            display: none;
         }
     }
 
-    &__about-missionvission {
-        position: relative;
-        z-index: 2;
-    }
+    &__mission-dot {
+        height: 5px;
+        width: 5px;
+        background-color: $color-soft-yellow-green;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 15px;
 
+        @include breakpoint(desktop-max) {
+            margin-right: 13px;
+            height: 4px;
+            width: 4px;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin-right: 9px;
+        }
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+    }
 
     &__vission-wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
-        @include breakpoint(mobile-max) {
-            display: block;
+        @include breakpoint(ipad-max) {
             flex-wrap: nowrap;
         }
 
-        &::before {
-            content: "";
-            width: 137px;
-            height: 181px;
-            top: 511px;
-            right: 97px;
-            position: absolute;
-            background-image: url("../images/vission-dot.png");
+        @include breakpoint(mobile-max) {
+            justify-content: center;
+        }
 
-            @include breakpoint(desktop-max) {
-                left: 805px;
-            }
+        @include breakpoint(portrait-mobile-max) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 
-            @include breakpoint(ipad-max) {
-                // left: 583px;
-                top: 533px;
-                right: 0;
-                left: auto;
-            }
+    &__vission-img {
+        width: 315px;
+        height: 394px;
+        border-radius: 25px;
+        box-shadow: 5px 3px 10px 8px rgb(0, 0, 0, 0.2);
+        margin-top: 64px;
+        position: relative;
+        z-index: 3;
+        margin-left: 67px;
 
-            @include breakpoint(mobile-max) {
-                display: none;
-            }
+        @include breakpoint(desktop-max) {
+            margin-left: 0;
+        }
+
+        @include breakpoint(ipad-max) {
+            width: 296px;
+            height: 380px;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 250px;
+            height: 322px;
+            margin-left: 20px;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 315px;
+            height: 318px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 263px;
+            height: 280px;
         }
     }
 
     &__vission-img-wrapper {
         position: relative;
-
-        @include breakpoint(ipad-max) {
-            position: unset;
-        }
-
-        @include breakpoint(mobile-max) {
-            position: unset;
-        }
-
+        z-index: 1;
 
         &::after {
-            content: '';
-            top: 365px;
-            left: 805px;
-            width: 44px;
-            height: 43px;
+            content: "";
+            top: 7%;
             position: absolute;
+            right: -30%;
+            width: 208px;
+            height: 208px;
             border-radius: 50%;
             border: 3px solid $color-koromilk;
-
-            @include breakpoint(desktop-max) {
-                left: 595px;
-            }
+            z-index: 2;
 
             @include breakpoint(ipad-max) {
-                // left: 442px;
-                right: 245px;
-                top: 392px;
-                left: auto;
+                right: -21%;
+                width: 200px;
+                height: 200px;
             }
 
             @include breakpoint(mobile-max) {
@@ -596,152 +608,75 @@
 
         &::before {
             content: "";
-            top: 375px;
-            // right: -412px;
-            left: 985px;
-            width: 180px;
-            height: 180px;
+            top: 3%;
             position: absolute;
+            right: 63%;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             border: 3px solid $color-koromilk;
 
-            @include breakpoint(desktop-max) {
-                left: 765px;
-            }
-
             @include breakpoint(ipad-max) {
-                top: 400px;
-                // left: 552px;
-                right: 0;
-                left: auto;
+                top: 6%;
+                right: 72%;
+                width: 40px;
+                height: 40px;
             }
 
             @include breakpoint(mobile-max) {
                 display: none;
             }
         }
-
     }
 
     &__about-vission {
-        position: absolute;
-        left: 269px;
-        top: 417px;
-
-        @include breakpoint(desktop-max) {
-            left: 188px;
-
-        }
+        margin-top: 91px;
 
         @include breakpoint(ipad-max) {
-            left: 92px;
-            top: 382px;
+            margin-top: 37px;
         }
 
         @include breakpoint(mobile-max) {
-            left: 0;
-            top: 412px;
+            margin-top: -13px;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            // top: 672px;
-            top: 378px;
-        }
-
-        @include breakpoint(custom-small-mobile-max) {
-            top: 404px;
-        }
-
-    }
-
-    &__vission-img {
-        position: absolute;
-        width: 315px;
-        height: 394px;
-        left: 736px;
-        // right: 135px;
-        top: 409px;
-        border-radius: 25px;
-        box-shadow: 5px 3px 10px 8px rgb(0, 0, 0, 0.2);
-
-        @include breakpoint(desktop-max) {
-            width: 300px;
-            left: 572px;
-        }
-
-        @include breakpoint(ipad-max) {
-            width: 250px;
-            height: 370px;
-            top: 436px;
-            // left: 417px;
-            right: 72px;
-            left: unset;
-
-        }
-
-        @include breakpoint(mobile-max) {
-            top: 508px;
-            right: 0;
-            left: auto;
-            width: 250px;
-            height: 300px;
-        }
-
-        @include breakpoint(portrait-mobile-max) {
-            // top: 996px;
-            // right: unset;
-            display: none;
-        }
-
-        @include breakpoint(custom-small-mobile-max) {
-            // top: 1011px;
-            display: none;
+            margin-top: 36px;
         }
     }
-
 
     &__desc-point {
         color: $color-white;
         font-size: 15px;
         display: block;
 
-        &:last-child {
-            width: 249px;
-        }
-
         @include breakpoint(ipad-max) {
-            width: 292px;
+            width: 274px;
         }
-
-        @include breakpoint(portrait-mobile-max) {
-            width: unset;
-        }
-
     }
 
     &__desc {
-        width: 388px;
+        width: 442px;
         color: $color-white;
         font-size: 15px;
         font-family: $secondary-font;
         margin-bottom: 0;
 
-        @include breakpoint(desktop-max) {
-            // width: 364px;
+        @include breakpoint(ipad-max) {
+            width: 315px;
         }
 
-        @include breakpoint(ipad-max) {
-            width: 364px;
-            // width: 90%;
-        }
 
         @include breakpoint(mobile-max) {
-            // width: 292px;
-            width: 100%;
+            width: 275px;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 100%;
+            width: 320px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 273px;
         }
     }
 
@@ -750,18 +685,60 @@
         font-size: 34px;
         font-weight: 700;
     }
+
+    &__vission-dot-wrapper {
+        width: 240px;
+        position: absolute;
+        bottom: 12%;
+        right: 10%;
+        line-height: 2;
+
+        @include breakpoint(desktop-max) {
+            right: 6%;
+            width: 259px;
+        }
+
+        @include breakpoint(ipad-max) {
+            right: 3%;
+            width: 258px;
+        }
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+    }
+
+    &__vission-dot {
+        height: 4px;
+        width: 4px;
+        background-color: $color-soft-yellow-green;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 17px;
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+    }
 }
 
-.whyhwschools{
 
-    &__heading{
+// .missionvission .container{
+//     background-color: $color-old-brick;
+// }
+
+.whyhwschools {
+    margin-top: 138.4px;
+
+    &__heading {
         color: $color-eclipse;
         font-size: 34px;
         text-align: center;
         font-weight: 700;
+        margin-bottom: 24.4px;
     }
 
-    &__heading-desc{
+    &__heading-desc {
         width: 674px;
         color: $color-gray;
         font-size: 16px;
@@ -770,5 +747,234 @@
         font-family: $secondary-font;
         margin-left: auto;
         margin-right: auto;
+
+        @include breakpoint(mobile-max) {
+            width: 544px;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 343px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 293px;
+        }
     }
+
+    &__box {
+        width: 841px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 63px;
+
+        @include breakpoint(ipad-max) {
+            width: unset;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: unset;
+        }
+    }
+
+    &__cards {
+        width: 257px;
+        min-height: 263px;
+        border-radius: 15px;
+        background-color: $color-white;
+        padding: 28px 21px 40px 21px;
+        box-shadow: 0 0 77px 0 rgba(0, 0, 0, 0.1);
+        margin: 0 23px 35px 0;
+
+        &:nth-child(3) {
+            margin-right: 0;
+
+            @include breakpoint(ipad-max) {
+                margin-right: 23px;
+            }
+        }
+
+        @include breakpoint(mobile-max) {
+            margin-bottom: 35px;
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 100%;
+            margin-right: 0;
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+
+        &:last-child {
+            margin: 0 0 35px 0;
+        }
+
+        &.active {
+            background-color: $color-old-brick;
+            box-shadow: 10px 15px 20px 0 rgba(132, 30, 37, 0.2);
+
+            .whyhwschools__title,
+            .whyhwschools__desc {
+
+                color: white;
+            }
+        }
+    }
+
+    [class^=icon-],
+    [class*=" icon-"] {
+        color: $color-white;
+        font-size: 21px;
+        margin-bottom: 27px;
+        display: inline-block;
+        border-radius: 50px;
+        border: 1px solid $color-white;
+        padding: 12px 14px 12px 14px;
+    }
+
+    &__book-img,
+    &__spring-img {
+        margin-bottom: 27px;
+    }
+
+    .icon-maps {
+        background-color: $color-conflower-blue;
+    }
+
+    .icon-Icon-awesome-medal {
+        background-color: $color-koromilk;
+    }
+
+    .icon-icon {
+        background-color: $color-silver-tree;
+    }
+
+    &__title {
+        color: $color-atomic;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        color: $color-atomic;
+        font-size: 13px;
+        font-family: $secondary-font;
+        font-weight: 400;
+    }
+}
+
+.schoolsection {
+    position: relative;
+    background-color: $color-floral-white;
+    width: 100%;
+    border-radius: 50%/36%;
+    // min-height: 773px;
+    padding-bottom: 220px;
+
+    &__heading {
+        color: $color-eclipse;
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+        padding: 73px 0 17px 0;
+        margin-bottom: 0;
+    }
+
+    &__heading-desc {
+        color: $color-gray;
+        font-size: 16px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        text-align: center;
+        padding: 0 0 97px 0;
+        margin-bottom: 0;
+    }
+
+    &__beacon-elementary {
+        width: 266px;
+        height: 197px;
+        border-radius: 5px;
+    }
+
+    &__title {
+        color: $color-atomic;
+        font-size: 17px;
+        background-color: $color-bg-white;
+        padding: 23px 58px 23px 58px;
+        border-radius: 5px;
+        box-shadow: 0 0 77px 0 rgba(118, 130, 183, 0.1);
+        cursor: pointer;
+    }
+
+    &__tyrone-elementary {
+        width: 266px;
+        height: 197px;
+        border-radius: 5px;
+    }
+
+    &__hw-middle-school {
+        width: 266px;
+        height: 197px;
+        border-radius: 5px;
+    }
+
+    &__hw-highschool-img {
+        width: 266px;
+        height: 197px;
+        border-radius: 5px;
+    }
+
+    &__schools {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+
+    &__beacon {
+        background-color: $color-bg-white;
+        text-align: center;
+        border-radius: 5px;
+
+    }
+
+    [class^=icon-],
+    [class*=" icon-"] {
+        color: $color-old-brick;
+        display: inline-block;
+        cursor: pointer;
+        margin: 23px 0 0 35px;
+    }
+
+    .icon-icon-arrow-right {
+        margin-left: 10px;
+    }
+
+    &__dot-wrapper {
+        width: 200px;
+        right: 0;
+        top: 59%;
+        position: absolute;
+    }
+
+    &__dot {
+        height: 4px;
+        width: 4px;
+        background-color: $color-old-brick;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 17px;
+    }
+
 }

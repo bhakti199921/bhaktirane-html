@@ -67,3 +67,29 @@
     content: $icon-search; 
   }
 }
+.icon-feather-target {
+  &:before {
+    content: $icon-feather-target; 
+  }
+}
+.icon-Icon-feather-book-open {
+  &:before {
+    content: $icon-Icon-feather-book-open; 
+  }
+}
+.icon-Icon-awesome-medal {
+  &:before {
+    content: $icon-Icon-awesome-medal; 
+  }
+}
+
+.icon-icon {
+  &:before {
+    content: $icon-icon; 
+  }
+}
+.icon-maps {
+  &:before {
+    content: $icon-maps; 
+  }
+}
