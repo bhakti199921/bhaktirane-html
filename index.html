@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HW School</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="app/css/style.css">
   <script type="text/javascript" src="app/js/search.js"></script>
   <script type="tex/javascript" src="./app/js/whyhw.js"></script>
@@ -432,73 +442,203 @@
         </div>
       </div>
     </section>
-    <!-- <section class="schoolsection">
-              <div class="container">
-                <h1 class="schoolsection__heading">Lorem Ipsum Dolar</h1>
-                <p class="schoolsection__heading-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                  labore et dolore magna aliqua!</p>
-                  <div class="schoolsection__schools">
-                  <div class="schoolsection__beacon">
-                    <img src="./app/images/beacon-elementary.jpg" alt="beacon-elementary" class="schoolsection__school-img">
-                    <figcaption class="schoolsection__title">Beacon Elementary</figcaption>
-                  </div>
-                  <div class="schoolsection__tyrone">
-                    <img src="./app/images/tyrone-elementary.jpg" alt="tyrone-elementary" class="schoolsection__school-img">
-                    <figcaption class="schoolsection__title active">Tyrone Elementary</figcaption>
-                  </div>
-                  <div class="schoolsection__hw-middle-school">
-                    <img src="./app/images/hw-middle-school.jpg" alt="hw-middle-school" class="schoolsection__school-img">
-                    <figcaption class="schoolsection__title">HW Middle School</figcaption>
-                  </div>
-                  <div class="schoolsection__hw-highschool">
-                    <img src="./app/images/hw-highschool.jpg" alt="hw-highschool" class="schoolsection__school-img">
-                    <figcaption class="schoolsection__title">HW High School</figcaption>
-                  </div>
-                  
-                </div>
-                <div class="schoolsection__dot-wrapper">
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                  <span class="schoolsection__dot"></span>
-                </div>
-                <span class="icon-icon-arrow-left"></span>
-                <span class="icon-icon-arrow-right"></span>
+    <section class="schoolsection">
+      <div class="container">
+        <h1 class="schoolsection__heading">Lorem Ipsum Dolar</h1>
+        <p class="schoolsection__heading-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut
+          labore et dolore magna aliqua!</p>
+        <div class="schoolsection__schools">
+          <div class="schoolsection__beacon">
+            <img src="./app/images/beacon-elementary.jpg" alt="beacon-elementary" class="schoolsection__school-img">
+            <figcaption class="schoolsection__title">Beacon Elementary</figcaption>
+          </div>
+          <div class="schoolsection__tyrone">
+            <img src="./app/images/tyrone-elementary.jpg" alt="tyrone-elementary" class="schoolsection__school-img">
+            <figcaption class="schoolsection__title active">Tyrone Elementary</figcaption>
+          </div>
+          <div class="schoolsection__hw-middle-school">
+            <img src="./app/images/hw-middle-school.jpg" alt="hw-middle-school" class="schoolsection__school-img">
+            <figcaption class="schoolsection__title">HW Middle School</figcaption>
+          </div>
+          <div class="schoolsection__hw-highschool">
+            <img src="./app/images/hw-highschool.jpg" alt="hw-highschool" class="schoolsection__school-img">
+            <figcaption class="schoolsection__title">HW High School</figcaption>
+          </div>
+
+        </div>
+        <div class="schoolsection__dot-wrapper">
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+          <span class="schoolsection__dot"></span>
+        </div>
+        <span class="icon-icon-arrow-left"></span>
+        <span class="icon-icon-arrow-right"></span>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="container">
+        <h4 class="testimonial__heading">Testimonial</h4>
+        <p class="testimonial__heading-desc">
+          Torquem detraxit hosti et quidem faciunt, ut et negent satis esse
+          appetendum, alterum.
+          Si sine causa? quae fuerit causa,
+          mox videro; interea hoc epicurus in liberos.
+        </p>
+        <div class="testimonial__items">
+          <div class="testimonial__card">
+            <div class="testimonial__item">
+              <img src="./app/images/harrison-phillips.jpg" alt="" class="testimonial__img">
+              <div>
+                <h5 class="testimonial__title">Harrison Phillips</h5>
+                <p class="testimonial__title-desc">Lorem ipsum</p>
               </div>
-            </section> -->
+            </div>
+            <p class="testimonial__desc">Nisi cumque in necessitatibus molestiae
+              eaque excepturi ab. Laboriosam ipsam
+              voluptatem voluptatibus labore quam nihil.
+              Quasi occaecati quos ratione quia aut
+              molestiae velit et. Voluptatem id ea dicta
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <div class="testimonial__item">
+              <img src="./app/images/ainara-vergara.jpg" alt="" class="testimonial__img">
+              <div>
+                <h5 class="testimonial__title">Ainara Vergara</h5>
+                <p class="testimonial__title-desc">Lorem ipsum</p>
+              </div>
+            </div>
+            <p class="testimonial__desc">Nisi cumque in necessitatibus molestiae
+              eaque excepturi ab. Laboriosam ipsam
+              voluptatem voluptatibus labore quam nihil.
+              Quasi occaecati quos ratione quia aut
+              molestiae velit et. Voluptatem id ea dicta
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <div class="testimonial__item">
+              <img src="./app/images/niek-bove.jpg" alt="" class="testimonial__img">
+              <div>
+                <h5 class="testimonial__title">Niek Bove</h5>
+                <p class="testimonial__title-desc">Lorem ipsum</p>
+              </div>
+            </div>
+            <p class="testimonial__desc">Nisi cumque in necessitatibus molestiae
+              eaque excepturi ab. Laboriosam ipsam
+              voluptatem voluptatibus labore quam nihil.
+              Quasi occaecati quos ratione quia aut
+              molestiae velit et. Voluptatem id ea dicta
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <div class="testimonial__item">
+              <img src="./app/images/niek-bove.jpg" alt="" class="testimonial__img">
+              <div>
+                <h5 class="testimonial__title">Niek Bove</h5>
+                <p class="testimonial__title-desc">Lorem ipsum</p>
+              </div>
+            </div>
+            <p class="testimonial__desc">Nisi cumque in necessitatibus molestiae
+              eaque excepturi ab. Laboriosam ipsam
+              voluptatem voluptatibus labore quam nihil.
+              Quasi occaecati quos ratione quia aut
+              molestiae velit et. Voluptatem id ea dicta
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <div class="testimonial__item">
+              <img src="./app/images/niek-bove.jpg" alt="" class="testimonial__img">
+              <div>
+                <h5 class="testimonial__title">Niek Bove</h5>
+                <p class="testimonial__title-desc">Lorem ipsum</p>
+              </div>
+            </div>
+            <p class="testimonial__desc">Nisi cumque in necessitatibus molestiae
+              eaque excepturi ab. Laboriosam ipsam
+              voluptatem voluptatibus labore quam nihil.
+              Quasi occaecati quos ratione quia aut
+              molestiae velit et. Voluptatem id ea dicta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    $('.testimonial__items').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
 </body>
+
 </html>
