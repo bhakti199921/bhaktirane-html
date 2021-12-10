@@ -93,3 +93,14 @@
     content: $icon-maps; 
   }
 }
+.icon-map {
+  &:before {
+    content: $icon-map; 
+  }
+}
+
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
