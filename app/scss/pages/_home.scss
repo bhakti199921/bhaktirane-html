@@ -884,7 +884,7 @@
     margin: 100px 0 0 0;
 
     @include breakpoint(ipad-max) {
-        padding-bottom: 196px;
+        padding-bottom: 156px;
     }
 
     @include breakpoint(mobile-max) {
@@ -994,9 +994,15 @@
         right: 31px;
         top: 60%;
 
+        @include breakpoint(ipad-max){
+            right: 0;
+            top: 62%;
+        }
+
         @include breakpoint(mobile-max) {
             top: 68%;
         }
+        
     }
 
     &__dot {
@@ -1014,6 +1020,10 @@
         left: 3%;
         text-align: center;
 
+        @include breakpoint(ipad-max){
+            left: 9%;
+        }
+
         @include breakpoint(mobile-max) {
             left: 0;
         }
@@ -1024,6 +1034,10 @@
         bottom: -23px;
         left: 7%;
         text-align: center;
+
+        @include breakpoint(ipad-max){
+            left: 15%;
+        }
 
         @include breakpoint(portrait-mobile-max) {
             left: 9%;
@@ -1114,7 +1128,7 @@
         background-color: $color-white;
         border-radius: 15px;
         box-shadow: 0 0 77px 0 rgba(118, 130, 183, 0.1);
-        margin-right: 43px;
+        margin-right: 44px;
         padding: 21px 41px 37px 25px;
 
         &:last-child {
@@ -1191,6 +1205,10 @@
             margin: 60px 0 10px 0;
             transform: none;
         }
+    }
+
+    .slick-dots{
+        bottom: 2%;
     }
 
     .slick-next {
@@ -1322,7 +1340,7 @@
 }
 
 .progressbar {
-    padding: 0 0 61px 0;
+    padding: 56px 0 61px 0;
 
     &__heading {
         color: $color-eclipse;
