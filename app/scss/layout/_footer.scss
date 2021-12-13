@@ -32,6 +32,14 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 0 115px 0;
+
+        @include breakpoint(desktop-max) {
+            flex-wrap: nowrap;
+        }
+
+        @include breakpoint(ipad-max) {
+            flex-wrap: wrap;
+        }
     }
 
     &__logo {
@@ -106,6 +114,10 @@
             width: 171px;
             margin-bottom: 20px;
         }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 143px;
+        }
     }
 
     &__district {
@@ -131,10 +143,14 @@
             width: 190px;
             margin-bottom: 20px;
         }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 165px;
+        }
     }
 
     &__listen {
-        width: 329px;
+        width: 232px;
 
         @include breakpoint(desktop-max) {
             width: 236px;
@@ -142,6 +158,14 @@
 
         @include breakpoint(mobile-max) {
             width: 200px;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 123px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 108px;
         }
     }
 

@@ -1,5 +1,4 @@
 //search
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -48,7 +47,6 @@ function myFunction() {
     });
 
     //slick slider
-
     $('.testimonial__items').slick({
         dots: true,
         slidesToShow: 3,
@@ -88,4 +86,44 @@ function myFunction() {
         ],
       });
 
+
+      //next prev slick slider
+      $('.schoolsection__schools').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow:'<div class="schoolsection__leftarrow"><span class="icon-icon-arrow-left"></span></div>',
+        nextArrow:'<div class="schoolsection__rightarrow"><span class="icon-icon-arrow-right"></span></div>',
+
+        responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            
+          },
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 359,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+      });
   });
