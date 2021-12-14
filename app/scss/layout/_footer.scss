@@ -3,25 +3,23 @@
     width: 100%;
     background-color: $color-old-brick;
 
-    padding: 80px 0 0 0;
-
     &::before {
         content: "";
         position: absolute;
         top: 0;
         width: 100%;
-        height: 40px;
+        height: 7%;
         background-color: white;
-        border-bottom-left-radius: 40%;
-        border-bottom-right-radius: 40%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 
     &__logoname {
         color: $color-white;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 900;
         display: inline-block;
-        padding: 0 0 21px 0;
+        padding: 0 0 1.8rem 0;
 
         &:hover {
             color: $color-white;
@@ -31,11 +29,7 @@
     &__contents {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 0 115px 0;
-
-        @include breakpoint(desktop-max) {
-            flex-wrap: nowrap;
-        }
+        padding: 0.75rem 0 6.25rem 0;
 
         @include breakpoint(ipad-max) {
             flex-wrap: wrap;
@@ -43,30 +37,40 @@
     }
 
     &__logo {
-        width: 41px;
-        height: 40px;
+        width: 2.6rem;
+        height: 2.5rem;
     }
 
     &__address {
-        width: 152px;
+        width: 9.5rem;
         color: $color-white;
-        font-size: 12px;
+        font-size: .75rem;
         font-weight: 500;
         margin: 0;
+        transition: color 2s;
+
+        &:hover {
+            color: rgb(226, 0, 207);
+        }
     }
 
     &__email,
     &__mobile {
         color: $color-white;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 500;
         margin: 0;
+        transition: color 2s;
+
+        &:hover {
+            color: rgb(141, 14, 130);
+        }
     }
 
     &__contact-icon {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 0 15px 0;
+        padding: 0 0 0.9rem 0;
         margin: 0;
 
         &:nth-child(4) {
@@ -76,191 +80,211 @@
 
     &__title {
         color: $color-white;
-        font-size: 17px;
+        font-size: 1.1rem;
         font-weight: 700;
         margin: 0;
-        padding: 0 0 21px 0;
+        padding: 0 0 1.8rem 0;
 
         @include breakpoint(custom-small-mobile-max) {
-            padding: 0 0 10px 0;
+            padding: 0 0 0.6rem 0;
         }
     }
 
     &__contact {
-        width: 303px;
+        width: 18.9rem;
+
+        @include breakpoint(desktop-max) {
+            width: 15.6rem;
+        }
 
         @include breakpoint(ipad-max) {
-            width: 302px;
+            width: 15.6rem;
+            margin-bottom: 2.2rem;
         }
 
         @include breakpoint(mobile-max) {
-            width: 290px;
+            width: 18.1rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 279px;
+            width: 17.4rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 222px;
+            width: 13.8rem;
         }
 
     }
 
     &__schools {
-        width: 189px;
+        width: 11.8rem;
+
+        @include breakpoint(desktop-max) {
+            width: 9.8rem;
+        }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 171px;
-            margin-bottom: 20px;
+            width: 9.4rem;
+            margin-bottom: 1.25rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 143px;
+            width: 8.9rem;
         }
     }
 
     &__district {
-        width: 184px;
+        width: 11.5rem;
 
         @include breakpoint(mobile-max) {
-            width: 142px;
+            width: 8.8rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 130px;
+            width: 8.1rem;
         }
     }
 
     &__more {
-        width: 194px;
+        width: 12.12rem;
+
+        @include breakpoint(ipad-max) {
+            width: 11.6rem;
+        }
 
         @include breakpoint(mobile-max) {
-            width: 187px;
+            width: 9.12rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 190px;
-            margin-bottom: 20px;
+            width: 11.8rem;
+            margin-bottom: 1.25rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 165px;
+            width: 10.31rem;
         }
     }
 
     &__listen {
-        width: 232px;
+        width: 14.5rem;
 
         @include breakpoint(desktop-max) {
-            width: 236px;
+            width: 7.1rem;
         }
 
         @include breakpoint(mobile-max) {
-            width: 200px;
+            width: 12.5rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 123px;
+            width: 7.7rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 108px;
-        }
-    }
-
-    &__contacts-logo-wrapper {
-        display: flex;
-
-        @include breakpoint(ipad-max) {
-            margin-bottom: 57px;
+            width: 6.75rem;
         }
     }
 
     &__logo-wrapper {
-        width: 46px;
+        width: 2.8rem;
     }
 
     [class^=icon-],
     [class*=" icon-"] {
         color: $color-white;
-        font-size: 14px;
-        margin: 5px 10px 0 0;
+        font-size: .75rem;
+        margin: 0.25rem 0.6rem 0 0;
     }
 
     &__follow-us-title {
         color: $color-white;
-        font-size: 16px;
+        font-size: 1.1rem;
         font-weight: 900;
-        padding: 53px 0 25px 0;
+        text-transform: uppercase;
+        padding: 3.31rem 0 1.6rem 0;
         margin: 0;
 
         @include breakpoint(mobile-max) {
-            padding: 30px 0 25px 0;
+            padding: 1.87rem 0 1.6rem 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            padding: 28px 0 25px 0;
+            padding: 1.75rem 0 1.6rem 0;
         }
     }
 
     .icon-icon-fb,
     .icon-youtube,
     .icon-twitter {
-        font-size: 10px;
+        font-size: 0.75rem;
         border-radius: 50%;
+        display: inline-block;
         border: 1px solid $color-white;
-        padding: 10px 10px;
+        padding: 0.7rem 0.7rem 0.7rem 0.6rem;
+        transition: color 2s, background-color 2s;
+
+        &:hover {
+            color: blue;
+            background-color: $color-yellow-orange;
+        }
+    }
+
+    .icon-icon-fb {
+        padding: 0.7rem 0.87rem;
     }
 
     &__links-wrapper {
         list-style-type: none;
         padding: 0;
+        margin: 0;
     }
 
     &__link-item {
-        padding: 0 0 18px 0;
+        padding: 0 0 1.5rem 0;
 
         &:last-child {
             padding: 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            padding: 0 0 8px 0;
+            padding: 0 0 0.5rem 0;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            padding: 0 0 2px 0;
+            padding: 0 0 0.125rem 0;
         }
     }
 
     &__link {
         color: $color-white;
-        font-size: 12px;
+        font-size: 0.8rem;
         font-weight: 500;
+        transition: color 2s;
 
         &:hover {
-            color: $color-koromilk;
+            color: rgb(192, 0, 199);
         }
     }
 
     &__transparency {
         color: $color-white;
-        font-size: 17px;
+        font-size: 1.1rem;
         font-weight: 700;
-        padding: 49px 0 24px 0;
+        padding: 3.1rem 0 1.5rem 0;
         margin: 0;
 
         @include breakpoint(portrait-mobile-max) {
-            padding: 31px 0 20px 0;
+            padding: 3.1rem 0 1.25rem 0;
         }
     }
 
     &__school-data {
         color: $color-white;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 500;
-        padding: 18px 0 0 0;
+        padding: 1.1rem 0 0 0;
+        margin: 0;
     }
 
     &__bottom {
@@ -268,19 +292,42 @@
     }
 
     &__copyright {
-        color: $color-white;
-        font-size: 12px;
+        color: $color-whisper;
+        font-size: 0.75rem;
         text-align: center;
-        padding: 23px 0 23px 0;
+        font-family: $secondary-font;
+        font-weight: 500;
+        padding: 1.4rem 0 1.4rem 0;
+        margin: 0;
     }
 
     &__woods-img {
-        width: 95px;
-        height: 55px;
+        width: 5.9rem;
+        height: 3.4rem;
     }
 
     &__school-data-img {
-        width: 55px;
-        height: 55px;
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+
+    &__section-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5.9rem 0 0 0;
+
+        @include breakpoint(ipad-max) {
+            flex-wrap: nowrap;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            flex-wrap: wrap;
+        }
     }
 }
+
+// .new{
+//     // border: em(1) solid red;
+//     width: 100%;
+//     height: em(200);
+// }

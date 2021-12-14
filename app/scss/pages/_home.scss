@@ -611,7 +611,7 @@
 
         &::before {
             content: "";
-            top:3%;
+            top: 3%;
             right: 63%;
             width: 50px;
             height: 50px;
@@ -734,7 +734,7 @@
         font-size: 34px;
         text-align: center;
         font-weight: 700;
-        margin:0 0 24.4px 0;
+        margin: 0 0 24.4px 0;
     }
 
     &__heading-desc {
@@ -845,7 +845,7 @@
 
     &__book-img,
     &__spring-img {
-        margin:0 0 27px 0;
+        margin: 0 0 27px 0;
     }
 
     .icon-maps {
@@ -864,7 +864,7 @@
         color: $color-atomic;
         font-size: 17px;
         font-weight: 500;
-        margin:0 0 20px 0;
+        margin: 0 0 20px 0;
     }
 
     &__desc {
@@ -880,7 +880,7 @@
     background: linear-gradient(#F9F4FC, #FFF4E5);
     width: 100%;
     border-radius: 100%/75%;
-    padding:0 0 248px 0;
+    padding: 0 0 248px 0;
     margin: 100px 0 0 0;
 
     @include breakpoint(ipad-max) {
@@ -994,7 +994,7 @@
         right: 31px;
         top: 60%;
 
-        @include breakpoint(ipad-max){
+        @include breakpoint(ipad-max) {
             right: 0;
             top: 62%;
         }
@@ -1002,7 +1002,7 @@
         @include breakpoint(mobile-max) {
             top: 68%;
         }
-        
+
     }
 
     &__dot {
@@ -1011,7 +1011,7 @@
         background-color: $color-old-brick;
         border-radius: 50%;
         display: inline-block;
-        margin:0 17px 0 0;
+        margin: 0 17px 0 0;
     }
 
     &__leftarrow {
@@ -1020,7 +1020,7 @@
         left: 3%;
         text-align: center;
 
-        @include breakpoint(ipad-max){
+        @include breakpoint(ipad-max) {
             left: 9%;
         }
 
@@ -1035,7 +1035,7 @@
         left: 7%;
         text-align: center;
 
-        @include breakpoint(ipad-max){
+        @include breakpoint(ipad-max) {
             left: 15%;
         }
 
@@ -1087,7 +1087,7 @@
         font-weight: 700;
         text-align: center;
         margin: 0;
-        padding:0 0 22px 0;
+        padding: 0 0 22px 0;
     }
 
     &__heading-desc {
@@ -1098,7 +1098,7 @@
         font-weight: 400;
         text-align: center;
         margin: 0 auto 0 auto;
-        padding:0 0 80px 0;
+        padding: 0 0 80px 0;
 
         @include breakpoint(mobile-max) {
             width: 512px;
@@ -1191,7 +1191,7 @@
     &__img {
         width: 44px;
         height: 44px;
-        margin:0 19px 0 0;
+        margin: 0 19px 0 0;
     }
 
     .slick-track {
@@ -1207,7 +1207,7 @@
         }
     }
 
-    .slick-dots{
+    .slick-dots {
         bottom: 2%;
     }
 
@@ -1311,7 +1311,7 @@
         height: 65px;
         background-color: $color-white;
         border-radius: 50%;
-        margin:0 0 0 15px;
+        margin: 0 0 0 15px;
 
         @include breakpoint(portrait-mobile-max) {
             margin-left: 0;
