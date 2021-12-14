@@ -287,7 +287,7 @@
         margin: 0;
     }
 
-    &__bottom {
+    &__copyright-wrapper {
         border-top: 1px solid rgba(255, 255, 255, 17%);
     }
 
@@ -326,8 +326,8 @@
     }
 }
 
-// .new{
-//     // border: em(1) solid red;
-//     width: 100%;
-//     height: em(200);
-// }
+.new{
+    // border: em(1) solid red;
+    width: 100%;
+    height: em(200);
+}

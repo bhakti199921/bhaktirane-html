@@ -8,7 +8,7 @@
             content: "";
             top: 0;
             width: 100%;
-            height: 637px;
+            height: 39.8rem;
             position: absolute;
             opacity: 0.7;
             background: linear-gradient(90deg, $color-dark-black, $color-dark-black 70%);
@@ -17,78 +17,78 @@
 
     &__herobanner-img {
         width: 100%;
-        height: 637px;
+        height: 39.8rem;
     }
 
     &__headings {
         position: absolute;
         top: 0;
-        width: 492px;
+        width: 30.75rem;
         z-index: 1;
-        padding-top: 143px;
+        padding-top: 8.9rem;
 
         @include breakpoint(desktop-max) {
-            width: 360px;
+            width: 22.5rem;
         }
 
         @include breakpoint(ipad-max) {
-            width: 352px;
+            width: 22rem;
             padding-top: 90px;
         }
 
         @include breakpoint(mobile-max) {
-            width: 277px;
-            padding-top: 77px;
+            width: 17.3rem;
+            padding-top: 4.8rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
             top: 0;
-            width: 327px;
-            padding-top: 58px;
+            width: 20.4rem;
+            padding-top: 3.62rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 267px;
+            width: 16.7rem;
         }
     }
 
     &__title {
-        width: 498px;
+        width: 31.1rem;
         color: $color-white;
-        font-size: 49px;
+        font-size: 3.06rem;
         font-weight: 700;
 
         @include breakpoint(ipad-max) {
-            font-size: 45px;
+            font-size: 2.81rem;
         }
 
         @include breakpoint(mobile-max) {
-            font-size: 40px;
+            font-size: 2.5rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 313px;
-            font-size: 35px;
+            width: 19.6rem;
+            font-size: 2.2rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 287px;
-            font-size: 30px;
+            width: 17.9rem;
+            font-size: 1.87rem;
         }
     }
 
     &__desc {
         color: $color-gray;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
-        margin-bottom: 29px;
-        margin-top: 29px;
+        margin-bottom: 1.8rem;
+        margin-top: 1.8rem;
     }
 
     .icon-icon-arrow-left {
         color: $color-white;
-        font-size: 13px;
-        margin-left: 10px;
+        font-size: 0.81rem;
+        margin-left: 0.625;
 
         &:hover {
             color: $color-black;
@@ -107,61 +107,61 @@
 
     &__hero-banner-student {
         width: 100%;
-        height: 473px;
+        height: 29.6rem;
         z-index: 1;
 
         @include breakpoint(ipad-max) {
             width: 100%;
-            height: 380px;
+            height: 23.75rem;
         }
 
         @include breakpoint(mobile-max) {
-            width: 790px;
-            height: 391px;
+            width: 49.37rem;
+            height: 24.44rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            height: 330px;
-            width: 600px;
+            height: 20.62rem;
+            width: 37.5rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            height: 300px;
-            width: 520px;
+            height: 18.75rem;
+            width: 32.5rem;
         }
     }
 
 }
 
 .bussinessmanintro {
-    margin-top: 133px;
+    margin-top: 8.31rem;
 
     @include breakpoint(mobile-max) {
-        margin-top: 50px;
+        margin-top: 3.12rem;
     }
 
     @include breakpoint(portrait-mobile-max) {
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     @include breakpoint(custom-small-mobile-max) {
-        margin-top: 30px;
+        margin-top: 1.87rem;
     }
 
     &__picture {
-        width: 384px;
-        height: 288px;
+        width: 24rem;
+        height: 18rem;
         z-index: 1;
         border-radius: 6px;
         box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 2%);
 
         @include breakpoint(ipad-max) {
-            width: 361px;
+            width: 22.56rem;
         }
 
         @include breakpoint(mobile-max) {
-            width: 480px;
-            height: 400px;
+            width: 30rem;
+            height: 25rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
@@ -171,7 +171,7 @@
 
         @include breakpoint(custom-small-mobile-max) {
             width: 100%;
-            height: 208px;
+            height: 14.37rem;
         }
     }
 
@@ -183,16 +183,16 @@
             content: '';
             top: -39px;
             left: -36px;
-            width: 100px;
-            height: 100px;
+            width: 6.25rem;
+            height: 6.25rem;
             position: absolute;
             border-radius: 50%;
             border: 20px solid $color-flame-red;
 
             @include breakpoint(ipad-max) {
                 top: -33px;
-                width: 82px;
-                height: 80px;
+                width: 5.12rem;
+                height: 5rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -210,68 +210,68 @@
     }
 
     &__name {
-        width: 284px;
+        width: 17.75rem;
         position: absolute;
         bottom: 4%;
         right: 0;
         left: 0;
         color: $color-blue-charcoal;
-        font-size: 17px;
+        font-size: 1.06rem;
         font-weight: 500;
         background-color: $color-koromilk;
         border-radius: 6px;
-        padding: 17px 94px 17px 94px;
+        padding: 1.06rem 5.87rem 1.06rem 5.87rem;
         margin: auto;
         text-align: center;
         box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 2%);
 
         @include breakpoint(ipad-max) {
             bottom: 20%;
-            padding: 15px 90px 15px 90px;
+            padding: 0.94rem 5.62rem 0.94rem 5.62rem;
         }
 
         @include breakpoint(mobile-max) {
             bottom: -1%;
-            width: 388px;
-            padding: 22px 94px 17px 94px;
+            width: 24.25rem;
+            padding: 1.375rem 5.875rem 1.06rem 5.875rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 221px;
-            padding: 9px 20px 9px 20px;
+            width: 13.81rem;
+            padding: 0.56rem 1.25rem 0.56rem 1.25rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
             bottom: -6%;
             width: 188px;
-            padding: 9px 33px 9px 33px;
+            padding: 0.56rem 2.06rem 0.56rem 2.06rem;
         }
     }
 
     &__introduction-part {
-        width: 404px;
+        width: 25.25rem;
         position: relative;
-        margin: 0 0 0 30px;
+        margin: 0 0 0 1.87rem;
 
         @include breakpoint(ipad-max) {
-            width: 295px;
-            margin: 0 0 0 13px;
+            width: 18.44rem;
+            margin: 0 0 0 0.81rem;
         }
 
         @include breakpoint(mobile-max) {
             width: 100%;
-            margin: 100px 0 0 0;
+            margin: 6.25rem 0 0 0;
         }
     }
 
     &__title {
-        width: 381px;
+        width: 23.81rem;
         color: $color-sapphire;
-        font-size: 34px;
+        font-size: 2.12rem;
         font-weight: 700;
 
         @include breakpoint(ipad-max) {
-            width: 300px;
+            width: 18.75rem;
         }
 
         @include breakpoint(mobile-max) {
@@ -281,14 +281,14 @@
     }
 
     &__intro {
-        width: 404px;
+        width: 25.25rem;
         color: $color-blue-charcoal;
-        font-size: 17px;
+        font-size: 1.0625rem;
         font-weight: 500;
         line-height: 1.4;
 
         @include breakpoint(ipad-max) {
-            width: 328px;
+            width: 20.5rem;
         }
 
         @include breakpoint(mobile-max) {
@@ -310,7 +310,7 @@
     }
 
     &__dot-wrapper {
-        width: 167px;
+        width: 10.44rem;
         position: absolute;
         bottom: 82%;
         right: 0;
@@ -318,12 +318,12 @@
     }
 
     &__dot {
-        height: 2.2px;
-        width: 2px;
+        height: 0.1375rem;
+        width: 0.125rem;
         background-color: $color-flame-red;
         border-radius: 50%;
         display: inline-block;
-        margin-right: 11px;
+        margin-right: 0.69rem;
     }
 }
 
@@ -332,10 +332,10 @@
     width: 100%;
     background-color: $color-old-brick;
     z-index: 1;
-    margin: 140px 0 0 0;
+    margin: 8.75rem 0 0 0;
 
     @include breakpoint(portrait-mobile-max) {
-        margin: 98px 0 0 0;
+        margin: 6.125rem 0 0 0;
     }
 
     &::after,
@@ -343,7 +343,7 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: 40px;
+        height: 2.5rem;
         background-color: $color-white;
         z-index: -1;
     }
@@ -361,22 +361,22 @@
     }
 
     @include breakpoint(portrait-mobile-max) {
-        padding: 50px 0 50px 0;
+        padding: 3.125rem 0 3.125rem 0;
     }
 
     &__about-mission {
-        margin: 119px 0 0 37px;
+        margin: 7.44rem 0 0 2.31rem;
 
         @include breakpoint(ipad-max) {
-            margin: 91px 0 0 37px;
+            margin: 5.69rem 0 0 2.31rem;
         }
 
         @include breakpoint(mobile-max) {
-            margin: 67px 0 0 10px;
+            margin: 3.19rem 0 0 0.625rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            margin: 5px 0 15px 0;
+            margin: 2rem 0 0.94rem 0;
         }
     }
 
@@ -384,11 +384,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin: 0 0 0 108px;
+        margin: 0 0 0 6.75rem;
 
         @include breakpoint(ipad-max) {
             flex-wrap: nowrap;
-            margin: 0 0 0 79px;
+            margin: 0 0 0 4.98rem;
         }
 
         @include breakpoint(mobile-max) {
@@ -404,30 +404,30 @@
 
     &__mission-img {
         position: relative;
-        width: 315px;
-        height: 394px;
+        width: 19.69rem;
+        height: 24.62rem;
         border-radius: 25px;
         box-shadow: 5px 3px 10px 8px rgba(0, 0, 0, 0.2);
         z-index: 20;
 
         @include breakpoint(ipad-max) {
-            width: 296px;
-            height: 350px;
+            width: 18.5rem;
+            height: 21.875rem;
         }
 
         @include breakpoint(mobile-max) {
-            width: 250px;
-            height: 322px;
+            width: 15.62rem;
+            height: 20.125rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 275px;
-            height: 250px;
+            width: 17.19rem;
+            height: 15.62rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 263px;
-            height: 280px;
+            width: 16.44rem;
+            height: 17.5rem;
         }
     }
 
@@ -446,13 +446,13 @@
         &::after {
             top: 42%;
             left: -25%;
-            width: 270px;
-            height: 270px;
+            width: 16.875rem;
+            height: 16.875rem;
             z-index: 2;
 
             @include breakpoint(ipad-max) {
-                width: 221px;
-                height: 218px;
+                width: 13.81rem;
+                height: 13.625rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -463,12 +463,12 @@
         &::before {
             top: 30%;
             left: -27%;
-            width: 50px;
-            height: 50px;
+            width: 3.125rem;
+            height: 3.125rem;
 
             @include breakpoint(ipad-max) {
-                width: 40px;
-                height: 40px;
+                width: 2.5rem;
+                height: 2.5rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -478,7 +478,7 @@
     }
 
     &__mission-dot-wrapper {
-        width: 117px;
+        width: 7.31rem;
         position: absolute;
         top: 32%;
         left: 6%;
@@ -492,7 +492,7 @@
         @include breakpoint(ipad-max) {
             left: 3%;
             top: 22%;
-            width: 95px;
+            width: 5.94rem;
         }
 
         @include breakpoint(mobile-max) {
@@ -501,21 +501,21 @@
     }
 
     &__mission-dot {
-        height: 5px;
-        width: 5px;
+        height: 0.3125rem;
+        width: 0.3125rem;
         background-color: $color-soft-yellow-green;
         border-radius: 50%;
         display: inline-block;
-        margin: 0 15px 0 0;
+        margin: 0 0.94rem 0 0;
 
         @include breakpoint(desktop-max) {
-            margin: 0 13px 0 0;
-            height: 4px;
-            width: 4px;
+            margin: 0 0.81rem 0 0;
+            height: 0.25rem;
+            width: 0.25rem;
         }
 
         @include breakpoint(ipad-max) {
-            margin: 0 9px 0 0;
+            margin: 0 0.56rem 0 0;
         }
 
         @include breakpoint(mobile-max) {
@@ -545,37 +545,37 @@
 
     &__vission-img {
         position: relative;
-        width: 315px;
-        height: 394px;
+        width: 19.69rem;
+        height: 24.62rem;
         border-radius: 25px;
-        box-shadow: 5px 3px 10px 8px rgb(0, 0, 0, 0.2);
+        box-shadow: 0.31rem 0.19rem 0.62rem 0.5rem rgb(0, 0, 0, 0.2);
         z-index: 3;
-        margin: 64px 0 0 67px;
+        margin: 4rem 0 0 4.19rem;
 
         @include breakpoint(desktop-max) {
             margin: 0 0 0 0;
         }
 
         @include breakpoint(ipad-max) {
-            width: 296px;
-            height: 380px;
+            width: 18.5rem;
+            height: 23.75rem;
         }
 
         @include breakpoint(mobile-max) {
-            width: 250px;
-            height: 322px;
-            margin: 0 0 0 4px;
+            width: 14.625rem;
+            height: 20.125rem;
+            margin: 0 0 0 0.25rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 275px;
-            height: 250px;
-            margin: 25px 0 0 0;
+            width: 17.19rem;
+            height: 15.625rem;
+            margin: 1.56rem 0 0 0;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 263px;
-            height: 280px;
+            width: 16.44rem;
+            height: 17.5rem;
         }
     }
 
@@ -594,14 +594,14 @@
         &::after {
             top: 7%;
             right: -30%;
-            width: 208px;
-            height: 208px;
+            width: 13rem;
+            height: 13rem;
             z-index: 2;
 
             @include breakpoint(ipad-max) {
                 right: -21%;
-                width: 200px;
-                height: 200px;
+                width: 12.5rem;
+                height: 12.5rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -613,14 +613,18 @@
             content: "";
             top: 3%;
             right: 63%;
-            width: 50px;
-            height: 50px;
+            width: 3.125rem;
+            height: 3.125rem;
+
+            @include breakpoint(desktop-max) {
+                top: -13%;
+            }
 
             @include breakpoint(ipad-max) {
                 top: 6%;
-                right: 72%;
-                width: 40px;
-                height: 40px;
+                right: 70%;
+                width: 2.5rem;
+                height: 2.5rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -630,40 +634,44 @@
     }
 
     &__about-vission {
-        margin: 74px 0 0 0;
+        margin: 4.625rem 0 0 0;
 
         @include breakpoint(ipad-max) {
-            margin: 37px 0 0 0;
+            margin: 0.31rem 0 0 0;
         }
 
         @include breakpoint(mobile-max) {
-            margin: 25px 0 0 0;
+            margin: 0.45rem 0 0 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            margin: 6px 0 0 0;
+            margin: 0.37rem 0 0 0;
         }
     }
 
     &__desc-point {
         color: $color-white;
-        font-size: 15px;
+        font-size: 0.94rem;
         display: block;
 
         @include breakpoint(ipad-max) {
-            width: 274px;
+            width: 17.12rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 17.12rem;
         }
     }
 
     &__desc {
-        width: 442px;
+        width: 27.62rem;
         color: $color-white;
-        font-size: 15px;
+        font-size: 0.94rem;
         font-family: $secondary-font;
         margin: 0 0 0 0;
 
         @include breakpoint(ipad-max) {
-            width: 315px;
+            width: 19.69rem;
         }
 
 
@@ -682,25 +690,26 @@
 
     &__title {
         color: $color-white;
-        font-size: 34px;
+        font-size: 2.12rem;
         font-weight: 700;
+        margin: 0;
     }
 
     &__vission-dot-wrapper {
         position: absolute;
         bottom: 12%;
         right: 10%;
-        width: 240px;
+        width: 15rem;
         line-height: 2;
 
         @include breakpoint(desktop-max) {
             right: 6%;
-            width: 259px;
+            width: 16.19rem;
         }
 
         @include breakpoint(ipad-max) {
             right: 3%;
-            width: 258px;
+            width: 16.125rem;
         }
 
         @include breakpoint(mobile-max) {
@@ -709,12 +718,12 @@
     }
 
     &__vission-dot {
-        height: 4px;
-        width: 4px;
+        height: 0.25rem;
+        width: 0.25rem;
         background-color: $color-soft-yellow-green;
         border-radius: 50%;
         display: inline-block;
-        margin: 0 17px 0 0;
+        margin: 0 1.06rem 0 0;
 
         @include breakpoint(mobile-max) {
             display: none;
@@ -723,48 +732,48 @@
 }
 
 .whyhwschools {
-    margin: 138.4px 0 0 0;
+    margin:8.65rem 0 0 0;
 
     @include breakpoint(portrait-mobile-max) {
-        margin: 54px 0 0 0;
+        margin: 3.375rem 0 0 0;
     }
 
     &__heading {
         color: $color-eclipse;
-        font-size: 34px;
+        font-size: 2.12rem;
         text-align: center;
         font-weight: 700;
-        margin: 0 0 24.4px 0;
+        margin: 0 0 1.525rem 0;
     }
 
     &__heading-desc {
-        width: 674px;
+        width: 42.125rem;
         color: $color-gray;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         text-align: center;
         font-family: $secondary-font;
         margin: 0 auto 0 auto;
 
         @include breakpoint(mobile-max) {
-            width: 544px;
+            width:34rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 304px;
+            width:19rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 272px;
+            width: 17rem;
         }
     }
 
     &__box {
-        width: 841px;
+        width: 52.56rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 63px auto 0 auto;
+        margin: 3.94rem auto 0 auto;
 
         @include breakpoint(ipad-max) {
             width: unset;
@@ -778,19 +787,19 @@
     }
 
     &__cards {
-        width: 257px;
-        min-height: 263px;
+        width: 16.06rem;
+        min-height: 16.4375rem;
         border-radius: 15px;
         background-color: $color-white;
-        padding: 28px 21px 40px 21px;
+        padding: 1.75rem 1.3125rem 2.5rem 1.3125rem;
         box-shadow: 0 0 77px 0 rgba(0, 0, 0, 0.1);
-        margin: 0 23px 35px 0;
+        margin: 0 1.44rem 2.19rem 0;
 
         &:nth-child(3) {
             margin-right: 0;
 
             @include breakpoint(ipad-max) {
-                margin-right: 23px;
+                margin-right: 1.4375rem;
             }
 
             @include breakpoint(mobile-max) {
@@ -799,7 +808,7 @@
         }
 
         @include breakpoint(mobile-max) {
-            margin-bottom: 35px;
+            margin-bottom: 2.1875rem;
             width: 100%;
 
             &:nth-child(2),
@@ -818,7 +827,7 @@
         }
 
         &:last-child {
-            margin: 0 0 35px 0;
+            margin: 0 0 2.1875rem 0;
         }
 
         &:hover {
@@ -835,17 +844,17 @@
     [class^=icon-],
     [class*=" icon-"] {
         color: $color-white;
-        font-size: 21px;
-        margin-bottom: 27px;
+        font-size: 1.3125rem;
+        margin-bottom: 1.69rem;
         display: inline-block;
         border-radius: 50px;
         border: 1px solid $color-white;
-        padding: 12px 14px 12px 14px;
+        padding: 0.75rem 0.875rem 0.75rem 0.875rem;
     }
 
     &__book-img,
     &__spring-img {
-        margin: 0 0 27px 0;
+        margin: 0 0 1.69rem 0;
     }
 
     .icon-maps {
@@ -862,14 +871,14 @@
 
     &__title {
         color: $color-atomic;
-        font-size: 17px;
+        font-size: 1.06rem;
         font-weight: 500;
-        margin: 0 0 20px 0;
+        margin: 0 0	1.25rem 0;
     }
 
     &__desc {
         color: $color-atomic;
-        font-size: 13px;
+        font-size: 0.81rem;
         font-family: $secondary-font;
         font-weight: 400;
     }
@@ -880,11 +889,11 @@
     background: linear-gradient(#F9F4FC, #FFF4E5);
     width: 100%;
     border-radius: 100%/75%;
-    padding: 0 0 248px 0;
-    margin: 100px 0 0 0;
+    padding: 0 0 15.5rem 0;
+    margin: 6.25rem 0 0 0;
 
     @include breakpoint(ipad-max) {
-        padding-bottom: 156px;
+        padding-bottom: 9.75rem;
     }
 
     @include breakpoint(mobile-max) {
@@ -892,47 +901,47 @@
     }
 
     @include breakpoint(portrait-mobile-max) {
-        padding-bottom: 90px;
+        padding-bottom: 5.62rem;
     }
 
     &__heading {
         color: $color-eclipse;
-        font-size: 34px;
+        font-size: 2.12rem;
         font-weight: 700;
         text-align: center;
-        padding: 73px 0 17px 0;
+        padding: 4.56rem 0 1.06rem 0;
         margin-bottom: 0;
     }
 
     &__heading-desc {
-        width: 675px;
+        width: 42.19rem;
         color: $color-gray;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: $secondary-font;
         font-weight: 400;
         text-align: center;
-        padding: 0 0 97px 0;
+        padding: 0 0 6.06rem 0;
         margin: 0 auto 0 auto;
 
         @include breakpoint(ipad-max) {
-            width: 530px;
+            width: 33.12rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 311px;
-            padding: 0 0 85px 0;
+            width: 19.44rem;
+            padding: 0 0 5.31rem 0;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 275px;
+            width: 17.187rem;
         }
     }
 
     &__title {
         color: $color-atomic;
-        font-size: 17px;
+        font-size: 1.06rem;
         background-color: $color-bg-white;
-        padding: 23px 58px 23px 58px;
+        padding: 1.437rem 3.625rem 1.437rem 3.625rem;
         border-radius: 5px;
         box-shadow: 0 15px 20px 0 rgba(118, 130, 183, 0.1);
         cursor: pointer;
@@ -944,15 +953,15 @@
         }
 
         @include breakpoint(desktop-max) {
-            padding: 19px 29px 19px 29px;
+            padding: 1.1875rem 1.8125rem 1.1875rem 1.8125rem;
         }
 
         @include breakpoint(ipad-max) {
-            padding: 12px;
+            padding: 0.75rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            padding: 12px 20px 12px 20px;
+            padding:0.75rem 1.25rem 0.75rem 1.25rem;
         }
     }
 
@@ -961,16 +970,20 @@
     &__hw-middle-school,
     &__hw-highschool {
         width: 270px !important;
-        margin: 0 35px 20px 0;
+        margin: 0 2.187rem 1.25rem 0;
 
         @include breakpoint(desktop-max) {
-            margin-right: 25px;
+            margin-right: 2.562rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max){
+            margin-right: 0.562rem;
         }
     }
 
     &__school-img {
-        width: 266px;
-        height: 197px;
+        width: 16.62rem;
+        height: 12.31rem;
         border-radius: 5px;
     }
 
@@ -990,8 +1003,8 @@
 
     &__dot-wrapper {
         position: absolute;
-        width: 200px;
-        right: 31px;
+        width: 12.5rem;
+        right: 1.9375rem;
         top: 60%;
 
         @include breakpoint(ipad-max) {
@@ -1006,12 +1019,12 @@
     }
 
     &__dot {
-        height: 4px;
-        width: 4px;
+        height: 0.25rem;
+        width: 0.25rem;
         background-color: $color-old-brick;
         border-radius: 50%;
         display: inline-block;
-        margin: 0 17px 0 0;
+        margin: 0 1.06rem 0 0;
     }
 
     &__leftarrow {
@@ -1039,6 +1052,10 @@
             left: 15%;
         }
 
+        @include breakpoint(mobile-max){
+            left: 7%;
+        }
+
         @include breakpoint(portrait-mobile-max) {
             left: 9%;
         }
@@ -1049,7 +1066,7 @@
     }
 
     .schoolsection__beacon .slick-slide .slick-current .slick-active {
-        width: 266px !important;
+        width: 16.625rem !important;
     }
 
     .slick-track {
@@ -1067,11 +1084,11 @@
     .slick-list.draggable {
 
         @include breakpoint(medium-large-desktop-max) {
-            height: 300px;
+            height: 18.75rem;
         }
 
         @include breakpoint(mobile-max) {
-            height: 265px;
+            height: 16.56rem;
         }
 
     }
@@ -1269,7 +1286,7 @@
         position: absolute;
         top: 0;
         width: 100%;
-        height: 40px;
+        height: 2.5rem;
         background-color: white;
         border-bottom-left-radius: 30%;
         border-bottom-right-radius: 30%;
@@ -1277,10 +1294,10 @@
 
     &__heading {
         color: $color-flame-red;
-        font-size: 34px;
+        font-size: 2.125rem;
         text-align: center;
         font-weight: 700;
-        padding: 0 0 32px 0;
+        padding: 0 0 2rem 0;
         margin: 0;
     }
 
@@ -1296,9 +1313,9 @@
 
     &__link {
         color: $color-gray;
-        font-size: 19px;
+        font-size: 1.1875rem;
         font-weight: 500;
-        padding-bottom: 2px;
+        padding-bottom: 0.125rem;
         border-bottom: 1px solid $color-gray;
 
         &:hover {
@@ -1307,25 +1324,25 @@
     }
 
     &__info-book-img {
-        width: 67px;
-        height: 65px;
+        width: 4.1875rem;
+        height: 4.0625rem;
         background-color: $color-white;
         border-radius: 50%;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 0.9375rem;
 
         @include breakpoint(portrait-mobile-max) {
             margin-left: 0;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 53px;
-            height: 53px;
+            width: 3.3125rem;
+            height: 3.3125rem;
         }
 
     }
 
     &__link-item {
-        margin: 0 0 0 29px;
+        margin: 0 0 0 1.8125rem;
 
         @include breakpoint(portrait-mobile-max) {
             margin-left: 0;
@@ -1334,7 +1351,7 @@
 
     &__item {
         list-style-type: disc;
-        font-size: 20px;
+        font-size: 	1.25rem;
         line-height: 1.6;
     }
 }
