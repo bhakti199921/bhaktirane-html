@@ -288,7 +288,7 @@
     }
 
     &__copyright-wrapper {
-        border-top: 1px solid rgba(255, 255, 255, 17%);
+        border-top: 0.0625rem solid rgba(255, 255, 255, 17%);
     }
 
     &__copyright {
@@ -324,10 +324,4 @@
             flex-wrap: wrap;
         }
     }
-}
-
-.new{
-    // border: em(1) solid red;
-    width: 100%;
-    height: em(200);
 }

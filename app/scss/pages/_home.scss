@@ -152,8 +152,8 @@
         width: 24rem;
         height: 18rem;
         z-index: 1;
-        border-radius: 6px;
-        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 2%);
+        border-radius: 0.375rem;
+        box-shadow: 0px 0.1875rem 0.375rem 0px rgba(0, 0, 0, 2%);
 
         @include breakpoint(ipad-max) {
             width: 22.56rem;
@@ -166,7 +166,7 @@
 
         @include breakpoint(portrait-mobile-max) {
             width: 77%;
-            height: 230px;
+            height: 14.375rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
@@ -187,7 +187,7 @@
             height: 6.25rem;
             position: absolute;
             border-radius: 50%;
-            border: 20px solid $color-flame-red;
+            border: 1.25rem solid $color-flame-red;
 
             @include breakpoint(ipad-max) {
                 top: -33px;
@@ -219,11 +219,11 @@
         font-size: 1.06rem;
         font-weight: 500;
         background-color: $color-koromilk;
-        border-radius: 6px;
+        border-radius: 0.375rem;
         padding: 1.06rem 5.87rem 1.06rem 5.87rem;
         margin: auto;
         text-align: center;
-        box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 2%);
+        box-shadow: 0 0.25rem 2.69rem 0 rgba(0, 0, 0, 2%);
 
         @include breakpoint(ipad-max) {
             bottom: 20%;
@@ -243,7 +243,7 @@
 
         @include breakpoint(custom-small-mobile-max) {
             bottom: -6%;
-            width: 188px;
+            width: 11.75rem;
             padding: 0.56rem 2.06rem 0.56rem 2.06rem;
         }
     }
@@ -406,8 +406,8 @@
         position: relative;
         width: 19.69rem;
         height: 24.62rem;
-        border-radius: 25px;
-        box-shadow: 5px 3px 10px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 1.5625rem;
+        box-shadow: 0.3125rem 0.1875rem 0.625rem 0.5rem rgba(0, 0, 0, 0.2);
         z-index: 20;
 
         @include breakpoint(ipad-max) {
@@ -439,7 +439,7 @@
         &::before {
             content: "";
             position: absolute;
-            border: 3px solid $color-koromilk;
+            border: 0.1875rem solid $color-koromilk;
             border-radius: 50%;
         }
 
@@ -547,7 +547,7 @@
         position: relative;
         width: 19.69rem;
         height: 24.62rem;
-        border-radius: 25px;
+        border-radius: 1.5625rem;
         box-shadow: 0.31rem 0.19rem 0.62rem 0.5rem rgb(0, 0, 0, 0.2);
         z-index: 3;
         margin: 4rem 0 0 4.19rem;
@@ -588,7 +588,7 @@
             content: "";
             position: absolute;
             border-radius: 50%;
-            border: 3px solid $color-koromilk;
+            border: 0.1875rem solid $color-koromilk;
         }
 
         &::after {
@@ -732,7 +732,7 @@
 }
 
 .whyhwschools {
-    margin:8.65rem 0 0 0;
+    margin: 8.65rem 0 0 0;
 
     @include breakpoint(portrait-mobile-max) {
         margin: 3.375rem 0 0 0;
@@ -756,11 +756,11 @@
         margin: 0 auto 0 auto;
 
         @include breakpoint(mobile-max) {
-            width:34rem;
+            width: 34rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width:19rem;
+            width: 19rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
@@ -789,10 +789,10 @@
     &__cards {
         width: 16.06rem;
         min-height: 16.4375rem;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
         background-color: $color-white;
         padding: 1.75rem 1.3125rem 2.5rem 1.3125rem;
-        box-shadow: 0 0 77px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 4.8125rem 0 rgba(0, 0, 0, 0.1);
         margin: 0 1.44rem 2.19rem 0;
 
         &:nth-child(3) {
@@ -832,7 +832,7 @@
 
         &:hover {
             background-color: $color-old-brick;
-            box-shadow: 10px 15px 20px 0 rgba(132, 30, 37, 0.2);
+            box-shadow: 0.625rem 0.9375rem 1.25rem 0 rgba(132, 30, 37, 0.2);
 
             .whyhwschools__title,
             .whyhwschools__desc {
@@ -847,7 +847,7 @@
         font-size: 1.3125rem;
         margin-bottom: 1.69rem;
         display: inline-block;
-        border-radius: 50px;
+        border-radius: 3.125rem;
         border: 1px solid $color-white;
         padding: 0.75rem 0.875rem 0.75rem 0.875rem;
     }
@@ -873,7 +873,7 @@
         color: $color-atomic;
         font-size: 1.06rem;
         font-weight: 500;
-        margin: 0 0	1.25rem 0;
+        margin: 0 0 1.25rem 0;
     }
 
     &__desc {
@@ -943,7 +943,7 @@
         background-color: $color-bg-white;
         padding: 1.437rem 3.625rem 1.437rem 3.625rem;
         border-radius: 5px;
-        box-shadow: 0 15px 20px 0 rgba(118, 130, 183, 0.1);
+        box-shadow: 0 0.9375rem 1.25rem 0 rgba(118, 130, 183, 0.1);
         cursor: pointer;
         text-align: center;
 
@@ -961,7 +961,7 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
-            padding:0.75rem 1.25rem 0.75rem 1.25rem;
+            padding: 0.75rem 1.25rem 0.75rem 1.25rem;
         }
     }
 
@@ -969,14 +969,14 @@
     &__tyrone,
     &__hw-middle-school,
     &__hw-highschool {
-        width: 270px !important;
+        width: 16.875rem !important;
         margin: 0 2.187rem 1.25rem 0;
 
         @include breakpoint(desktop-max) {
             margin-right: 2.562rem;
         }
 
-        @include breakpoint(custom-small-mobile-max){
+        @include breakpoint(custom-small-mobile-max) {
             margin-right: 0.562rem;
         }
     }
@@ -984,7 +984,7 @@
     &__school-img {
         width: 16.62rem;
         height: 12.31rem;
-        border-radius: 5px;
+        border-radius: 0.3125rem;
     }
 
     &__schools {
@@ -1052,7 +1052,7 @@
             left: 15%;
         }
 
-        @include breakpoint(mobile-max){
+        @include breakpoint(mobile-max) {
             left: 7%;
         }
 
@@ -1096,40 +1096,40 @@
 }
 
 .testimonial {
-    margin: 60px 0 0 0;
+    margin: 3.75rem 0 0 0;
 
     &__heading {
         color: $color-eclipse;
-        font-size: 34px;
+        font-size: 2.125rem;
         font-weight: 700;
         text-align: center;
         margin: 0;
-        padding: 0 0 22px 0;
+        padding: 0 0 1.375rem 0;
     }
 
     &__heading-desc {
-        width: 683px;
+        width: 42.687rem;
         color: $color-gray;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: $secondary-font;
         font-weight: 400;
         text-align: center;
         margin: 0 auto 0 auto;
-        padding: 0 0 80px 0;
+        padding: 0 0 5rem 0;
 
         @include breakpoint(mobile-max) {
-            width: 512px;
-            padding: 0 0 50px 0;
+            width: 32rem;
+            padding: 0 0 3.125rem 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 315px;
-            padding: 0 0 36px 0;
+            width: 19.6875rem;
+            padding: 0 0 2.25rem 0;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 274px;
-            padding: 0 0 36px 0;
+            width: 17.125rem;
+            padding: 0 0 2.25rem 0;
         }
     }
 
@@ -1140,43 +1140,43 @@
     }
 
     &__card {
-        width: 369px !important;
-        min-height: 241px;
+        width: 23.06rem !important;
+        min-height: 15.06rem;
         background-color: $color-white;
-        border-radius: 15px;
-        box-shadow: 0 0 77px 0 rgba(118, 130, 183, 0.1);
-        margin-right: 44px;
-        padding: 21px 41px 37px 25px;
+        border-radius: 0.9375rem;
+        box-shadow: 0 0 4.8125rem 0 rgba(118, 130, 183, 0.1);
+        margin-right: 2.75rem;
+        padding: 1.31rem 2.56rem 2.31rem 1.56rem;
 
         &:last-child {
             margin-right: 0;
 
             @include breakpoint(desktop-max) {
-                width: 365px;
+                width: 22.8125rem;
                 margin-left: 0;
             }
         }
 
         @include breakpoint(desktop-max) {
-            width: 371px !important;
-            margin: 0 10px 0 0;
+            width: 23.19rem !important;
+            margin: 0 0.625rem 0 0;
         }
 
         @include breakpoint(ipad-max) {
-            width: 344px !important;
+            width: 21.5rem !important;
         }
 
         @include breakpoint(mobile-max) {
-            width: 313px !important;
+            width: 19.56rem !important;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 295px !important;
+            width: 18.44rem !important;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 267px !important;
-            padding: 21px 23px 37px 25px;
+            width: 16.69rem !important;
+            padding: 1.31rem 1.44rem 2.31rem 1.56rem;
         }
     }
 
@@ -1187,39 +1187,39 @@
 
     &__desc {
         color: $color-atomic;
-        font-size: 15px;
+        font-size: 0.94rem;
         font-family: $secondary-font;
         font-weight: 400;
-        margin: 22px 0 0 0;
+        margin: 1.375rem 0 0 0;
     }
 
     &__title {
         color: $color-nero;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 500;
     }
 
     &__title-desc {
         color: $color-atomic;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-family: $ternery-font;
     }
 
     &__img {
-        width: 44px;
-        height: 44px;
-        margin: 0 19px 0 0;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin: 0 1.19rem 0 0;
     }
 
     .slick-track {
-        margin: 60px 28px;
+        margin: 3.75rem 1.75rem;
 
         @include breakpoint(desktop-max) {
-            margin: 60px 20px;
+            margin: 3.75rem 1.25rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            margin: 60px 0 10px 0;
+            margin: 3.75rem 0 0.625rem 0;
             transform: none;
         }
     }
@@ -1237,25 +1237,25 @@
     .slick-list.draggable {
 
         @include breakpoint(medium-large-desktop-max) {
-            height: 400px;
+            height: 25rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            height: 400px;
+            height: 25rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            height: 400px;
+            height: 25rem;
         }
 
     }
 
     div#slick-slide00.testimonial__card.slick-slide.slick-current {
-        width: 333px;
+        width: 20.8125rem;
     }
 
     .testimonial__card.slick-slide.slick-cloned {
-        width: 333px;
+        width: 20.8125rem;
     }
 
     .slick-dots li button:before {
@@ -1267,8 +1267,8 @@
     position: relative;
     background-color: rgba(132, 30, 37, 7%);
     width: 100%;
-    margin-top: 100px;
-    padding: 112px 0 112px 0;
+    margin-top: 6.25rem;
+    padding: 7rem 0 7rem 0;
 
     &::after {
         content: "";
@@ -1278,7 +1278,7 @@
         background-color: white;
         border-top-left-radius: 30%;
         border-top-right-radius: 30%;
-        height: 40px;
+        height: 2.5rem;
     }
 
     &::before {
@@ -1316,7 +1316,7 @@
         font-size: 1.1875rem;
         font-weight: 500;
         padding-bottom: 0.125rem;
-        border-bottom: 1px solid $color-gray;
+        border-bottom: 0.0625rem solid $color-gray;
 
         &:hover {
             color: $color-flame-red;
@@ -1351,43 +1351,43 @@
 
     &__item {
         list-style-type: disc;
-        font-size: 	1.25rem;
+        font-size: 1.25rem;
         line-height: 1.6;
     }
 }
 
 .progressbar {
-    padding: 56px 0 61px 0;
+    padding: 3.5rem 0 3.81rem 0;
 
     &__heading {
         color: $color-eclipse;
-        font-size: 34px;
+        font-size: 2.125rem;
         text-align: center;
         font-weight: 700;
         margin: 0;
-        padding: 0 0 32px 0;
+        padding: 0 0 2rem 0;
     }
 
     &__heading-desc {
-        width: 690px;
+        width: 43.125rem;
         color: $color-gray;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: $secondary-font;
         font-weight: 400;
         text-align: center;
         margin: 0 auto 0 auto;
-        padding: 0 0 79px 0;
+        padding: 0 0 4.94rem 0;
 
         @include breakpoint(mobile-max) {
-            width: 500px;
+            width: 31.25rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 312px;
+            width: 19.5rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 284px;
+            width: 17.75rem;
         }
     }
 
@@ -1410,14 +1410,14 @@
     }
 
     &__card {
-        width: 333px;
+        width: 20.8125rem;
         background: #fff;
-        min-height: 371px;
-        border-radius: 100px 8px 101px 8px;
+        min-height: 23.19rem;
+        border-radius: 6.25rem 0.5rem 6.31rem 0.5rem;
         display: flex;
         flex-direction: column;
-        padding: 21px 34px 63px 34px;
-        margin: 0 32px 0 0;
+        padding: 1.3125rem 2.12rem 3.94rem 2.12rem;
+        margin: 0 2rem 0 0;
 
         &:last-child {
             margin: 0 0 0 0;
@@ -1429,7 +1429,7 @@
 
         @include breakpoint(mobile-max) {
             width: 100%;
-            margin: 0 0 20px 0;
+            margin: 0 0 1.25rem 0;
 
             &:last-child {
                 margin-bottom: 0;
@@ -1437,14 +1437,14 @@
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 333px;
+            width: 20.81rem;
         }
     }
 
     &__circle {
         position: relative;
-        height: 100px;
-        width: 100px;
+        height: 6.25rem;
+        width: 6.25rem;
         color: $color-flame-red;
 
         border-radius: 50%;
@@ -1472,7 +1472,7 @@
     }
 
     &__percentage {
-        font-size: 21px;
+        font-size: 1.3125rem;
         font-weight: 700;
         transform: translate(-45%, -45%);
         transition: all 0.1s;
@@ -1497,15 +1497,15 @@
 
     &__title {
         color: $color-wedgewood;
-        font-size: 17px;
+        font-size: 1.0625rem;
         font-weight: 500;
         text-align: center;
-        padding: 29px 0 41px 0;
+        padding: 1.8125rem 0 2.5625rem 0;
     }
 
     &__title-desc {
         color: $color-gray;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         text-align: center;
     }

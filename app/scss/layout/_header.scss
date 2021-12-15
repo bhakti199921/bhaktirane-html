@@ -5,7 +5,7 @@
         background-color: $color-old-brick;
         width: 100%;
         display: flex;
-        padding: 16px 0 13px 0;
+        padding: 1rem 0 0.81rem 0;
     }
 
     &__topnav {
@@ -28,7 +28,7 @@
         display: flex;
 
         @include breakpoint(portrait-mobile-max) {
-            padding-top: 5px;
+            padding-top: 0.3125rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
@@ -37,10 +37,10 @@
     }
 
     &__suppt-hotline {
-        margin-right: 35px;
+        margin-right: 2.1875rem;
 
         @include breakpoint(ipad-max) {
-            margin-right: 15px;
+            margin-right: 0.9375rem;
         }
 
         @include breakpoint(mobile-max) {
@@ -49,7 +49,7 @@
     }
 
     &__number {
-        font-size: 13px;
+        font-size: 0.8125rem;
         display: inline;
         color: $color-very-light-gray;
         font-weight: 400;
@@ -58,8 +58,8 @@
     .icon-icon-call,
     .icon-letter {
         color: $color-very-light-gray;
-        font-size: 11px;
-        margin-right: 5px;
+        font-size: 0.6875rem;
+        margin-right: 0.3125rem;
     }
 
     &__emailid {
@@ -72,22 +72,22 @@
 
     &__languages {
         border: 1px solid $color-white;
-        border-radius: 22px;
-        padding: 0 0 0 15px;
+        border-radius: 1.375rem;
+        padding: 0 0 0 0.9375rem;
         outline: none;
         color: $color-white;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 500;
-        margin-left: 20px;
+        margin-left: 1.25rem;
         background-color: $color-old-brick;
 
         @include breakpoint(mobile-max) {
-            height: 31px;
+            height: 1.9375rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            padding-left: 5px;
-            margin-left: 10px;
+            padding-left: 0.3125rem;
+            margin-left: 0.625rem;
         }
     }
 
@@ -109,75 +109,75 @@
     }
 
     &__logo {
-        width: 46px;
-        height: 46px;
+        width: 2.875rem;
+        height: 2.875rem;
         margin-bottom: 0;
 
         @include breakpoint(desktop-max) {
-            width: 38px;
-            height: 51px;
-            padding-bottom: 10px;
+            width: 2.375rem;
+            height: 3.1875rem;
+            padding-bottom: 0.625rem;
             // margin-bottom: 20px;
         }
 
         @include breakpoint(ipad-max) {
-            width: 38px;
-            height: 46px;
-            padding: 5px 0 5px 0;
+            width: 2.375rem;
+            height: 2.875rem;
+            padding: 0.3125rem 0 0.3125rem 0;
             margin-bottom: 0;
         }
 
         @include breakpoint(mobile-max) {
-            width: 38px;
-            height: 46px;
-            padding: 5px 0 5px 0;
+            width: 2.375rem;
+            height: 2.875rem;
+            padding: 0.3125rem 0 0.3125rem 0;
             margin-bottom: 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 38px;
-            height: 46px;
-            padding: 5px 0 5px 0;
+            width: 2.375rem;
+            height: 2.875rem;
+            padding: 0.3125rem 0 0.3125rem 0;
             margin-bottom: 0;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 38px;
-            height: 46px;
-            padding: 5px 0 5px 0;
+            width: 2.375rem;
+            height: 2.875rem;
+            padding: 0.3125rem 0 0.3125rem 0;
             margin-bottom: 0;
         }
     }
 
     &__logoname {
         color: $color-sapphire;
-        font-size: 17px;
+        font-size: 1.06rem;
         font-weight: 900;
-        margin-left: 9px;
+        margin-left: 0.56rem;
 
         @include breakpoint(medium-large-desktop-max) {
-            margin-right: 35px;
+            margin-right: 2.1875rem;
         }
 
         @include breakpoint(desktop-max) {
-            width: 119px;
+            width: 7.44rem;
             display: inline-block;
             margin-right: 0;
-            margin-left: 7px;
+            margin-left: 0.44rem;
         }
 
         @include breakpoint(ipad-max) {
-            width: 191px;
+            width: 11.94rem;
             display: inline-block;
         }
 
         @include breakpoint(mobile-max) {
-            width: 207px;
+            width: 12.94rem;
             margin: 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 191px;
+            width: 11.94rem;
             margin: 0;
         }
 
@@ -188,10 +188,10 @@
 
     .navbar {
         background-color: $color-snow;
-        padding: 12px 0 12px 0;
+        padding: 0.75rem 0 0.75rem 0;
 
         @include breakpoint(ipad-max) {
-            padding: 5px 0 0 0;
+            padding: 0.3125rem 0 0 0;
         }
     }
 
@@ -201,7 +201,7 @@
 
     &__nav-link {
         color: $color-sapphire;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         padding: 0;
         margin: 0;
@@ -213,7 +213,7 @@
 
     .icon-icon-arrow-down {
         color: $color-sapphire;
-        font-size: 8px;
+        font-size: 0.5rem;
 
         &:hover {
             color: $color-tomato;
@@ -226,19 +226,19 @@
     }
 
     &__nav-item {
-        margin-left: 19px;
+        margin-left: 1.1875rem;
 
         &:first-child {
             margin-left: 0;
         }
 
         @include breakpoint(desktop-max) {
-            margin-left: 11px;
+            margin-left: 0.6875rem;
         }
 
         @include breakpoint(ipad-max) {
-            margin-left: 6px;
-            margin-bottom: 5px;
+            margin-left: 0.375rem;
+            margin-bottom: 0.3125rem;
         }
     }
 
@@ -246,10 +246,10 @@
         background-color: $color-white;
         border: none;
         cursor: pointer;
-        border: 1px solid $color-silver;
-        border-radius: 15px;
-        padding: 7px 14px 5px 14px;
-        margin-left: 20px;
+        border: 0.0625rem solid $color-silver;
+        border-radius: 0.9375rem;
+        padding: 0.44rem 0.87rem 0.31rem 0.87rem;
+        margin-left: 1.25rem;
 
         @include breakpoint(desktop-max) {
             margin-left: 0;
@@ -259,12 +259,12 @@
     }
 
     #myInput {
-        padding: 10px 10px 10px 38px;
+        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
         border: none;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 0.0625rem solid #ddd;
 
         &:focus {
-            outline: 3px solid #ddd;
+            outline: 0.1875 solid #ddd;
         }
     }
 
@@ -282,9 +282,9 @@
         display: none;
         position: absolute;
         background-color: #f6f6f6;
-        min-width: 230px;
+        min-width: 14.37rem;
         overflow: auto;
-        border: 1px solid #ddd;
+        border: 0.0625rem solid #ddd;
         z-index: 1;
 
         @include breakpoint(ipad-max) {
@@ -294,7 +294,7 @@
 
     &__searchbar-content a {
         color: black;
-        padding: 12px 16px;
+        padding: 0.75rem 1rem;
         text-decoration: none;
         display: block;
     }
@@ -305,7 +305,7 @@
 
     .icon-search {
         color: $color-blue-charcoal;
-        font-size: 17px;
+        font-size: 1.0625rem;
     }
 
 
@@ -358,15 +358,15 @@
     }
 
     .toggler-icon {
-        width: 30px;
-        height: 3px;
+        width: 1.87rem;
+        height: 0.1875rem;
         background-color: $color-black;
         display: block;
         transition: all 0.2s;
     }
 
     .middle-bar {
-        margin: 5px auto;
+        margin: 0.3125rem auto;
     }
 
     .navbar-toggler.collapsed {
@@ -391,7 +391,7 @@
     .dropdown-menu {
 
         @include breakpoint(ipad-max) {
-            width: 188px;
+            width: 11.75rem;
         }
     }
 }
