@@ -55,7 +55,7 @@ function myFunction() {
             breakpoint: 1200,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               dots: true
             },
           },
@@ -91,7 +91,7 @@ function myFunction() {
       $('.schoolsection__schools').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         prevArrow:'<div class="schoolsection__leftarrow"><span class="icon-icon-arrow-left"></span></div>',
         nextArrow:'<div class="schoolsection__rightarrow"><span class="icon-icon-arrow-right"></span></div>',
 
@@ -120,8 +120,8 @@ function myFunction() {
         {
           breakpoint: 359,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: false,
+            slidesToScroll: false,
           },
         },
       ],

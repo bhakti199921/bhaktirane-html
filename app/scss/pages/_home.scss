@@ -976,6 +976,11 @@
             margin-right: 2.562rem;
         }
 
+
+        @include breakpoint(mobile-max){
+            margin-right: 0.562rem;
+        }
+
         @include breakpoint(custom-small-mobile-max) {
             margin-right: 0.562rem;
         }
@@ -1073,11 +1078,19 @@
         left: 5%;
 
         @include breakpoint(desktop-max) {
-            left: 11%;
+            left: 5%;
         }
 
-        @include breakpoint(ipad-max) {
-            left: 0;
+        @include breakpoint(ipad-max){
+            left: 46%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            left: 19%;
+        }
+
+        @include breakpoint(custom-small-mobile-max){
+            left: 4%;
         }
     }
 
