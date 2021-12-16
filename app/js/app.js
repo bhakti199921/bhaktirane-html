@@ -96,10 +96,10 @@ function myFunction() {
         nextArrow:'<div class="schoolsection__rightarrow"><span class="icon-icon-arrow-right"></span></div>',
 
         responsive: [{
-          breakpoint: 1200,
+          breakpoint: 1199,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 2,
             
           },
         },
@@ -120,8 +120,8 @@ function myFunction() {
         {
           breakpoint: 359,
           settings: {
-            slidesToShow: false,
-            slidesToScroll: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
           },
         },
       ],

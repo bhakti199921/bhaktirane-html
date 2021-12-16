@@ -893,7 +893,7 @@
     margin: 6.25rem 0 0 0;
 
     @include breakpoint(ipad-max) {
-        padding-bottom: 9.75rem;
+        padding-bottom: 13.75rem;
     }
 
     @include breakpoint(mobile-max) {
@@ -1039,11 +1039,12 @@
         text-align: center;
 
         @include breakpoint(ipad-max) {
-            left: 9%;
+            left: 3%;
         }
 
         @include breakpoint(mobile-max) {
             left: 0;
+            bottom: -17%;
         }
     }
 
@@ -1054,11 +1055,12 @@
         text-align: center;
 
         @include breakpoint(ipad-max) {
-            left: 15%;
+            left: 8%;
         }
 
         @include breakpoint(mobile-max) {
             left: 7%;
+            bottom: -17%;
         }
 
         @include breakpoint(portrait-mobile-max) {
@@ -1078,11 +1080,13 @@
         left: 5%;
 
         @include breakpoint(desktop-max) {
-            left: 5%;
+            left: 16%;
+            top: 7%;
         }
 
         @include breakpoint(ipad-max){
-            left: 46%;
+            left: 38%;
+            top: 12%;
         }
 
         @include breakpoint(portrait-mobile-max) {
