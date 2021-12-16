@@ -54,17 +54,33 @@ function myFunction() {
         responsive: [{
             breakpoint: 1200,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 1,
               dots: true
             },
           },
           {
-            breakpoint: 769,
+            breakpoint: 1199,
             settings: {
               dots: true,
-              slidesToShow: 1,
+              slidesToShow: 3,
               slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              dots: true,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              dots: true,
+              slidesToShow: 2,
+              slidesToScroll: 2,
             },
           },
           {
@@ -96,7 +112,7 @@ function myFunction() {
         nextArrow:'<div class="schoolsection__rightarrow"><span class="icon-icon-arrow-right"></span></div>',
 
         responsive: [{
-          breakpoint: 1199,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 2,
@@ -104,7 +120,21 @@ function myFunction() {
           },
         },
         {
-          breakpoint: 769,
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 767,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,

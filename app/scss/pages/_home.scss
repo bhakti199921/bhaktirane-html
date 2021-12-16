@@ -893,7 +893,7 @@
     margin: 6.25rem 0 0 0;
 
     @include breakpoint(ipad-max) {
-        padding-bottom: 13.75rem;
+        padding-bottom: 10.75rem;
     }
 
     @include breakpoint(mobile-max) {
@@ -938,6 +938,7 @@
     }
 
     &__title {
+        width: 17rem;
         color: $color-atomic;
         font-size: 1.06rem;
         background-color: $color-bg-white;
@@ -957,7 +958,7 @@
         }
 
         @include breakpoint(ipad-max) {
-            padding: 0.75rem;
+            padding: 1.1875rem 1.8125rem 1.1875rem 1.8125rem;
         }
 
         @include breakpoint(portrait-mobile-max) {
@@ -969,16 +970,15 @@
     &__tyrone,
     &__hw-middle-school,
     &__hw-highschool {
-        width: 16.875rem !important;
         margin: 0 2.187rem 1.25rem 0;
 
         @include breakpoint(desktop-max) {
-            margin-right: 2.562rem;
+            margin: 0;
         }
 
 
-        @include breakpoint(mobile-max){
-            margin-right: 0.562rem;
+        @include breakpoint(mobile-max) {
+            margin-right: 0.9rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
@@ -987,7 +987,7 @@
     }
 
     &__school-img {
-        width: 16.62rem;
+        width: 17rem;
         height: 12.31rem;
         border-radius: 0.3125rem;
     }
@@ -1020,7 +1020,6 @@
         @include breakpoint(mobile-max) {
             top: 68%;
         }
-
     }
 
     &__dot {
@@ -1035,8 +1034,12 @@
     &__leftarrow {
         position: absolute;
         bottom: -23px;
-        left: 3%;
+        left: 0;
         text-align: center;
+
+        @include breakpoint(desktop-max) {
+            left: 2%;
+        }
 
         @include breakpoint(ipad-max) {
             left: 3%;
@@ -1051,8 +1054,12 @@
     &__rightarrow {
         position: absolute;
         bottom: -23px;
-        left: 7%;
+        left: 4%;
         text-align: center;
+
+        @include breakpoint(desktop-max) {
+            left: 5%;
+        }
 
         @include breakpoint(ipad-max) {
             left: 8%;
@@ -1072,29 +1079,22 @@
         }
     }
 
-    .schoolsection__beacon .slick-slide .slick-current .slick-active {
-        width: 16.625rem !important;
-    }
-
     .slick-track {
-        left: 5%;
 
         @include breakpoint(desktop-max) {
-            left: 16%;
-            top: 7%;
+            left: 2%;
         }
 
-        @include breakpoint(ipad-max){
-            left: 38%;
-            top: 12%;
+        @include breakpoint(mobile-max) {
+            left: 0;
         }
 
         @include breakpoint(portrait-mobile-max) {
-            left: 19%;
+            left: 0;
         }
 
-        @include breakpoint(custom-small-mobile-max){
-            left: 4%;
+        @include breakpoint(custom-small-mobile-max) {
+            left: 0;
         }
     }
 
@@ -1107,7 +1107,6 @@
         @include breakpoint(mobile-max) {
             height: 16.56rem;
         }
-
     }
 
 }
@@ -1157,7 +1156,6 @@
     }
 
     &__card {
-        width: 23.06rem !important;
         min-height: 15.06rem;
         background-color: $color-white;
         border-radius: 0.9375rem;
@@ -1169,31 +1167,31 @@
             margin-right: 0;
 
             @include breakpoint(desktop-max) {
-                width: 22.8125rem;
                 margin-left: 0;
             }
         }
 
         @include breakpoint(desktop-max) {
-            width: 23.19rem !important;
-            margin: 0 0.625rem 0 0;
+            margin: 0 0.5rem 0 0;
         }
 
         @include breakpoint(ipad-max) {
-            width: 21.5rem !important;
+            min-height: 25rem;
+            margin: 0 0.4rem 0 0;
         }
 
         @include breakpoint(mobile-max) {
-            width: 19.56rem !important;
+            min-height: 24rem;
+
         }
 
         @include breakpoint(portrait-mobile-max) {
-            width: 18.44rem !important;
+            min-height: 24rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 16.69rem !important;
-            padding: 1.31rem 1.44rem 2.31rem 1.56rem;
+            min-height: 20rem;
+            margin: 0 0.55rem 0 0;
         }
     }
 
@@ -1232,10 +1230,20 @@
         margin: 3.75rem 1.75rem;
 
         @include breakpoint(desktop-max) {
-            margin: 3.75rem 1.25rem;
+            margin: 3.75rem 2.25rem;
+        }
+
+        @include breakpoint(ipad-max) {
+            left: -3%;
+        }
+
+        @include breakpoint(mobile-max) {
+            left: 0;
+            margin: 3.75rem 0.25rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
+            left: 1%;
             margin: 3.75rem 0 0.625rem 0;
             transform: none;
         }
@@ -1257,18 +1265,21 @@
             height: 25rem;
         }
 
+        @include breakpoint(ipad-max) {
+            height: 31rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            height: 32rem;
+        }
+
         @include breakpoint(portrait-mobile-max) {
-            height: 25rem;
+            height: 32rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            height: 25rem;
+            height: 27rem;
         }
-
-    }
-
-    div#slick-slide00.testimonial__card.slick-slide.slick-current {
-        width: 20.8125rem;
     }
 
     .testimonial__card.slick-slide.slick-cloned {
