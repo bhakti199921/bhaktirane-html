@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coromandel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="app/images/header-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="app/css/slick.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="container-fluid">
+                    <div>
+                        <div class="header__shareprice">
+                            <p class="header__shareprice-title">Share price:</p>
+                            <div class="header__shareprice-wrapper">
+                                <p class="header__price">750</p>
+                                <p class="header__triangle"></p>
+                                <p class="header__value">+3</p>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false"
+                            aria-lable="Toggle navigation">
+                            <span class="toggler-icon top-bar"></span>
+                            <span class="toggler-icon middle-bar"></span>
+                            <span class="toggler-icon bottom-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                            <ul class="header__navbar-nav">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link active" aria-current="page" href="#">About Us</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">Our Businesses</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">Investor Relations</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">Sustainability</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">Media</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#">Career</a>
+                                </li>
+                                <div class="header__searchbar">
+                                    <button onclick="myFunction()" class="header__searchbtn">
+                                        <span class="icon-search"></span>
+                                    </button>
+                                    <div class="header__circle"></div>
+                                    <div id="myDropdown" class="header__searchbar-content">
+                                        <input type="text" placeholder="Search.." id="myInput"
+                                            onkeyup="filterFunction()">
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__logo-wrapper">
+                        <a href="#" class="header__logoname">Coromandel</a>
+                        <a href="#"><img src="app/images/header-logo.png" alt="logo" class="header__logo-img"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="herobanner">
+            <div class="herobanner__img-wrapper">
+                <img src="app/images/herobanner.png" alt="herobanner" class="herobanner__img">
+                <img src="app/images/herobanner-bottom.png" alt="" class="herobanner__bottom-img">
+                <div class="container">
+                    <div class="herobanner__headings">
+                        <h2 class="herobanner__title">Our Farmer’s</h2>
+                        <h3 class="herobanner__sub-title">First Approach</h3>
+                        <a href="#" class="btn btn--primary">KNOW MORE</a>
+                    </div>
+                    <div class="herobanner__turnover-wrapper">
+                        <h4 class="herobanner__turnover">TURNOVER</h4>
+                        <span class="herobanner__number">3224</span>
+                        <span class="herobanner__qtr">QTR 1</span>
+                        <span class="herobanner__crore">crore</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="whatsnew">
+            <div class="container">
+                <div class="whatsnew__wrapper">
+                    <div class="whatsnew__headings">
+                        <a href="#"><img src="app/images/header-logo.png" alt="header-logo" class="whatsnew__logo"></a>
+                        <h4 class="whatsnew__title">What's New?</h4>
+                        <a href="#" class="whatsnew__link">Know More</a>
+                    </div>
+                    <div class="whatsnew__card-wrapper">
+                        <div class="whatsnew__card">
+                            <div class="whatsnew__img-wrapper active">
+                                <a href="#">
+                                    <img src="app/images/coromandel-entrance.jpg" alt="coromandel-entrance"
+                                        class="whatsnew__img">
+                                </a>
+                            </div>
+                            <p class="whatsnew__date">24th July 2020</p>
+                            <p class="whatsnew__post">Coromandel International posts Q1 results</p>
+                            <p class="whatsnew__desc">Coromandel International Limited, India’s leading agri solutions
+                                provider is
+                                in the business of Fertilisers, Crop…
+                            </p>
+                        </div>
+                        <div class="whatsnew__card">
+                            <div class="whatsnew__img-wrapper">
+                                <a href="#">
+                                    <img src="app/images/coromandel-award-function.jpg" alt="coromandel-award-function"
+                                        class="whatsnew__img">
+                                </a>
+                            </div>
+                            <p class="whatsnew__date">24th July 2020</p>
+                            <p class="whatsnew__post">Coromandel International posts Q1 results</p>
+                            <p class="whatsnew__desc">Coromandel International Limited, India’s leading agri solutions
+                                provider is
+                                in the business of Fertilisers, Crop…
+                            </p>
+                        </div>
+                        <div class="whatsnew__card">
+                            <div class="whatsnew__img-wrapper">
+                                <a href="#">
+                                    <img src="app/images/coromandel-factory.jpg" alt="coromandel-factory"
+                                        class="whatsnew__img">
+                                </a>
+                            </div>
+                            <p class="whatsnew__date">24th July 2020</p>
+                            <p class="whatsnew__post">Coromandel International posts Q1 results</p>
+                            <p class="whatsnew__desc">Coromandel International Limited, India’s leading agri solutions
+                                provider is
+                                in the business of Fertilisers, Crop…
+                            </p>
+                        </div>
+                        <div class="whatsnew__card">
+                            <div class="whatsnew__img-wrapper">
+                                <a href="#">
+                                    <img src="app/images/coromandel-lady-award.jpg" alt="coromandel-lady-award"
+                                        class="whatsnew__img">
+                                </a>
+                            </div>
+                            <p class="whatsnew__date">24th July 2020</p>
+                            <p class="whatsnew__post">Coromandel International posts Q1 results</p>
+                            <p class="whatsnew__desc">Coromandel International Limited, India’s leading agri solutions
+                                provider is
+                                in the business of Fertilisers, Crop…
+                            </p>
+                        </div>
+
+
+                        <div class="whatsnew__card">
+                            <div class="whatsnew__img-wrapper">
+                                <a href="#">
+                                    <img src="app/images/coromandel-factory.jpg" alt="coromandel-factory"
+                                        class="whatsnew__img">
+                                </a>
+                            </div>
+                            <p class="whatsnew__date">24th July 2020</p>
+                            <p class="whatsnew__post">Coromandel International posts Q1 results</p>
+                            <p class="whatsnew__desc">Coromandel International Limited, India’s leading agri solutions
+                                provider is
+                                in the business of Fertilisers, Crop…
+                            </p>
+                        </div>
+                        </a>
+
+                        <div class="whatsnew__card">
+                            <div class="whatsnew__img-wrapper">
+                                <a href="#">
+                                    <img src="app/images/coromandel-award-function.jpg" alt="coromandel-award-function"
+                                        class="whatsnew__img">
+                                </a>
+                            </div>
+                            <p class="whatsnew__date">24th July 2020</p>
+                            <p class="whatsnew__post">Coromandel International posts Q1 results</p>
+                            <p class="whatsnew__desc">Coromandel International Limited, India’s leading agri solutions
+                                provider is
+                                in the business of Fertilisers, Crop…
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plantnutrition">
+            <img src="app/images/plant-nutrition.jpg" alt="plant-nutrition" class="plantnutrition__plant-nutritio-img">
+            <div class="plantnutrition__layer"></div>
+            <img src="app/images/nutrition-bottom.png" alt="nutrition-top" class="plantnutrition__nutrition-top">
+            <img src="app/images/plant-nutrition-bottom.png" alt="nutrition-bottom"
+                class="plantnutrition__nutrition-bottom">
+            <div class="container">
+                <img src="app/images/farmer.png" class="plantnutrition__farmer">
+                <div class="plantnutrition__details">
+                    <h2 class="plantnutrition__title">Provider Of Complete Plant Nutrition Solution</h2>
+                    <p class="plantnutrition__desc">Coromandel International Limited, India’s second largest Phosphatic
+                        fertilizer player,
+                        is in the business segments of Fertilizers, Specialty Nutrients, Crop Protection and Retail.
+                        The Company manufactures a wide range of fertilizers and markets around 4.5 million tons making
+                        it
+                        a leader in its addressable markets.</p>
+                    <a href="#" class="btn btn--primary">KNOW MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="growthjourney">
+            <img src="app/images/soil-img.png" alt="soil-img" class="growthjourney__soil-shape">
+            <div class="container">
+                <div class="multiple-items">
+                    <div class="growthjourney__item">
+                        <div>
+                            <h2 class="growthjourney__title">GROWTH JOURNEY</h2>
+                            <p class="growthjourney__desc">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        </div>
+                        <img src="app/images/seed-plant.png" alt="seed-plant" class="growthjourney__seed-plant">
+                    </div>
+                    <div class="growthjourney__item">
+                        <div>
+                            <h2 class="growthjourney__title">GROWTH JOURNEY</h2>
+                            <p class="growthjourney__desc">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        </div>
+                        <img src="app/images/seed-plant.png" alt="seed-plant" class="growthjourney__seed-plant">
+                    </div>
+                    <div class="growthjourney__item">
+                        <div>
+                            <h2 class="growthjourney__title">GROWTH JOURNEY</h2>
+                            <p class="growthjourney__desc">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        </div>
+                        <img src="app/images/seed-plant.png" alt="seed-plant" class="growthjourney__seed-plant">
+                    </div>
+                    <div class="growthjourney__item">
+                        <div>
+                            <h2 class="growthjourney__title">GROWTH JOURNEY</h2>
+                            <p class="growthjourney__desc">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        </div>
+                        <img src="app/images/seed-plant.png" alt="seed-plant" class="growthjourney__seed-plant">
+                    </div>
+                    <div class="growthjourney__item">
+                        <div>
+                            <h2 class="growthjourney__title">GROWTH JOURNEY</h2>
+                            <p class="growthjourney__desc">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        </div>
+                        <img src="app/images/seed-plant.png" alt="seed-plant" class="growthjourney__seed-plant">
+                    </div>
+                    <div class="growthjourney__item">
+                        <div>
+                            <h2 class="growthjourney__title">GROWTH JOURNEY</h2>
+                            <p class="growthjourney__desc">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        </div>
+                        <img src="app/images/seed-plant.png" alt="seed-plant" class="growthjourney__seed-plant">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="coromadelblocks">
+            <img src="app/images/grass-img.jpg" alt="grass-img" class="coromadelblocks__grass-img">
+            <div class="container">
+                <div class="coromadelblocks__award-deatils">
+                    <div class="coromadelblocks__award-deatils-wrapper">
+
+                        <div class="coromadelblocks__award-title-wrapper">
+                            <h2 class="coromadelblocks__award-title">Awards & Recognitions</h2>
+                            <a href="#" class="btn btn--secondary">KNOW MORE</a>
+                        </div>
+                        <div>
+                            <img src="app/images/award.jpg" alt="award" class="coromadelblocks__award-img">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="app/images/header-logo.png" alt="award-logo" class="coromadelblocks__coromandel-logo">
+                    </div>
+                </div>
+                <div class="coromadelblocks__second-phosphatic">
+                    <h2 class="coromadelblocks__phosphatic-title">02<sup class="coromadelblocks__upper-text">nd</sup>
+                    </h2>
+                    <p class="coromadelblocks__phosphatic-desc">
+                        Largest phosphatic fertiliser player in India
+                    </p>
+                </div>
+                <div class="coromadelblocks__gromor-logo-wrapper">
+                    <img src="app/images/gromor.jpg" alt="gromor-img" class="coromadelblocks__gromor-img">
+                </div>
+                <div class="coromadelblocks__crop-protection">
+                    <h2 class="coromadelblocks__crop-title">Crop Protection</h2>
+                    <ul class="coromadelblocks__crop-links-wrapper">
+                        <li class="coromadelblocks__croplink-item">
+                            <a href="#" class="coromadelblocks__croplink">Insecticides</a>
+                        </li>
+                        <li class="coromadelblocks__croplink-item">
+                            <a href="#" class="coromadelblocks__croplink">Fungicides</a>
+                        </li>
+                        <li class="coromadelblocks__croplink-item">
+                            <a href="#" class="coromadelblocks__croplink">Herbicides</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--primary">KNOW MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="ourproduct">
+            <div class="container">
+                <div class="ourproduct__scroollmenu">
+                    <a href="#" class="ourproduct__scroollmenu-item">
+                        <img src="app/images/gromor-suraksha.jpg" alt="gromor-suraksha" class="ourproduct__suraksha">
+                    </a>
+                    <a href="#" class="ourproduct__scroollmenu-item">
+                        <img src="app/images/gromor-ultra.jpg" alt="gromor-ultra" class="ourproduct__items">
+                    </a>
+                    <a href="#" class="ourproduct__scroollmenu-item">
+                        <img src="app/images/gromor-super.jpg" alt="gromor-super" class="ourproduct__items">
+                    </a>
+                    <a href="#" class="ourproduct__scroollmenu-item">
+                        <img src="app/images/gromor-ultra.jpg" alt="gromor-ultra" class="ourproduct__items">
+                    </a>
+                    <a href="#" class="ourproduct__scroollmenu-item">
+                        <img src="app/images/gromor-dap.jpg" alt="gromor-dap" class="ourproduct__items">
+                    </a>
+                    <a href="#" class="ourproduct__scroollmenu-item">
+                        <img src="app/images/gromor-paramfos.jpg" alt="gromor-paramfos" class="ourproduct__items">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="chairmanintro">
+            <div>
+                <img src="app/images/leaves-img.jpg" alt="leaves-img" class="chairmanintro__leaves-img">
+                <div class="chairmanintro__white-top">
+                </div>
+                <div class="chairmanintro__back-color"></div>
+                <div class="container">
+                    <div>
+                        <div class="chairmanintro__chairman-details">
+                            <h2 class="chairmanintro__name">Mr. M. M. Murugappan</h2>
+                            <p class="chairmanintro__designation">Chairman</p>
+                            <p class="chairmanintro__desc">Mr. M. M Murugappan, aged 62 yrs. holds a Master’s
+                                degree in Chemical Engineering from the University of Michigan, USA.
+                                He has held the position of Managing Director of CUMI in the past. Besides serving
+                                as the Chairman of CUMI, Tube Investments of India, Cholamandalam MS General Insurance
+                                Company Limited,
+                                he is on the Boards of several companies including Mahindra & Mahindra,
+                                IIT Madras Research Park, Cyient and TI Financial Holdings Limited.
+                            </p>
+                        </div>
+                        <div class="chairmanintro__chairman-img-wrapper">
+                            <img src="app/images/Mr-M-M-Murugappan.png" alt="Murugappan-img"
+                                class="chairmanintro__chairman-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="app/images/footer-top.png" alt="footer-top-img" class="chairmanintro__bottom-img">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__details">
+                <div class="footer__logo-wrapper">
+                    <img src="app/images/footer-logo.jpg" alt="footer-logo" class="footer__logo">
+                </div>
+                <div class="footer__coromandel">
+                    <h2 class="footer__title">Coromandel</h2>
+                    <ul class="footer__links-wrapper">
+                        <li class="footer__link-item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Our Businesses</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Investor Relations</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Sustainability</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Media</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer__quick">
+                    <h2 class="footer__title">Quick Links</h2>
+                    <ul class="footer__links-wrapper">
+                        <li class="footer__link-item"><a href="#" class="footer__link">Employee login</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Dealer portal</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Sign up for Alerts</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Social Media</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <p class="footer__newsletter">Newsletter Subscription</p>
+                    <form class="footer__form">
+                        <input type="text" name="" value="Name" class="footer__name">
+                        <input type="email" name="" value="Email Id" class="footer__email">
+                        <input type="button" value="subscribe" class="btn btn--subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright-wrapper">
+                <p class="footer__copyright">
+                    All rights reserved by Coromandel. Copyright © 2020
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app/js/slick.min.js"></script>
+    <script src="app/js/custom.js"></script>
+</body>
+
+</html>

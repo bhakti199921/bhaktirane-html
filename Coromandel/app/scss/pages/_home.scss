@@ -1,0 +1,932 @@
+.herobanner {
+
+    &__img {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 43.125rem;
+    }
+
+    &__img-wrapper {
+        position: relative;
+    }
+
+    &__bottom-img {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -13%;
+    }
+
+    &__headings {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+
+        @include breakpoint(mobile-max) {
+            top: 29%;
+            left: 8%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            top: 20%;
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-size: 4.375rem;
+        font-weight: 300;
+        margin: 0;
+        padding: 0 0 1.0625rem 0;
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 3rem;
+        }
+    }
+
+    &__sub-title {
+        color: $color-white;
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0 0 1.0625rem 0;
+
+        @include breakpoint(mobile-max) {
+            font-size: 4rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__turnover-wrapper {
+        position: absolute;
+        top: 69%;
+        right: 6%;
+        line-height: 0.5;
+
+        @include breakpoint(desktop-max){
+            right: 1%;
+        }
+
+        @include breakpoint(mobile-max){
+            right: 3%;
+        }
+    }
+
+    &__turnover {
+        color: $color-white;
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0 0 0 2rem;
+        line-height: 3;
+        display: inline;
+    }
+
+    &__number {
+        color: $color-white;
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 0 0 0.9375rem 0;
+        display: block;
+    }
+
+    &__qtr {
+        color: $color-white;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0 52px 0 0;
+    }
+
+    &__crore {
+        color: $color-white;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+.whatsnew {
+    background-color: $color-light-gray;
+    margin: 3.5625rem 0 4.187rem 0;
+    padding: 2.5rem 0 0 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(ipad-max) {
+            display: block;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            display: block;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            display: block;
+        }
+    }
+
+    &__desc {
+        width: 12.5rem;
+        color: $color-chicago;
+        font-size: 1.125rem;
+        font-weight: 400;
+
+        @include breakpoint(mobile-max) {
+            width: 100%;
+        }
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        width: 17.25rem;
+        position: relative;
+
+
+        &:hover {
+            box-shadow: -10px 13px 0px 0px $color-dark-tangerine;
+        }
+    }
+
+    &__img-wrapper {
+        position: relative;
+
+    }
+
+    &__post {
+        width: 11.4375rem;
+        color: $color-chicago;
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin: 0;
+
+        @include breakpoint(mobile-max) {
+            width: 100%;
+        }
+    }
+
+    &__headings {
+        padding: 0 10.25rem 0 0;
+
+        @include breakpoint(desktop-max){
+            padding: 0 9.25rem 0;
+        }
+
+        @include breakpoint(ipad-max) {
+            padding: 0;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            padding: 0 2rem 0 0;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            padding: 0 0 0 0;
+        }
+    }
+
+    &__card {
+        padding: 0 1.3125rem 0.625rem 0;
+
+        &:nth-of-type(3) {
+            padding: 0 0 0.625rem 0;
+
+            @include breakpoint(desktop-max) {
+                padding: 0 1.1875rem 0.625rem 0;
+            }
+
+            @include breakpoint(portrait-mobile-max) {
+                padding: 0 0.8125rem 0 0;
+            }
+        }
+
+        &:last-child {
+            padding: 0 0 0 0;
+
+            @include breakpoint(portrait-mobile-max) {
+                padding: 0 0.8125rem 0 0;
+            }
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            padding: 0 0.8125rem 0.625rem 0;
+        }
+    }
+
+    &__logo {
+        width: 1.9375rem;
+        height: 2.12rem;
+    }
+
+    &__title {
+        color: $color-chicago;
+        font-size: 2.75rem;
+        font-weight: 400;
+    }
+
+    &__link {
+        color: $color-dark-tangerine;
+        font-size: 1.25rem;
+        font-weight: 700;
+        transition: color 2s;
+
+        &:hover {
+            color: $color-shamrock-green;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            display: block;
+            padding: 0 0 0.625rem 0;
+        }
+    }
+
+    &__date {
+        color: $color-chicago;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0.81rem 0 0 0;
+    }
+}
+
+.plantnutrition {
+    position: relative;
+
+    &__nutrition-top {
+        position: absolute;
+        width: 100%;
+        height: 6.25rem;
+        top: -11%;
+        left: 0;
+        z-index: 2;
+    }
+
+    &__plant-nutritio-img {
+        width: 100%;
+        height: 39.94rem;
+        z-index: 1;
+    }
+
+    &__nutrition-bottom {
+        position: absolute;
+        width: 100%;
+        height: 6.25rem;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &__layer {
+        background-color: rgba(17, 13, 14, 50%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 39.94rem;
+    }
+
+    &__farmer {
+        position: absolute;
+        bottom: 7%;
+        width: 39rem;
+        height: 30.625rem;
+
+
+        @include breakpoint(ipad-max) {
+            width: 28.25rem;
+            height: 28.25rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 20.25rem;
+            height: 20.25rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 18.25rem;
+            height: 18.25rem;
+        }
+    }
+
+    &__details {
+        position: absolute;
+        top: 12%;
+        right: 10%;
+        width: 26.6875rem;
+
+        @include breakpoint(desktop-max) {
+            right: 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            top: 14%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 20.4375rem;
+            top: 4%;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 18.06rem;
+            top: 6%;
+        }
+
+    }
+
+    &__title {
+
+        color: $color-white;
+        font-size: 2.75rem;
+        margin: 0;
+        padding: 0 0 1.75rem 0;
+
+        @include breakpoint(portrait-mobile-max) {
+            padding: 0 0 0.9375rem 0;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            font-size: 2.375rem;
+        }
+    }
+
+    &__desc {
+        color: $color-white;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 0 1.625rem 0;
+    }
+
+}
+
+.growthjourney {
+    position: relative;
+    width: 100%;
+    background-color: $color-light-gray;
+    padding: 2.5rem 0 177px 0;
+
+    @include breakpoint(portrait-mobile-max) {
+        padding: 2.5rem 0 100px 0;
+    }
+
+    .slick-dots li button::before {
+        color: $color-chicago;
+        opacity: 1;
+        font-size: 0.75rem;
+    }
+
+    &__soil-shape {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__item {
+        width: 12.5rem;
+        display: flex;
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include breakpoint(mobile-max) {
+            justify-content: start;
+        }
+    }
+
+    .slick-dots {
+        right: 0;
+        width: unset;
+    }
+
+    .slick-dots li {
+        display: block;
+        margin: 0 0 10px 0;
+
+        &:nth-child(1) {
+            margin-left: -10px;
+            transform: rotate(163deg);
+        }
+
+        &:nth-child(2) {
+            margin-left: 5px;
+            transform: rotate(208deg);
+        }
+
+        &:nth-child(3) {
+            margin-left: 8px;
+            transform: rotate(208deg);
+        }
+
+        &:nth-child(4) {
+            margin-left: 9px;
+            transform: rotate(208deg);
+        }
+
+        &:nth-child(5) {
+            margin-left: 8px;
+            transform: rotate(208deg);
+        }
+
+        &:nth-child(6) {
+            margin-left: -10px;
+            transform: rotate(236deg);
+        }
+    }
+
+    .slick-dots {
+        bottom: 6%;
+
+        @include breakpoint(portrait-mobile-max) {
+            bottom: 2%;
+        }
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-dots li.slick-active button:before {
+        content: "";
+        width: 1.87rem;
+        height: 1.87rem;
+        position: absolute;
+        background-image: url("../images/arrows.png");
+        background-repeat: no-repeat;
+        color: $color-dark-tangerine;
+        left: 26%;
+        top: 15%;
+        z-index: 1;
+    }
+
+    .slick-dots li.slick-active button::after {
+        content: "";
+        position: absolute;
+        background-color: $color-dark-tangerine;
+        border-radius: 50%;
+        width: 1.87rem;
+        height: 1.87rem;
+        left: 0;
+        top: 0;
+    }
+
+    &__title {
+        color: $color-chicago;
+        font-size: 2.75rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 0 0.625rem 0;
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__desc {
+        width: 28.5rem;
+        color: $color-chicago;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+
+        @include breakpoint(mobile-max) {
+            width: 21rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 19.5rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 17.5rem;
+        }
+    }
+}
+
+.coromadelblocks {
+    position: relative;
+
+    &__grass-img {
+        width: 100%;
+        height: 43.31rem;
+    }
+
+    &__award-deatils {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $color-white;
+    }
+
+    &__award-title {
+        color: $color-chicago;
+        font-size: 2.75rem;
+        font-weight: 400;
+        display: table-caption;
+        margin: 0;
+        padding: 0 0 0.625rem 0;
+
+        @include breakpoint(ipad-max) {
+            font-size: 2.1875rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            font-size: 1.75rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 1.375rem;
+        }
+    }
+
+    &__coromandel-logo {
+        vertical-align: top;
+        width: 2.75rem;
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 1.4375rem;
+        }
+    }
+
+    &__second-phosphatic {
+        background-color: $color-dark-tangerine;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 4.5rem 4rem 4.5rem 4.375rem;
+
+        @include breakpoint(ipad-max) {
+            padding: 4.1875rem 2.5rem 4.1875rem 2.9375rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            padding: 4.1875rem 0.8125rem 4.1875rem 0.9375rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            top: 34%;
+            padding: 1.3125rem 0.625rem 1.9375rem 0.625rem;
+        }
+    }
+
+    &__phosphatic-title {
+        color: $color-white;
+        font-size: 8.3125rem;
+        font-weight: 700;
+        margin: 0;
+
+        @include breakpoint(ipad-max) {
+            font-size: 5.8125rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            font-size: 5.4375rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 3.0625rem;
+        }
+    }
+
+    &__phosphatic-desc {
+        width: 14.5rem;
+        color: $color-white;
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin: 0;
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 11.25rem;
+            font-size: 1.125rem;
+        }
+    }
+
+    &__gromor-img {
+        width: 8.875rem;
+    }
+
+    &__gromor-logo-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $color-white;
+        padding: 5.625rem 3.875rem 5.625rem 3.875rem;
+
+        @include breakpoint(ipad-max) {
+            padding: 3.875rem 2.5rem 3.875rem 2.5rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            padding: 3.875rem 0 3.875rem 0;
+        }
+    }
+
+    &__crop-protection {
+        position: absolute;
+        bottom: 14%;
+
+        @include breakpoint(portrait-mobile-max) {
+            bottom: 3%;
+        }
+    }
+
+    &__crop-title {
+        position: relative;
+        color: $color-white;
+        font-size: 3.6875rem;
+        font-weight: 700;
+        display: table-caption;
+        margin: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3.8125rem;
+            height: 5px;
+            left: 0;
+            display: block;
+            background-image: linear-gradient(90deg, #F57629, #FFB016);
+            margin: 0 0 0.625rem 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            font-size: 3.3125rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 2.4375rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            font-size: 2rem;
+        }
+
+    }
+
+    &__crop-links-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 1.75rem 0;
+        margin: 0;
+
+        @include breakpoint(mobile-max) {
+            display: block;
+        }
+    }
+
+    &__croplink-item {
+        list-style-type: none;
+        border-right: 1px solid $color-white;
+        padding: 0 0.56rem 0 0.56rem;
+
+        @include breakpoint(mobile-max) {
+            border: none;
+        }
+
+        &:last-child {
+            border: none;
+            padding: 0 0 0 0.56rem;
+        }
+    }
+
+    &__croplink {
+        color: $color-white;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__award-deatils-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 0 3.125rem 39px;
+
+        @include breakpoint(ipad-max) {
+            padding: 2rem 0 3.125rem 2.375rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            padding: 1.9375rem 0 2.75rem 1.125rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            padding: 1.9375rem 0 2.75rem 0.25rem;
+        }
+    }
+
+    &__award-title-wrapper {
+        position: relative;
+        width: 21.25rem;
+        height: 11.9375rem;
+        border-right: 1px solid #707070;
+
+        @include breakpoint(ipad-max) {
+            width: 14rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 10.8125rem;
+            height: 10rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 9.375rem;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1.8125rem;
+            height: 1.8125rem;
+            border-top: 1px solid #707070;
+            border-right: 1px solid #707070;
+            right: 0;
+            top: 40%;
+            margin: 0 -15px 0 0;
+            transform: rotate(45deg);
+            background-color: white;
+        }
+    }
+
+    &__award-img {
+        padding: 0 0 0 3rem;
+
+        @include breakpoint(ipad-max) {
+            padding: 0 0 0 1.5rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 4.1875rem;
+            height: 7.9375rem;
+            padding: 0 0 0 1.125rem;
+        }
+    }
+}
+
+.ourproduct {
+    padding: 12.125rem 0 0 0;
+
+    &__suraksha {
+        width: 10.25rem;
+    }
+
+    &__items {
+        width: 13.4375rem;
+    }
+
+    &__scroollmenu {
+        overflow: auto;
+        white-space: nowrap;
+
+    }
+
+    &__scroollmenu .ourproduct__scroollmenu-item {
+        display: inline-block;
+        color: $color-white;
+        text-align: center;
+        padding: 0.875rem;
+        text-decoration: none;
+    }
+
+}
+
+.chairmanintro {
+    position: relative;
+
+    &__white-top {
+        content: "";
+        position: absolute;
+        top: -1px;
+        width: 100%;
+        height: 10.625rem;
+        background-color: $color-white;
+        border-bottom-right-radius: 10.625rem;
+    }
+
+    &__back-color {
+        position: absolute;
+        top: 23%;
+        left: 18.4%;
+        height: 61%;
+        width: 63.3%;
+        background-color: rgba(34, 80, 75, 60%);
+    }
+
+    &__leaves-img {
+        width: 100%;
+        height: 47.06rem;
+    }
+
+    &__name {
+        color: $color-white;
+        font-size: 1.9375rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__designation {
+        color: $color-white;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__desc {
+        color: $color-white;
+        font-size: 0.75rem;
+        font-weight: 400;
+        width: 21rem;
+        margin: 0;
+
+        @include breakpoint(mobile-max) {
+            width: 20rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 12.875rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 11.875rem;
+        }
+    }
+
+    &__chairman-details {
+        position: absolute;
+        top: 41%;
+        left: 23.5%;
+        width: 63%;
+
+        @include breakpoint(mobile-max) {
+            top: 24%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            left: 21.5%;
+        }
+    }
+
+    &__chairman-img-wrapper {
+        position: absolute;
+        top: 38%;
+        right: 10%;
+
+        @include breakpoint(ipad-max) {
+            top: 39%;
+            right: 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            top: 51%;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            top: 63%;
+            right: 12%;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            right: 0;
+        }
+    }
+
+    &__chairman-img {
+        width: 23.4375rem;
+        height: 22.5625rem;
+
+        @include breakpoint(ipad-max) {
+            width: 21.875rem;
+            height: 22.1875rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 18.9375rem;
+            height: 16rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 12.5625rem;
+            height: 11rem;
+        }
+    }
+
+    &__bottom-img {
+        width: 100%;
+        position: absolute;
+        bottom: -10%;
+    }
+}

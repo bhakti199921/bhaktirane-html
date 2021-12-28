@@ -1,0 +1,51 @@
+.btn {
+    color: $color-white;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    padding: 0.56rem 1.87rem 0.56rem 1.87rem;
+    border-radius: 40px;
+    background-color: $color-dark-tangerine;
+
+    &--primary {
+        background-image: linear-gradient(90deg, #F57629, #FB9A1D);
+
+        &:hover {
+            color: $color-dark-green;
+            background-image: linear-gradient(90deg, #F57629, hsl(61, 97%, 55%));
+        }
+    }
+
+    &--subscribe {
+        font-size: 1rem;
+        border-radius: 50px;
+        border: 1px solid $color-white;
+        padding: 0.56rem 1.31rem 0.56rem 1.31rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        float: right;
+        margin-top: 0.625rem;
+
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-dark-tangerine;
+        }
+
+    }
+
+    &--secondary {
+        border: 1px solid $color-dark-tangerine;
+        background-color: $color-white;
+        color: $color-dark-tangerine;
+
+        &:hover {
+            color: $color-dark-green;
+            background-image: linear-gradient(90deg, #F57629, hsl(138, 97%, 55%));
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            padding: 0.5rem 0.87rem 0.56rem 0.8rem;
+        }
+    }
+
+}

@@ -106,6 +106,7 @@ function myFunction() {
       //next prev slick slider
       $('.schoolsection__schools').slick({
         infinite: true,
+        dots:true,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow:'<div class="schoolsection__leftarrow"><span class="icon-icon-arrow-left"></span></div>',

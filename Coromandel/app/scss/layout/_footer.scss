@@ -1,0 +1,184 @@
+.footer {
+    position: relative;
+    background-color: $color-dark-tangerine;
+    width: 100%;
+    padding: 4.375rem 0 2.44rem 0;
+
+    &__top-shape {
+        width: 100%;
+        height: 5.875rem;
+        background-color: $color-dark-tangerine;
+
+    }
+
+    &__details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 0 2.12rem 0;
+
+        @include breakpoint(ipad-max){
+            justify-content: start;
+        }
+    }
+
+    &__logo-wrapper {
+        width: 12.5rem;
+
+        @include breakpoint(desktop-max) {
+            width: 11.56rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 8.25rem;
+        }
+    }
+
+    &__logo {
+        width: 6.125rem;
+        height: 4.875rem;
+    }
+
+    &__coromandel {
+        width: 17.875rem;
+
+        @include breakpoint(desktop-max) {
+            width: 15.875rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            // width: 14.25rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 12.375rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            margin: 0.94rem 0 0 0;
+        }
+    }
+
+    &__quick {
+        width: 15.69rem;
+
+        @include breakpoint(desktop-max) {
+            width: 15.875rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            // width: 13.25rem;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 8.4375rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            margin: 0.94rem 0 0 0;
+        }
+    }
+
+    &__contact {
+        width: 16.625rem;
+        padding: 1.375rem 0 0 0;
+
+        @include breakpoint(desktop-max) {
+            width: 16.75rem;
+        }
+
+        @include breakpoint(ipad-max) {
+            width: 16.75rem;
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0 0 0.69rem 0;
+    }
+
+    &__links-wrapper {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link-item {
+        padding: 0 0 0.81rem 0;
+        margin: 0;
+
+        &:last-child {
+            padding: 0;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+        font-size: 1.25rem;
+        font-weight: 400;
+
+        &:hover {
+            color: $color-chicago;
+        }
+    }
+
+    &__newsletter {
+        width: 13.25rem;
+        color: $color-white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: right;
+        float: right;
+        margin: 0;
+        padding: 0 0 0.69rem 0;
+
+        @include breakpoint(mobile-max) {
+            text-align: start;
+            width: unset;
+        }
+    }
+
+    &__name {
+        width: 266px;
+        height: 39px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $color-white;
+        border-radius: 2.5rem;
+        padding: 0 0 0 1.625rem;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 15%);
+    }
+
+    &__email {
+        width: 16.625rem;
+        height: 2.44rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $color-white;
+        border-radius: 2.5rem;
+        padding: 0 0 0 1.625rem;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 15%);
+        margin: 0.6875rem 0 0 0;
+    }
+
+    &__copyright-wrapper {
+        border-top: 1px solid $color-white;
+        padding: 0.8125rem 0 0 0;
+    }
+
+    &__copyright {
+        color: $color-white;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 400;
+        margin: 0;
+    }
+}
