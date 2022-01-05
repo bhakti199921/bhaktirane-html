@@ -1,0 +1,194 @@
+.login-container {
+    max-width: 801px; //771
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include breakpoint(ipad-max) {
+        width: unset;
+    }
+
+    @include breakpoint(custom-small-mobile-max) {
+        // width: 100%;
+    }
+}
+
+.login {
+    // position: relative;
+    background-image: url("../images/bluish-plant-leaves-textured.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 44.813rem;
+    background-repeat: no-repeat;
+
+    &__details {
+        // position: absolute;
+        // top: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        // left: 45%;
+
+        @include breakpoint(ipad-max) {
+            justify-content: space-around;
+        }
+    }
+
+    &__plant-leaves {
+        width: 100%;
+        height: 717px;
+    }
+
+    &__logoname {
+        // position: absolute;
+        // top: 50%;
+        // width: 208px;
+        // height: 117px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // align-items: center;
+        color: $color-white;
+        font-size: 3.125rem;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__logoname-wrapper {
+        position: relative;
+    }
+
+    &__dot {
+        position: absolute;
+        bottom: 15%;
+        right: -5%;
+        height: 0.813rem;
+        width: 0.813rem;
+        background-color: $bg-color-limerick;
+        border-radius: 50%;
+        display: inline-block;
+
+        @include breakpoint(portrait-mobile-max) {
+            right: 0;
+        }
+    }
+
+    &__form {
+        background-color: rgba(10, 8, 8, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        padding: 4.625rem 2.688rem 4.625rem 2.688rem;
+        border-radius: 20px;
+        margin-top: 6.375rem;
+        box-shadow: 0px 0.25rem 7.125rem rgba(255, 255, 255, 0.25);
+
+        @include breakpoint(portrait-mobile-max) {
+            padding: 4.625rem 0.438rem 4.625rem 0.438rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            padding: 4.625rem 0.125rem 4.625rem 0.125rem;
+        }
+    }
+
+    &__password-wrapper,
+    &__username-wrapper {
+        position: relative;
+    }
+
+    &__password-wrapper {
+        margin-bottom: 1.875rem;
+        margin-top: 0.75rem;
+    }
+
+    &__input:focus+label,
+    &__input:valid+label {
+        transform: translateY(-18px);
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8rem;
+    }
+
+    &__input {
+        width: 19.875rem;
+        height: 3.563rem;
+        color: rgba(255, 255, 255, 0.9);
+        padding-left: 1.188rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #4D4D4D;
+        border-radius: 10px;
+
+        // @include breakpoint(portrait-mobile-max){
+        //     width: 18.75rem;
+        // }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 17.5rem;
+        }
+    }
+
+    &__text,
+    &__pswd {
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 10px;
+        top: 40%;
+        font-size: 0.875rem;
+        transition: .3s ease-out;
+        padding-left: 1.188rem;
+    }
+
+    &__pswd,
+    &__text {
+        position: absolute;
+        left: 0;
+        font-size: 1rem;
+    }
+
+    &__questionmark {
+        position: absolute;
+        right: 6%;
+        top: 20%;
+        color: rgba(255, 255, 255, 0.5);
+
+        @include breakpoint(custom-small-mobile-max) {
+            right: 8%;
+        }
+    }
+
+    &__title {
+        font-size: 1.375rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        margin-bottom: 1.875rem;
+        text-align: center;
+    }
+
+    &__remember {
+        color: $color-white;
+        opacity: 0.6;
+        font-size: 0.75rem;
+        font-weight: 400;
+        margin-right: 5.938rem;
+
+        @include breakpoint(custom-small-mobile-max) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__check-button-wrapper {
+        display: flex;
+    }
+
+    &__checkbox {
+        position: relative;
+        width: 1.375rem;
+        height: 1.438rem;
+        color: $color-white;
+        background-color: black;
+        opacity: 0.5;
+        // background-color: rgba(0, 0, 0,0.5);
+        border: 1px solid #4D4D4D;
+        border-radius: 3px;
+        margin: 0 0.938rem 0 0;
+    }
+}
