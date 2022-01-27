@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,1531 @@
     <title>Deloitte</title>
     <link rel="shortcut icon" href="app/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+    <!--sidebar-->
+    <div class="sidebar">
+        <div class="sidebar__logo-content">
+            <div class="sidebar__logo">
+                <div class="sidebar__logo-name">
+                    <img src="app/images/d-logo-img.PNG" alt="d-logo-img" class="sidebar__d-logo-img">
+                    <h2 class="sidebar__title">
+                        Deloitte
+                    </h2>
+                </div>
+            </div>
+            <div id="btn" class="sidebar__left-arrow">
+                <i class="fas fa-angle-left left"></i>
+            </div>
+        </div>
+        <ul class="sidebar__nav-list tab">
+            <li class="sidebar__link-item">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'dashboard')"
+                    id="defaultOpen">
+                    <img src="app/images/dashboard-icon.PNG" alt="icon-img" class="sidebar__icon-img">
+                    <span class="sidebar__link-name">Dashboard</span>
+                </a>
+                <span class="sidebar__tooltip">Dashboard</span>
+            </li>
+            <li class="sidebar__link-item">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'user')">
+                    <img src="app/images/user.png" alt="icon-img" class="sidebar__icon-img">
+                    <span class="sidebar__link-name">User Management</span>
+                </a>
+                <span class="sidebar__tooltip">User Management</span>
+            </li>
+            <li class="sidebar__link-item">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'asset')">
+                    <img src="app/images/asset.png" alt="icon-img" class="sidebar__icon-img">
+                    <span class="sidebar__link-name">Asset Management</span>
+                </a>
+                <span class="sidebar__tooltip">Asset Management</span>
+            </li>
+            <li class="sidebar__link-item">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'container')">
+                    <img src="app/images/container.jpg" alt="icon-img" class="sidebar__icon-img">
+                    <span class="sidebar__link-name">Container Management</span>
+                </a>
+                <span class="sidebar__tooltip">Container Management</span>
+            </li>
+            <li class="sidebar__link-item">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'assessment')">
+                    <img src="app/images/assessment.jpg" alt="icon-img" class="sidebar__icon-img">
+                    <span class="sidebar__link-name">Assessment Master</span>
+                </a>
+                <span class="sidebar__tooltip">Assessment Master</span>
+            </li>
+            <li class="sidebar__link-item">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'status')">
+
+                    <img src="app/images/project-status.JPG" alt="icon-img" class="sidebar__icon-img">
+                    <span class="sidebar__link-name">Project Status Report</span>
+                </a>
+                <span class="sidebar__tooltip">Project Status Report</span>
+            </li>
+        </ul>
+        <div class="sidebar__profile-content">
+            <div class="sidebar__profile">
+                <div class="sidebar__profile-details">
+                    <img src="app/images/administrator-img.png" alt="icon-img" class="sidebar__profile-img">
+                    <div class="sidebar__name-job">
+                        <span class="sidebar__admin-name">kinjal Jain</span>
+                        <p class="sidebar__designation"> Administrator</p>
+                    </div>
+                </div>
+                <div class="btn-group dropup">
+                    <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-angle-up" class="up-arrow"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="javascript:void(0)" class="sidebar__dropdown-link tablinks"
+                                onclick="openIcon(event, 'profile')">
+                                My Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="sidebar__dropdown-link tablinks"
+                                onclick="openIcon(event, 'settings')">
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="sidebar__dropdown-link tablinks"
+                                onclick="openIcon(event, 'logout')">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main section-->
+    <main class="home-content">
+        <!--dashboard-->
+        <section class="tabcontent" id="dashboard">
+            <div class="header">
+                <div class="header__section">
+                    <div class="tabcontent-title">
+                        <div>
+                            <h2 class="header-title">
+                                Hello kinjal
+                            </h2>
+                            <p class="header-sub-title">
+                                Have a great day ahead.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__header-right">
+                        <div class="header__select-workspace">
+                            <select class="header__workspace" name="state">
+                                <option value="AL">Select Workspace</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <!--dark-->
+                        <div class="darkmode-btn">
+                            <label id="dark-change" class="label">
+                            </label>
+                            <div>
+                                <p class="dark">Dark</p>
+                                <p class="light">Light</p>
+                            </div>
+                        </div>
+                        <!--Assessment-->
+                        <div class="assessment-btn-wrapper">
+                            <a href="#my_form" class="header__assessment-btn">
+                                Add New Assessment</a>
+                            <div id="my_form" class="header__assessment-form">
+                                <form class="form_container">
+                                    <div class="header__form-title-wrapper">
+                                        <h1 class="header__assessment-title">Add New Assessment
+                                        </h1>
+                                        <a class="close" href="#">&times;</a>
+                                    </div>
+
+                                    <label class="header__form-name">Assessment Name</label>
+                                    <input type="text" placeholder="Enter Assessment Name" autocomplete="off"
+                                        class="header__assessment-name input">
+                                    <label class="header__form-name">Description</label>
+                                    <input type="text" placeholder="Enter Assessment Description" autocomplete="off"
+                                        class="header__descript input">
+                                    <label class="header__form-name">client
+                                        assessment domain
+                                        name</label>
+                                    <select name="assessment" class="header__client-assessment input">
+                                        <option value="client">Select Assessment Name</option>
+                                        <option value="java">Java</option>
+                                        <option value="react">React</option>
+                                        <option value="angular">Angular</option>
+                                    </select>
+                                    <div class="header__module-domain">
+                                        <div class="header__module-wrapper">
+                                            <label class="header__form-name">
+                                                Module
+                                            </label>
+                                            <input type="text" placeholder="Enter module Name" autocomplete="off"
+                                                class="header__assessment-domain input">
+                                        </div>
+                                        <div class="header__domain-wrapper">
+                                            <label class="header__form-name">Assessment
+                                                domain</label>
+                                            <select name="domain" class="input">
+                                                <option value="volvo">Select Module Name
+                                                </option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="js">Js</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="header__role-template">
+                                        <div class="header__role-assessment">
+                                            <label class="header__form-name">
+                                                Assessment Role
+                                            </label>
+                                            <input type="text" placeholder="Select Assessment Role" autocomplete="off"
+                                                class="header__assessment-role input">
+                                        </div>
+                                        <div class="header__template">
+                                            <label class="header__form-name">Report
+                                                Template</label>
+                                            <select name="template" class="input">
+                                                <option value="select">Select Report Template
+                                                </option>
+                                                <option value="report">Report</option>
+                                                <option value="google">Google</option>
+                                                <option value="chrome">Chrome</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button button--login">
+                                        Save Assessment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--notification-->
+
+                        <div>
+                            <button class="open-bell-icon">
+                                <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                            </button>
+                            <div id="my_notification" class="header__mail_form">
+                                <div class="header__notification-date-wrapper">
+                                    <div>
+                                        <h5 class="header__notification-date">16 november,2021
+                                        </h5>
+                                        <p class="header__notification-time">Tue,7.12 pm</p>
+                                    </div>
+                                    <button class="cancel_btn" onclick="close_btn2()">
+                                        <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                                    </button>
+                                </div>
+                                <div class="header__mail-dropdown-wrapper">
+                                    <div>
+                                        <h2 class="header__mail-title">My Mailbox</h2>
+                                        <span class="header__recent-mail">Recent Mails</span>
+                                    </div>
+                                    <div class="header__search-dropdown-wrapper">
+                                        <select name="mailsList" onchange="showHide(this)"
+                                            class="header__select-dropdown">
+                                            <option>All</option>
+                                            <option value="allmail">All</option>
+                                        </select>
+                                        <div class="header__search-wrapper">
+                                            <i class="fas fa-search search-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="#" method="post" id="notification">
+                                    <div>
+                                        <div id="allmail" class="show-hide">
+                                            <ul class="header__mail-list-wrapper">
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">PP</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Hi</h2>
+                                                        <p class="header__mail-desc">PFA</p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">
+                                                            Interview assigned</h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">10:01am</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Access
+                                                            required for the
+                                                            employee
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">1d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <div></div>
+                                                    <p class="header__mail-time">4d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">5d</p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="main-content">
+                <div class="dashboard">
+                    <h5 class="dashboard__discover-data">Discover the data</h5>
+                    <div class="dashboard__card-wrapper">
+                        <div class="dashboard__cards first-card">
+                            <img src="app/images/discover-data.png" alt="discover-data-img"
+                                class="dashboard__discover-data-img">
+                            <h3 class="dashboard__card-title">
+                                CISCO & Business Unit view
+                            </h3>
+                            <p class="dashboard__card-desc">Dashboard with 360 degree view to the cisco</p>
+                            <div class="dashboard__compliance-wrapper">
+                                <a href="javascript:void(0)" class="button button--compliance">COMPLIANCE</a>
+                            </div>
+                        </div>
+                        <div class="dashboard__cards second-card">
+                            <div>
+                                <a href="javascript:void(0)" class="button button--risk">RISK</a>
+                            </div>
+                            <img src="app/images/discover-data.png" alt="discover-data-img"
+                                class="dashboard__discover-data-img">
+                            <h3 class="dashboard__card-title">
+                                Retail Sales Audit
+                            </h3>
+                            <p class="dashboard__card-desc">
+                                Assessment & reconcilation of the retail sales
+                                against risk controls
+                            </p>
+                        </div>
+                        <div class="dashboard__cards third-card">
+                            <div>
+                                <a href="javascript:void(0)" class="button button--topic">TOPIC</a>
+                            </div>
+                            <img src="app/images/discover-data.png" alt="discover-data-img"
+                                class="dashboard__discover-data-img">
+                            <h3 class="dashboard__card-title">
+                                Assessment Master
+                            </h3>
+                            <p class="dashboard__card-desc">Resords of all the assessments in available </p>
+
+                        </div>
+                    </div>
+                    <div class="dashboard__card-addition">
+                        <i class="fas fa-plus addition"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--user-->
+        <section class="tabcontent" id="user">
+            <div class="tabcontent-title">
+                <a href="javascript:void(0)">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+                <div>
+                    <h2>
+                        User Management
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!--asset-->
+        <section class="tabcontent" id="asset">
+            <div class="tabcontent-title">
+                <a href="javascript:void(0)">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+                <div>
+                    <h2> Asset Management</h2>
+                </div>
+            </div>
+        </section>
+
+        <!--container-->
+        <section class="tabcontent" id="container">
+            <div class="header">
+                <div class="header__section">
+                    <div class="tabcontent-title">
+                        <a href="javascript:void(0)">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div>
+                            <h2 class="header-title">Container Management</h2>
+                            <p class="header-sub-title">Checkout the structure</p>
+                        </div>
+                    </div>
+                    <div class="header__header-right">
+                        <div class="header__select-workspace">
+                            <select class="header__workspace" name="state">
+                                <option value="AL">Select Workspace</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <!--dark-->
+                        <div class="darkmode-btn">
+                            <label id="dark-change" class="label">
+                            </label>
+                            <div>
+                                <p class="dark">Dark</p>
+                                <p class="light">Light</p>
+                            </div>
+                        </div>
+                        <!--Assessment-->
+                        <div class="assessment-btn-wrapper">
+                            <a href="#my_form" class="header__assessment-btn">
+                                Add New Assessment</a>
+                            <div class="header__assessment-form" id="my_form">
+                                <form class="form_container">
+                                    <div class="header__form-title-wrapper">
+                                        <h1 class="header__assessment-title">Add New Assessment
+                                        </h1>
+                                        <a class="close" href="#">&times;</a>
+                                    </div>
+
+                                    <label class="header__form-name">Assessment Name</label>
+                                    <input type="text" placeholder="Enter Assessment Name" autocomplete="off"
+                                        class="header__assessment-name input">
+                                    <label class="header__form-name">Description</label>
+                                    <input type="text" placeholder="Enter Assessment Description" autocomplete="off"
+                                        class="header__descript input">
+                                    <label class="header__form-name">client
+                                        assessment domain
+                                        name</label>
+                                    <select name="assessment" class="header__client-assessment input">
+                                        <option value="client">Select Assessment Name</option>
+                                        <option value="java">Java</option>
+                                        <option value="react">React</option>
+                                        <option value="angular">Angular</option>
+                                    </select>
+                                    <div class="header__module-domain">
+                                        <div class="header__module-wrapper">
+                                            <label class="header__form-name">
+                                                Module
+                                            </label>
+                                            <input type="text" placeholder="Enter module Name" autocomplete="off"
+                                                class="header__assessment-domain input">
+                                        </div>
+                                        <div class="header__domain-wrapper">
+                                            <label class="header__form-name">Assessment
+                                                domain</label>
+                                            <select name="domain" class="input">
+                                                <option value="volvo">Select Module Name
+                                                </option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="js">Js</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="header__role-template">
+                                        <div class="header__role-assessment">
+                                            <label class="header__form-name">
+                                                Assessment Role
+                                            </label>
+                                            <input type="text" placeholder="Select Assessment Role" autocomplete="off"
+                                                class="header__assessment-role input">
+                                        </div>
+                                        <div class="header__template">
+                                            <label class="header__form-name">Report
+                                                Template</label>
+                                            <select name="template" class="input">
+                                                <option value="select">Select Report Template
+                                                </option>
+                                                <option value="report">Report</option>
+                                                <option value="google">Google</option>
+                                                <option value="chrome">Chrome</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button button--login">
+                                        Save Assessment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--notification-->
+
+                        <div>
+                            <button class="open-bell-icon">
+                                <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                            </button>
+                            <div class="header__mail_form" id="my_notification">
+                                <div class="header__notification-date-wrapper">
+                                    <div>
+                                        <h5 class="header__notification-date">16 november,2021
+                                        </h5>
+                                        <p class="header__notification-time">Tue,7.12 pm</p>
+                                    </div>
+                                    <button class="cancel_btn" onclick="close_btn2()">
+                                        <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                                    </button>
+                                </div>
+                                <div class="header__mail-dropdown-wrapper">
+                                    <div>
+                                        <h2 class="header__mail-title">My Mailbox</h2>
+                                        <span class="header__recent-mail">Recent Mails</span>
+                                    </div>
+                                    <div class="header__search-dropdown-wrapper">
+                                        <select name="mailsList" onchange="showHide(this)"
+                                            class="header__select-dropdown">
+                                            <option>All</option>
+                                            <option value="allmail">All</option>
+                                        </select>
+                                        <div class="header__search-wrapper">
+                                            <i class="fas fa-search search-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="#" method="post" id="notification">
+                                    <div>
+                                        <div class="show-hide" id="allmail">
+                                            <ul class="header__mail-list-wrapper">
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">PP</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Hi</h2>
+                                                        <p class="header__mail-desc">PFA</p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">
+                                                            Interview assigned</h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">10:01am</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Access
+                                                            required for the
+                                                            employee
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">1d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <div></div>
+                                                    <p class="header__mail-time">4d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">5d</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="containermanagement">
+                    <div class="containermanagement__container-first-card-wrapper">
+                        <h3 class="containermanagement__first-card-title">
+                            Application name
+                        </h3>
+                        <p class="containermanagement__first-card-desc">
+                            Applications desc
+                        </p>
+                        <a href="javascript:void(0)" class="containermanagement__first-card-add">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="containermanagement__first-card-bottom-add">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                        <div class="containermanagement__curly-brace">
+                            <div id="left" class="containermanagement__brace"></div>
+                            <div id="right" class="containermanagement__brace"></div>
+                        </div>
+                    </div>
+
+                    <ul class="containermanagement__conatiner-middle-card">
+                        <li>
+                            <div class="containermanagement__container-card container-card">
+                                <h3 class="containermanagement__container-card-title">
+                                    On Prem Application
+                                </h3>
+                                <p class="containermanagement__container-card-desc">
+                                    On Prem application desc
+                                </p>
+                                <a href="javascript:void(0)" class="containermanagement__second-card-bottom-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <div class="containermanagement__nested-card">
+                                    <div class="containermanagement__close-card">
+                                        <h3 class="containermanagement__container-card-title add-card-title">
+                                            Sub internal Application name
+                                        </h3>
+                                        <i class="fas fa-times close"></i>
+                                    </div>
+                                    <p class="containermanagement__container-card-desc">
+                                        description will be here</p>
+                                    <a href="javascript:void(0)" class="containermanagement__second-card-bottom-add">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="containermanagement__container-card container-third-card">
+                                <h3 class="containermanagement__container-card-title">
+                                    Sub Application name
+                                </h3>
+                                <p class="containermanagement__container-card-desc">
+                                    description will be here
+                                </p>
+                                <a href="javascript:void(0)" class="containermanagement__second-card-bottom-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <div class="containermanagement__curly-brace-second">
+                                    <div id="left-side" class="containermanagement__brackets"></div>
+                                    <div id="right-side" class="containermanagement__brackets"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="containermanagement__container-card">
+                                <h3 class="containermanagement__container-card-title">
+                                    Sub Application name
+                                </h3>
+                                <p class="containermanagement__container-card-desc">
+                                    description will be here
+                                </p>
+                                <a href="javascript:void(0)" class="containermanagement__second-card-bottom-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="containermanagement__container-last-cards-wrapper">
+                        <li>
+                            <div class="containermanagement__container-card fifth">
+                                <h3 class="containermanagement__container-card-title">Sub internal
+                                </h3>
+                                <h3 class="containermanagement__container-card-title">Application
+                                    name</h3>
+                                <p class="containermanagement__container-card-desc">description will be here
+                                </p>
+                                <a href="javascript:void(0)" class="containermanagement__second-card-bottom-add">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="containermanagement__container-card">
+                            <h3 class="containermanagement__container-card-title">Sub internal</h3>
+                            <h3 class="containermanagement__container-card-title">Application
+                                name</h3>
+                            <p class="containermanagement__container-card-desc">description will be here</p>
+                            <a href="javascript:void(0)" class="containermanagement__second-card-bottom-add">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--assessment-->
+        <section class="tabcontent" id="assessment">
+            <div class="header">
+                <div class="header__section">
+                    <div class="tabcontent-title">
+                        <a href="javascript:void(0)" class="fa-left">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div>
+                            <h2 class="header-title">Assessment Master</h2>
+                            <p class="header-sub-title">2 Assessment Domains in list</p>
+                        </div>
+                    </div>
+                    <div class="header__header-right">
+                        <div class="header__select-workspace">
+                            <select class="header__workspace" name="state">
+                                <option value="AL">Select Workspace</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <!--dark-->
+                        <div class="darkmode-btn">
+                            <label id="dark-change" class="label">
+                            </label>
+                            <div>
+                                <p class="dark">Dark</p>
+                                <p class="light">Light</p>
+                            </div>
+                        </div>
+                        <!--Assessment-->
+                        <div class="assessment-btn-wrapper">
+                            <a href="#my_form" class="header__assessment-btn">
+                                Add New Assessment</a>
+                            <div class="header__assessment-form" id="my_form">
+                                <form class="form_container">
+                                    <div class="header__form-title-wrapper">
+                                        <h1 class="header__assessment-title">Add New Assessment
+                                        </h1>
+                                        <a class="close" href="#">&times;</a>
+                                    </div>
+
+                                    <label class="header__form-name">Assessment Name</label>
+                                    <input type="text" placeholder="Enter Assessment Name" autocomplete="off"
+                                        class="header__assessment-name input">
+                                    <label class="header__form-name">Description</label>
+                                    <input type="text" placeholder="Enter Assessment Description" autocomplete="off"
+                                        class="header__descript input">
+                                    <label class="header__form-name">client
+                                        assessment domain
+                                        name</label>
+                                    <select name="assessment" class="header__client-assessment input">
+                                        <option value="client">Select Assessment Name</option>
+                                        <option value="java">Java</option>
+                                        <option value="react">React</option>
+                                        <option value="angular">Angular</option>
+                                    </select>
+                                    <div class="header__module-domain">
+                                        <div class="header__module-wrapper">
+                                            <label class="header__form-name">
+                                                Module
+                                            </label>
+                                            <input type="text" placeholder="Enter module Name" autocomplete="off"
+                                                class="header__assessment-domain input">
+                                        </div>
+                                        <div class="header__domain-wrapper">
+                                            <label class="header__form-name">Assessment
+                                                domain</label>
+                                            <select name="domain" class="input">
+                                                <option value="volvo">Select Module Name
+                                                </option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="js">Js</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="header__role-template">
+                                        <div class="header__role-assessment">
+                                            <label class="header__form-name">
+                                                Assessment Role
+                                            </label>
+                                            <input type="text" placeholder="Select Assessment Role" autocomplete="off"
+                                                class="header__assessment-role input">
+                                        </div>
+                                        <div class="header__template">
+                                            <label class="header__form-name">Report
+                                                Template</label>
+                                            <select name="template" class="input">
+                                                <option value="select">Select Report Template
+                                                </option>
+                                                <option value="report">Report</option>
+                                                <option value="google">Google</option>
+                                                <option value="chrome">Chrome</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button button--login">
+                                        Save Assessment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--notification-->
+
+                        <div>
+                            <button class="open-bell-icon">
+                                <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                            </button>
+                            <div class="header__mail_form" id="my_notification">
+                                <div class="header__notification-date-wrapper">
+                                    <div>
+                                        <h5 class="header__notification-date">16 november,2021
+                                        </h5>
+                                        <p class="header__notification-time">Tue,7.12 pm</p>
+                                    </div>
+                                    <button class="cancel_btn" onclick="close_btn2()">
+                                        <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                                    </button>
+                                </div>
+                                <div class="header__mail-dropdown-wrapper">
+                                    <div>
+                                        <h2 class="header__mail-title">My Mailbox</h2>
+                                        <span class="header__recent-mail">Recent Mails</span>
+                                    </div>
+                                    <div class="header__search-dropdown-wrapper">
+                                        <select name="mailsList" onchange="showHide(this)"
+                                            class="header__select-dropdown">
+                                            <option>All</option>
+                                            <option value="allmail">All</option>
+                                        </select>
+                                        <div class="header__search-wrapper">
+                                            <i class="fas fa-search search-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="#" method="post" id="notification">
+                                    <div>
+                                        <div class="show-hide" id="allmail">
+                                            <ul class="header__mail-list-wrapper">
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">PP</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Hi</h2>
+                                                        <p class="header__mail-desc">PFA</p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">
+                                                            Interview assigned</h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">10:01am</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Access
+                                                            required for the
+                                                            employee
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">1d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <div></div>
+                                                    <p class="header__mail-time">4d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">5d</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="assessmentmaster">
+                    <ul class="assessmentmaster__assessment-list-wrapper">
+                        <li class="assessmentmaster__assessment-list">Name</li>
+                        <li class="assessmentmaster__assessment-list">Client</li>
+                        <li class="assessmentmaster__assessment-list">Is Compliance & Rating Required
+                        </li>
+                        <li class="assessmentmaster__assessment-list">Module</li>
+                        <li class="assessmentmaster__assessment-list"> Assessment Domain</li>
+                        <li class="assessmentmaster__assessment-list">Status</li>
+                        <li class="assessmentmaster__assessment-list">Action</li>
+                    </ul>
+                    <div class="assessmentmaster__details-wrapper">
+                        <details class="assessmentmaster__details">
+                            <summary class="assessmentmaster__assessment-vapt-section">
+                                <div class="assessmentmaster__domain-title-wrapper">
+                                    <p class="assessmentmaster__assessment-domain-title">Assessment
+                                        Domain-VAPT</p>
+                                    <p class="assessmentmaster__assessment-domain-sub-title">1 Sub
+                                        Assessment</p>
+                                </div>
+                            </summary>
+                            <div class="assessmentmaster__assessment-domain-wrapper">
+                                <div class="assessmentmaster__assessment-description-wrapper">
+                                    <div class="assessmentmaster__vapt-wrapper">
+                                        <p class="assessmentmaster__assessment-vapt-title">VAPT</p>
+                                        <p class="assessmentmaster__assessment-vapt-desc">Term used to
+                                            describe security testing
+                                            that is designed to
+                                            identify and help address cyber security vulnerabilities.</p>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-company-name">
+                                        <h4 class="assessmentmaster__assessment-vapt-title">XYZ company</h4>
+                                        <p class="assessmentmaster__assessment-vapt-desc">
+                                            Lorem Ipsum is simply dummy text of the
+                                            printing and typesetting industry
+                                            . Lorem Ipsum has been the industry's.
+                                        </p>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-rating">
+                                        <div class="assessmentmaster__toggle-btn-cover">
+                                            <div class="assessmentmaster__button-cover">
+                                                <div id="toggle-btn" class="assessmentmaster__button-toggle btn-radius">
+                                                    <input type="checkbox" class="assessmentmaster__check" />
+                                                    <div class="assessmentmaster__toggle-active"></div>
+                                                    <div class="assessmentmaster__toggle-inactive"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-module">
+                                    </div>
+                                    <div class="assessmentmaster__assessment-domain">
+                                    </div>
+                                    <div class="assessmentmaster__assessment-status">
+                                        <a href="#" class="button button--active">Active</a>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-action">
+                                        <i class="fas fa-ellipsis-v more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="assessmentmaster__details operational">
+                            <summary class="assessmentmaster__assessment-operational-control">
+                                <div class="assessmentmaster__operational-control-title-wrapper">
+                                    <h2 class="assessmentmaster__assessment-domain-title">Assessment Domain
+                                        - Operational Control
+                                    </h2>
+                                    <p class="assessmentmaster__assessment-domain-sub-title">
+                                        2 Sub Assessments</p>
+                                </div>
+                            </summary>
+                            <div class="assessmentmaster__operational-control-wrapper">
+                                <div class="assessmentmaster__assessment-description-wrapper vapt-second">
+                                    <div class="assessmentmaster__vapt-wrapper">
+                                        <h4 class="assessmentmaster__assessment-vapt-title">VAPT</h4>
+                                        <p class="assessmentmaster__assessment-vapt-desc">
+                                            Term used to
+                                            describe security testing
+                                            that is designed to
+                                            identify and help address cyber security vulnerabilities.
+                                        </p>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-company-name">
+                                        <h4 class="assessmentmaster__assessment-vapt-title">XYZ company</h4>
+                                        <p class="assessmentmaster__assessment-vapt-desc">
+                                            Lorem Ipsum is
+                                            simply dummy text of the
+                                            printing and typesetting industry
+                                            . Lorem Ipsum has been the industry's.
+                                        </p>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-rating">
+                                        <div class="assessmentmaster__toggle-btn-cover">
+                                            <div class="assessmentmaster__button-cover">
+                                                <div id="toggle-btn" class="assessmentmaster__button-toggle btn-radius">
+                                                    <input type="checkbox" class="assessmentmaster__check" />
+                                                    <div class="assessmentmaster__toggle-active"></div>
+                                                    <div class="assessmentmaster__toggle-inactive"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-module">
+                                    </div>
+                                    <div class="assessmentmaster__assessment-domain">
+                                    </div>
+                                    <div class="assessmentmaster__assessment-status">
+                                        <a href="#" class="button button--inactive">Inactive</a>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-action">
+                                        <i class="fas fa-ellipsis-v more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assessmentmaster__operational-control-wrapper-second">
+                                <div class="assessmentmaster__assessment-description-wrapper">
+                                    <div class="assessmentmaster__vapt-wrapper">
+                                        <h4 class="assessmentmaster__assessment-vapt-title">VAPT</h4>
+                                        <p class="assessmentmaster__assessment-vapt-desc">
+                                            Term used to
+                                            describe security testing
+                                            that is designed to
+                                            identify and help address cyber security vulnerabilities.
+                                        </p>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-company-name">
+                                        <h4 class="assessmentmaster__assessment-vapt-title">XYZ company</h4>
+                                        <p class="assessmentmaster__assessment-vapt-desc">
+                                            Lorem Ipsum is
+                                            simply dummy text of the
+                                            printing and typesetting industry
+                                            . Lorem Ipsum has been the industry's.
+                                        </p>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-rating">
+                                        <div class="assessmentmaster__toggle-btn-cover">
+                                            <div class="assessmentmaster__button-cover">
+                                                <div id="toggle-btn" class="assessmentmaster__button-toggle btn-radius">
+                                                    <input type="checkbox" class="assessmentmaster__check" />
+                                                    <div class="assessmentmaster__toggle-active"></div>
+                                                    <div class="assessmentmaster__toggle-inactive"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-module">
+                                    </div>
+                                    <div class="assessmentmaster__assessment-domain">
+                                    </div>
+                                    <div class="assessmentmaster__assessment-status">
+                                        <a href="javascript:void(0)" class="button button--active">Active</a>
+                                    </div>
+                                    <div class="assessmentmaster__assessment-action">
+                                        <i class="fas fa-ellipsis-v more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--status-->
+
+        <section class="tabcontent" id="status">
+            <div class="header">
+                <div class="header__section">
+                    <div class="tabcontent-title">
+                        <a href="javascript:void(0)">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div>
+                            <h2 class="header-title">ITC Assest A - Runtime Status Update</h2>
+                            <p class="header-sub-title">Checkout the status of the project</p>
+                        </div>
+                    </div>
+                    <div class="header__header-right">
+                        <div class="header__select-workspace">
+                            <select class="header__workspace" name="state">
+                                <option value="AL">Select Workspace</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <!--dark-->
+                        <div class="darkmode-btn">
+                            <label id="dark-change" class="label">
+                            </label>
+                            <div>
+                                <p class="dark">Dark</p>
+                                <p class="light">Light</p>
+                            </div>
+                        </div>
+                        <!--Assessment-->
+                        <div class="assessment-btn-wrapper">
+                            <a href="#my_form" class="header__assessment-btn">
+                                Add New Assessment</a>
+                            <div class="header__assessment-form" id="my_form">
+                                <form class="form_container">
+                                    <div class="header__form-title-wrapper">
+                                        <h1 class="header__assessment-title">Add New Assessment
+                                        </h1>
+                                        <a class="close" href="#">&times;</a>
+                                    </div>
+
+                                    <label class="header__form-name">Assessment Name</label>
+                                    <input type="text" placeholder="Enter Assessment Name" autocomplete="off"
+                                        class="header__assessment-name input">
+                                    <label class="header__form-name">Description</label>
+                                    <input type="text" placeholder="Enter Assessment Description" autocomplete="off"
+                                        class="header__descript input">
+                                    <label class="header__form-name">client
+                                        assessment domain
+                                        name</label>
+                                    <select name="assessment" class="header__client-assessment input">
+                                        <option value="client">Select Assessment Name</option>
+                                        <option value="java">Java</option>
+                                        <option value="react">React</option>
+                                        <option value="angular">Angular</option>
+                                    </select>
+                                    <div class="header__module-domain">
+                                        <div class="header__module-wrapper">
+                                            <label class="header__form-name">
+                                                Module
+                                            </label>
+                                            <input type="text" placeholder="Enter module Name" autocomplete="off"
+                                                class="header__assessment-domain input">
+                                        </div>
+                                        <div class="header__domain-wrapper">
+                                            <label class="header__form-name">Assessment
+                                                domain</label>
+                                            <select name="domain" class="input">
+                                                <option value="volvo">Select Module Name
+                                                </option>
+                                                <option value="css">CSS</option>
+                                                <option value="html">HTML</option>
+                                                <option value="js">Js</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="header__role-template">
+                                        <div class="header__role-assessment">
+                                            <label class="header__form-name">
+                                                Assessment Role
+                                            </label>
+                                            <input type="text" placeholder="Select Assessment Role" autocomplete="off"
+                                                class="header__assessment-role input">
+                                        </div>
+                                        <div class="header__template">
+                                            <label class="header__form-name">Report
+                                                Template</label>
+                                            <select name="template" class="input">
+                                                <option value="select">Select Report Template
+                                                </option>
+                                                <option value="report">Report</option>
+                                                <option value="google">Google</option>
+                                                <option value="chrome">Chrome</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button button--login">
+                                        Save Assessment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--notification-->
+
+                        <div>
+                            <button class="open-bell-icon">
+                                <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                            </button>
+                            <div class="header__mail_form" id="my_notification">
+                                <div class="header__notification-date-wrapper">
+                                    <div>
+                                        <h5 class="header__notification-date">16 november,2021
+                                        </h5>
+                                        <p class="header__notification-time">Tue,7.12 pm</p>
+                                    </div>
+                                    <button class="cancel_btn" onclick="close_btn2()">
+                                        <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
+                                    </button>
+                                </div>
+                                <div class="header__mail-dropdown-wrapper">
+                                    <div>
+                                        <h2 class="header__mail-title">My Mailbox</h2>
+                                        <span class="header__recent-mail">Recent Mails</span>
+                                    </div>
+                                    <div class="header__search-dropdown-wrapper">
+                                        <select name="mailsList" onchange="showHide(this)"
+                                            class="header__select-dropdown">
+                                            <option>All</option>
+                                            <option value="allmail">All</option>
+                                        </select>
+                                        <div class="header__search-wrapper">
+                                            <i class="fas fa-search search-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="javascript:void(0)" method="post" id="notification">
+                                    <div>
+                                        <div class="show-hide" id="allmail">
+                                            <ul class="header__mail-list-wrapper">
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">PP</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Hi</h2>
+                                                        <p class="header__mail-desc">PFA</p>
+                                                    </div>
+                                                    <p class="header__mail-time">3 min</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">
+                                                            Interview assigned</h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">10:01am</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Access
+                                                            required for the
+                                                            employee
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">1d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">3d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <div></div>
+                                                    <p class="header__mail-time">4d</p>
+                                                </li>
+                                                <li class="header__mail-list">
+                                                    <h2 class="header__mail-name-short">SK</h2>
+                                                    <div class="mail-heading-wrapper">
+                                                        <h2 class="header__mailheading">Meeting
+                                                            Confirmation
+                                                        </h2>
+                                                        <p class="header__mail-desc">Hello
+                                                            Kinjal , Im available
+                                                            for the
+                                                            meet..
+                                                        </p>
+                                                    </div>
+                                                    <p class="header__mail-time">5d</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="projectstatusreport">
+                    <div class="projectstatusreport__project-status-section">
+                        <div class="projectstatusreport__project-status-big-card">
+                            <div class="projectstatusreport__assessment-card preassessment-card">
+                                <h2 class="projectstatusreport__pre-assessment-title">
+                                    Pre Assessment
+                                </h2>
+                                <p class="projectstatusreport__progress-percentage">
+                                    40% Progress
+                                </p>
+                                <div class="projectstatusreport__pre-progress">
+                                    <div class="projectstatusreport__progress-fill">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectstatusreport__assessment-review-response">
+                                <div class="projectstatusreport__review-wrapper">
+                                    <a href="javascript:void(0)" class="projectstatusreport__review-check">
+                                        <i class="fas fa-check"></i>
+                                    </a>
+                                    <h2 class="projectstatusreport__assessment-review-title">Assessment
+                                        Review</h2>
+                                    <p class="projectstatusreport__assessment-review-subtitle">
+                                        Reviewer : </p>
+                                    <p class="projectstatusreport__review-response-small-title">
+                                        ITC Admin
+                                    </p>
+                                    <p class="projectstatusreport__assessment-review-subtitle">
+                                        Completed On :
+                                    </p>
+                                    <p class="projectstatusreport__review-response-small-title">
+                                        17 Nov 2021 11:23am
+                                    </p>
+                                </div>
+                                <div class="projectstatusreport__response-wrapper">
+                                    <a href="javascript:void(0)" class="projectstatusreport__response-check">
+                                        <i class="fas fa-check"></i>
+                                    </a>
+                                    <h2 class="projectstatusreport__assessment-review-title">
+                                        Response
+                                    </h2>
+                                    <p class="projectstatusreport__assessment-review-subtitle">
+                                        Performed by :
+                                    </p>
+                                    <p class="projectstatusreport__review-response-small-title">
+                                        Safety User
+                                    </p>
+                                    <p class="projectstatusreport__assessment-review-subtitle">
+                                        Completed On :
+                                    </p>
+                                    <p class="projectstatusreport__review-response-small-title">
+                                        13 Nov 2021 1:56pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectstatusreport__status-card-wrapper">
+                            <div class="projectstatusreport__assessment-card covid-card">
+                                <h2 class="projectstatusreport__pre-assessment-title">COVID - 19</h2>
+                                <p class="projectstatusreport__progress-percentage covid-percentage">
+                                    80% Progress
+                                </p>
+                                <div class="projectstatusreport__pre-progress">
+                                    <div class="projectstatusreport__progress-fill eighty-progress">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectstatusreport__assessment-card operational-card">
+                                <h2 class="projectstatusreport__pre-assessment-title">
+                                    Operational Control
+                                </h2>
+                            </div>
+                            <div class="projectstatusreport__assessment-card Safety-card">
+                                <h2 class="projectstatusreport__pre-assessment-title">
+                                    Safety Planning</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--profile-->
+        <section class="tabcontent" id="profile">
+            <div>
+                <h1>my profile</h1>
+            </div>
+        </section>
+        <!--settings-->
+        <section class="tabcontent" id="settings">
+            <div>
+                <h1>settings</h1>
+            </div>
+        </section>
+        <!--logout-->
+        <section class="tabcontent" id="logout">
+            <div>
+                <h1>logout</h1>
+            </div>
+        </section>
+        <!-- </div> -->
+    </main>
+    <script src="app/js/bootstrap.bundle.min.js"></script>
+    <script src="app/js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/80d91804c8.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,18 +1,19 @@
-.btn{
-    color: $color-black;
+.button{
+    color: $color-black ;
     font-size: 0.75rem;
-    padding: 10px;
+    padding: 0.625rem;
     outline: none;
+    text-decoration: none;
 
     &--submit{
         color:$color-night-rider;
-        font-size: 15px;
+        font-size:0.938rem;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 20px;
         background-color: $bg-color-limerick;
         box-shadow: 0px 4px 24px rgba(196, 197, 195, 0.25);
-        padding: 8px 35px 7px 35px;
+        padding: 0.5rem 2.188rem 0.438rem 2.188rem;
         border: none;
         cursor: pointer;
         transition:3s background-color;
@@ -21,4 +22,83 @@
             background-color: $bg-color-persian-green;
         }
     }
+
+    &--compliance{
+        position: absolute;
+        top: 80%;
+       left: 4%;
+        color: $color-white;
+        font-size: 8px;
+        font-weight: 600;
+        background-color: $bg-color-matterhorn;
+        border-radius: 20px;
+        padding: 1px 7px 2px 7px;
+        float: right;
+        
+        &:hover{
+            color: white;
+        }
+    }
+
+    &--risk{
+        font-size: 8px;
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 1px 7px 2px 7px;
+        background-color: rgba(77,77,77,0.1);
+        float: right;
+
+        &:hover{
+            color: $color-white;
+            background-color: $bg-color-matterhorn;
+        }
+    }
+
+    &--topic{
+        font-size: 8px;
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 1px 7px 2px 7px;
+        background-color: rgba(77,77,77,0.1);
+        float: right;
+
+        &:hover{
+            color: $color-white;
+            background-color: $bg-color-matterhorn;
+        }
+    }
+
+    &--active{
+        color: $color-white;
+        border-radius: 20px;
+        font-size: 8px;
+        text-transform: uppercase;
+        background-color: $bg-color-limerick;
+        padding: 5px 15px 5px 15px;
+    }
+
+    &--inactive{
+        color: $color-white;
+        font-size: 8px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        background-color:$bg-color-harley-davidson-orange;
+        padding: 5px 15px 5px 15px;
+    }
+
+    &--login {
+        font-size: 10px;
+        background-color: $bg-color-cerulean;
+        margin: 99px 0 0 0;
+        padding: 10px;
+        color: $color-white;
+        cursor: pointer;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+}
+
+.home-content.active .button--compliance{
+    top: 12%;
+    left: 61%;
 }

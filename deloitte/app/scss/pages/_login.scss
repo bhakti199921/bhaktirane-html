@@ -7,29 +7,21 @@
     @include breakpoint(ipad-max) {
         width: unset;
     }
-
-    @include breakpoint(custom-small-mobile-max) {
-        // width: 100%;
-    }
 }
 
 .login {
-    // position: relative;
     background-image: url("../images/bluish-plant-leaves-textured.png");
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 44.813rem;
+    height: 39rem;
     background-repeat: no-repeat;
 
     &__details {
-        // position: absolute;
-        // top: 25%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        // left: 45%;
 
         @include breakpoint(ipad-max) {
             justify-content: space-around;
@@ -42,13 +34,6 @@
     }
 
     &__logoname {
-        // position: absolute;
-        // top: 50%;
-        // width: 208px;
-        // height: 117px;
-        // display: flex;
-        // flex-wrap: wrap;
-        // align-items: center;
         color: $color-white;
         font-size: 3.125rem;
         font-weight: 700;
@@ -63,7 +48,7 @@
     &__dot {
         position: absolute;
         bottom: 15%;
-        right: -5%;
+        right: -8%;
         height: 0.813rem;
         width: 0.813rem;
         background-color: $bg-color-limerick;
@@ -84,11 +69,11 @@
         box-shadow: 0px 0.25rem 7.125rem rgba(255, 255, 255, 0.25);
 
         @include breakpoint(portrait-mobile-max) {
-            padding: 4.625rem 0.438rem 4.625rem 0.438rem;
+            padding: 4.625rem 1.438rem 4.625rem 1.438rem;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            padding: 4.625rem 0.125rem 4.625rem 0.125rem;
+            padding: 4.625rem 1.125rem 4.625rem 1.125rem;
         }
     }
 
@@ -118,12 +103,12 @@
         border: 1px solid #4D4D4D;
         border-radius: 10px;
 
-        // @include breakpoint(portrait-mobile-max){
-        //     width: 18.75rem;
-        // }
+        @include breakpoint(portrait-mobile-max){
+            width: 17.5rem;
+        }
 
         @include breakpoint(custom-small-mobile-max) {
-            width: 17.5rem;
+            width: 15.5rem;
         }
     }
 
@@ -147,8 +132,12 @@
     &__questionmark {
         position: absolute;
         right: 6%;
-        top: 20%;
+        top: 30%;
         color: rgba(255, 255, 255, 0.5);
+
+        @include breakpoint(portrait-mobile-max){
+            right: 11%;
+        }
 
         @include breakpoint(custom-small-mobile-max) {
             right: 8%;
@@ -170,8 +159,12 @@
         font-weight: 400;
         margin-right: 5.938rem;
 
-        @include breakpoint(custom-small-mobile-max) {
+        @include breakpoint(portrait-mobile-max){
             margin-right: 4rem;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            margin-right: 2.5rem;
         }
     }
 

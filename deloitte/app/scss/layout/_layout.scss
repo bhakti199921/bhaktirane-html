@@ -1,7 +1,15 @@
 
 .container{
-    max-width: 1214px;
-    width: 100%;
-    margin: 0 auto;
-    padding:0 15px;
+    // max-width: 1214px !important;
+    // width: 100%;
+    // margin: 0 auto;
+    // padding:0 15px;
+
+    // @include breakpoint(desktop-max){
+    //     max-width: 947px !important;
+    // }
+
+    // @include breakpoint(ipad-max){
+    //     max-width: 730px !important;
+    // }
 }

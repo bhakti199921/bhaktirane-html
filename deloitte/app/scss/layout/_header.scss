@@ -1,1 +1,581 @@
+.header {
 
+    .header-title {
+        color: $color-black;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.125rem;
+
+        @include breakpoint(desktop-max) {
+            width: 226px;
+        }
+    }
+
+    .header-sub-title {
+        font-size: 0.938rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+        margin: 0;
+
+        @include breakpoint(desktop-max) {
+            width: 226px;
+        }
+    }
+
+    .fa-angle-left {
+        width: 0.625rem;
+        font-size: 1.563rem;
+        font-weight: 600;
+        color: $bg-color-limerick;
+        margin: 0.938rem 0.75rem 0 0;
+    }
+
+    &__header-right {
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        padding: 0;
+    }
+
+    //notification code start
+    &__notification-date {
+        color: $color-black;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    &__notification-date-wrapper {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 0 1.063rem 0;
+    }
+
+    &__notification-time {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 600;
+        font-size: 0.688rem;
+    }
+
+    &__bell-img {
+        height: 1.563rem;
+        width: 1.563rem;
+    }
+
+    &__mail_form {
+        width: 336px;
+        position: absolute;
+        left: 72%;
+        top: 1px;
+        display: none;
+        padding: 2.5rem 1.375rem 0 1.375rem;
+        background-color: $color-white;
+        box-shadow: 0px 4px 44px rgba(194, 194, 194, 0.25);
+        z-index: 18;
+
+        @include breakpoint(desktop-max) {
+            right: 0;
+            left: unset;
+        }
+    }
+
+    &__mail-dropdown-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+
+    &__mail-title {
+        color: $color-black;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 0 0.188rem 0;
+    }
+
+    &__recent-mail {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 0.75rem;
+    }
+
+    &__search-dropdown-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    &__select-dropdown {
+        width: 3.938rem;
+        border-left: none;
+        border-bottom: none;
+        border-top: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        outline: none;
+        border-radius: unset;
+    }
+
+    #allmail {
+        display: none;
+    }
+
+    &__search-wrapper {
+        margin-left: 0.625rem;
+    }
+
+    #mail {
+        border: none;
+        border-right: 1px solid;
+    }
+
+    &__mail-list-wrapper {
+        padding: 0;
+        margin: 1.125rem 0 0 0;
+    }
+
+    &__mail-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.625rem 0 0.625rem 0;
+        margin: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+
+    &__mail-name-short {
+        color: #515151;
+        font-size: 0.688rem;
+        font-weight: 700;
+        background-color: $bg-color-clear-day;
+        border-radius: 50%;
+        padding: 0.625rem;
+    }
+
+    &__mailheading {
+        color: $color-black;
+        font-size: 0.688rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__mail-desc {
+        color: $color-black;
+        font-size: 0.625rem;
+        font-weight: 400;
+    }
+
+    &__mail-time {
+        color: $color-black;
+        font-size: 0.563rem;
+        font-weight: 400;
+    }
+
+    .search-icon {
+        width: 1.188rem;
+        height: 0.938rem;
+        color:rgba(0, 0, 0, 0.3);
+    }
+
+    //workspace dropdown
+
+    &__workspace {
+        width: 9.25rem;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 0.625rem;
+        font-weight: 400;
+        background-color: $bg-color-white-smoke;
+        border: none;
+        outline: none;
+        padding: 0.587rem 1.063rem 0.587rem 0.587rem;
+        margin: 0 1.25rem 0 0;
+        border-radius: 8px;
+
+        @include breakpoint(desktop-max) {
+            width: 8.188rem;
+            margin: 0 0.25rem 0 0;
+        }
+    }
+
+    //assessment form start
+    &__assessment-btn {
+        font-size: 0.625rem;
+        font-weight: 400;
+        background-color: $bg-color-cerulean;
+        color: $color-white;
+        text-transform: uppercase;
+        opacity: 0.8;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 0.5rem 1rem 0.5rem 1.063rem;
+
+        &:hover {
+            color: $color-white;
+        }
+
+        @include breakpoint(ipad-max){
+            display: block;
+        }
+    }
+
+    &__assessment-form {
+        position: absolute;
+        top: 0;
+        right: -4%;
+        bottom: -322px;
+        // display: none;
+        padding: 2.188rem;
+        background-color: $color-white;
+        box-shadow: 0px 4px 44px rgba(194, 194, 194, 0.25);
+        visibility: hidden;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .form_container .close {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.875rem;
+        transition: all 200ms;
+        font-size: 1.563rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: $bg-color-black;
+    }
+
+    .form_container {
+        max-width: 310px;
+    }
+
+    &__assessment-title {
+        font-size: 1.25rem;
+        color: $color-black;
+        font-weight: 700;
+        margin-bottom: 1.313rem;
+    }
+
+    &__form-title-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &__assessment-name {
+        width: 100%;
+    }
+
+    &__descript,
+    &__client-assessment {
+        width: 100%;
+    }
+
+    &__assessment-domain,
+    &__assessment-role {
+        min-width: 138px;
+        min-height: 2.125rem;
+    }
+
+    &__module-domain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__module-wrapper,
+    &__domain-wrapper,
+    &__role-assessment,
+    &__template {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__role-template {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__domain-wrapper {
+        width: 145px;
+    }
+
+    .input {
+        color: rgba(0, 0, 0, 0.4);
+        border: none;
+        border-radius: 8px;
+        background-color: $bg-color-white-smoke;
+        padding: 0.563rem 0 0.563rem 0.938rem;
+        font-size: 0.625rem;
+        outline: none;
+    }
+
+    &__form-name {
+        color: black;
+        font-size: 0.688rem;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    .header__assessment-form:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .assessment-btn-wrapper {
+        margin: 0 1.25rem 0 1.25rem;
+
+        @include breakpoint(desktop-max) {
+            margin: 0 0.25rem 0 0.25rem;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin: 0;
+        }
+    }
+
+    //assessment form end
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include breakpoint(desktop-max) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        @include breakpoint(ipad-max) {
+            display: flex;
+        }
+    }
+}
+
+//dark mode
+
+.darkmode-btn {
+
+    @include breakpoint(ipad-max) {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.label {
+    position: absolute;
+    width: 1.875rem;
+    height: 1.625rem;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin: 0.188rem 0 0 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1rem;
+        height: 1.6rem;
+        left: 0;
+        top: 0;
+        background-color: black;
+        border-top-left-radius: 19px;
+        border-bottom-left-radius: 19px;
+    }
+}
+
+body.darkmode {
+    background-color: #323232;
+}
+
+body.darkmode .sidebar.active {
+    background-color: #86BC25;
+    color: $bg-color-white-smoke;
+    box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.03);
+}
+
+body.darkmode .sidebar__title {
+    color: $color-white;
+}
+
+body.darkmode .sidebar {
+    background-color: #1C1A1A;
+}
+
+body.darkmode .sidebarwrapper {
+    background-color: #323232;
+}
+
+body.darkmode .dashboard__cards {
+    background-color: #272727;
+    color: $color-white;
+    box-shadow: 0px 0px 3px rgba(196, 197, 195, 0.25);
+}
+
+body.darkmode .dashboard__card-title {
+    color: $color-white;
+}
+
+body.darkmode .dashboard__card-desc {
+    color: #F5F5F5;
+}
+
+body.darkmode .sidebar .sidebar__link-name {
+    color: #C2C2C2;
+}
+
+body.darkmode .light {
+    display: none;
+}
+
+body.darkmode .dark {
+    display: block;
+    color: $color-white;
+}
+
+.dark {
+    font-size: 0.813rem;
+    margin: 0.188rem 0 0 2.063rem;
+    display: none;
+}
+
+.light {
+    font-size: 0.813rem;
+    margin: 0.188rem 0 0 2.063rem;
+    display: block;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+body.darkmode .header__mail_form {
+    background-color: #1C1A1A;
+    box-shadow: unset;
+}
+
+body.darkmode .header__mailheading {
+    color: $color-white;
+}
+
+body.darkmode .header__mail-desc {
+    color: $color-white;
+}
+
+body.darkmode .header__mail-time {
+    color: $color-white;
+}
+
+body.darkmode .header__select-dropdown {
+    color: $color-white;
+    background-color: #1C1A1A;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgba(253, 253, 253, 0.1);
+}
+
+body.darkmode .header__notification-date-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.darkmode .header__notification-date {
+    color: $color-white;
+}
+
+body.darkmode .header__notification-time {
+    color: $color-white;
+}
+
+body.darkmode .header__recent-mail {
+    color: $color-white;
+}
+
+body.darkmode .header__mail-list {
+    border-bottom: 1px solid rgba(231, 231, 231, 0.1);
+}
+
+body.darkmode .header__workspace {
+    background-color: rgba(245, 245, 245, 0.1);
+    color: rgba(196, 196, 196, 0.4);
+}
+
+body.darkmode .dashboard__card-addition {
+    background: rgba(0, 0, 0, 0.21);
+}
+
+body.darkmode .button--risk {
+    color: $color-white;
+    background-color: #4D4D4D !important;
+}
+
+body.darkmode .button--topic {
+    color: $color-white;
+    background-color: #4D4D4D !important;
+}
+
+body.darkmode .header-title {
+    color: $color-white;
+}
+
+body.darkmode .header-sub-title {
+    color: rgba(254, 254, 254, 0.7);
+}
+
+body.darkmode .dashboard__discover-data {
+    color: rgba(249, 249, 249, 0.3);
+}
+
+body.darkmode .header__mail-title {
+    color: $color-white;
+}
+
+body.darkmode .search-icon {
+    color: $color-white;
+}
+
+body.darkmode .sidebar__admin-name {
+    color: #D0D0D0;
+}
+
+body.darkmode .sidebar__designation {
+    color: #D0D0D0;
+}
+
+//project status
+body.darkmode .projectstatusreport__project-status-section::after{
+    border-left: 1px solid rgba(255, 254, 254, 0.4);
+}
+
+body.darkmode .projectstatusreport__project-status-big-card::before{
+    border-left: 1px solid rgba(255, 254, 254, 0.4);
+}
+
+body.darkmode .projectstatusreport .Safety-card::before{
+    border-left: 1px solid rgba(255, 254, 254, 0.5); 
+}
+
+body.darkmode .projectstatusreport .covid-card::before{
+    border-left: 1px solid rgba(255, 254, 254, 0.5); 
+}
+
+body.darkmode .projectstatusreport .operational-card::before{
+    border-left: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+body.darkmode a.sidebar__link.tablinks.active .sidebar__link-name{
+    color: $color-white;
+}
+
+//assessment master section start for darkmode
+
+body.darkmode .assessmentmaster__assessment-vapt-section{
+    background-color: #EEEEEE;
+}
+
+body.darkmode .assessmentmaster__assessment-description-wrapper{
+    background-color: $color-white;
+}
+
+body.darkmode .assessmentmaster__assessment-list{
+    color: $color-white;
+}
