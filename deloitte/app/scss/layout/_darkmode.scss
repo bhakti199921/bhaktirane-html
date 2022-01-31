@@ -1,0 +1,227 @@
+body.header__assessment-form {
+    display: block;
+}
+
+//dark mode
+
+.darkmode-btn {
+
+    @include breakpoint(ipad-max) {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.label {
+    position: absolute;
+    width: 1.875rem;
+    height: 1.625rem;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin: 0.188rem 0 0 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1rem;
+        height: 1.6rem;
+        left: 0;
+        top: 0;
+        background-color: black;
+        border-top-left-radius: 19px;
+        border-bottom-left-radius: 19px;
+    }
+}
+
+body.darkmode {
+    background-color: #323232;
+}
+
+body.darkmode .sidebar.active {
+    background-color: #86BC25;
+    color: $bg-color-white-smoke;
+    box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.03);
+}
+
+body.darkmode .sidebar__title {
+    color: $color-white;
+}
+
+body.darkmode .sidebar {
+    background-color: #1C1A1A;
+}
+
+body.darkmode .sidebarwrapper {
+    background-color: #323232;
+}
+
+body.darkmode .dashboard__cards {
+    background-color: #272727;
+    color: $color-white;
+    box-shadow: 0px 0px 3px rgba(196, 197, 195, 0.25);
+}
+
+body.darkmode .dashboard__card-title {
+    color: $color-white;
+}
+
+body.darkmode .dashboard__card-desc {
+    color: #F5F5F5;
+}
+
+body.darkmode .sidebar .sidebar__link-name {
+    color: #C2C2C2;
+}
+
+body.darkmode .light {
+    display: none;
+}
+
+body.darkmode .dark {
+    display: block;
+    color: $color-white;
+}
+
+.dark {
+    font-size: 0.813rem;
+    margin: 0.188rem 0 0 2.063rem;
+    display: none;
+}
+
+.light {
+    font-size: 0.813rem;
+    margin: 0.188rem 0 0 2.063rem;
+    display: block;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+body.darkmode .header__mail_form {
+    background-color: #1C1A1A;
+    box-shadow: unset;
+}
+
+body.darkmode .header__mailheading {
+    color: $color-white;
+}
+
+body.darkmode .header__mail-desc {
+    color: $color-white;
+}
+
+body.darkmode .header__mail-time {
+    color: $color-white;
+}
+
+body.darkmode .header__select-dropdown {
+    color: $color-white;
+    background-color: #1C1A1A;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgba(253, 253, 253, 0.1);
+}
+
+body.darkmode .header__notification-date-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.darkmode .header__notification-date {
+    color: $color-white;
+}
+
+body.darkmode .header__notification-time {
+    color: $color-white;
+}
+
+body.darkmode .header__recent-mail {
+    color: $color-white;
+}
+
+body.darkmode .header__mail-list {
+    border-bottom: 1px solid rgba(231, 231, 231, 0.1);
+}
+
+body.darkmode .header__workspace {
+    background-color: rgba(245, 245, 245, 0.1);
+    color: rgba(196, 196, 196, 0.4);
+}
+
+body.darkmode .dashboard__card-addition {
+    background: rgba(0, 0, 0, 0.21);
+}
+
+body.darkmode .button--risk {
+    color: $color-white;
+    background-color: #4D4D4D !important;
+}
+
+body.darkmode .button--topic {
+    color: $color-white;
+    background-color: #4D4D4D !important;
+}
+
+body.darkmode .header-title {
+    color: $color-white;
+}
+
+body.darkmode .header-sub-title {
+    color: rgba(254, 254, 254, 0.7);
+}
+
+body.darkmode .dashboard__discover-data {
+    color: rgba(249, 249, 249, 0.3);
+}
+
+body.darkmode .header__mail-title {
+    color: $color-white;
+}
+
+body.darkmode .search-icon {
+    color: $color-white;
+}
+
+body.darkmode .sidebar__admin-name {
+    color: #D0D0D0;
+}
+
+body.darkmode .sidebar__designation {
+    color: #D0D0D0;
+}
+
+//project status
+body.darkmode .projectstatusreport__project-status-section::after {
+    border-left: 1px solid rgba(255, 254, 254, 0.4);
+}
+
+body.darkmode .projectstatusreport__project-status-big-card::before {
+    border-left: 1px solid rgba(255, 254, 254, 0.4);
+}
+
+body.darkmode .projectstatusreport .Safety-card::before {
+    border-left: 1px solid rgba(255, 254, 254, 0.5);
+}
+
+body.darkmode .projectstatusreport .covid-card::before {
+    border-left: 1px solid rgba(255, 254, 254, 0.5);
+}
+
+body.darkmode .projectstatusreport .operational-card::before {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode a.sidebar__link.tablinks.active .sidebar__link-name {
+    color: $color-white;
+}
+
+//assessment master section start for darkmode
+
+body.darkmode .assessmentmaster__assessment-vapt-section {
+    background-color: #EEEEEE;
+}
+
+body.darkmode .assessmentmaster__assessment-description-wrapper {
+    background-color: $color-white;
+}
+
+body.darkmode .assessmentmaster__assessment-list {
+    color: $color-white;
+}

@@ -2,10 +2,12 @@
 let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
 let home = document.querySelector(".home-content");
+let tabtitle = document.querySelector(".tabcontent-title");
 
 btn.onclick = function () {
     sidebar.classList.toggle("active");
     home.classList.toggle("active");
+    tabtitle.classList.toggle("active");
 
 }
 
@@ -28,8 +30,37 @@ function openIcon(evt, verticalTabs) {
     }
     document.getElementById(verticalTabs).style.display = "block";
     evt.currentTarget.className += " active";
+    setTitle(verticalTabs);
 };
 
+function setTitle(sectionName) {
+    var title = document.getElementById("pTitle");
+    var subTitle = document.getElementById("pSubTitle");
+    // var leftArrow = document.getElementsById("header-left-arrow");
+
+    if (sectionName == "dashboard") {
+        title.textContent = "Hello Kinjal";
+
+        subTitle.textContent = "Have a great day ahead.";
+    } else if (sectionName == "user") {
+        title.textContent = "User Management";
+        // leftArrow.style.display="";
+        subTitle.textContent = "Have a great day ahead.";
+    } else if (sectionName == "asset") {
+        title.textContent = "Asset Management";
+        subTitle.textContent = "Have a great day ahead.";
+    } else if (sectionName == "container") {
+        title.textContent = "Container Management";
+        subTitle.textContent = "Checkout the Structure";
+    } else if (sectionName == "assessment") {
+        title.textContent = "Assessment Master";
+        subTitle.textContent = "2 Assessment Domains in list";
+    } else if (sectionName == "status") {
+        title.textContent = "ITC Assest A - Runtime Status Update";
+        subTitle.textContent = "Checkout the status of the project";
+    }
+
+}
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
@@ -41,16 +72,12 @@ const myNotification = document.getElementById("my_notification");
 
 const openBellIcons = document.querySelectorAll(".open-bell-icon");
 for (const openBellIcon of openBellIcons) {
-    openBellIcon.addEventListener("click", function(){
-console.log('click');
+    openBellIcon.addEventListener("click", function () {
+        console.log('click');
         myNotification.style.display = "block";
-        });
+    });
 }
 
-
-// function open_form_btn2() {
- 
-// };
 
 function close_btn2() {
     document.getElementById("my_notification").style.display = "none";
@@ -73,6 +100,24 @@ window.onload = function () {
 };
 
 
+//assessment
+
+const assessmentForm = document.getElementById("my_form");
+
+const openAssessments = document.querySelectorAll(".header__assessment-btn");
+for (const openAssessment of openAssessments) {
+    openAssessment.addEventListener("click", function () {
+        console.log("click");
+        assessmentForm.style.display = "block";
+    });
+};
+
+function myformclose() {
+    document.getElementById("my_form").style.display = "none";
+};
+
+
+
 //body darkmode
 
 var content = document.getElementsByTagName('body')[0];
@@ -84,40 +129,19 @@ darkMode.addEventListener('click', function () {
 
 
 const darkmodebtn = document.querySelectorAll(".label");
- 
+
 for (const bodydarkmode of darkmodebtn) {
-    bodydarkmode.addEventListener("click",()=>{
+    bodydarkmode.addEventListener("click", () => {
         document.body.classList.toggle("darkmode");
     });
 }
-
-
-const assessmentmaster = document.querySelectorAll(".assessment-btn-wrapper");
- 
-for (const assessment of assessmentmaster) {
-    assessment.addEventListener("click",()=>{
-        document.body.classList.toggle(".header__assessment-btn");
-        // assessmentmaster.body.classList.style.display="block";
-    });
-}
-
-
-
-
-// const notificationwindow = document.querySelectorAll(".open-bell-icon");
- 
-// for (const dashboardnotification of notificationwindow) {
-//     dashboardnotification.addEventListener("click",()=>{
-//         document.body.classList.toggle(".header__mail_form");
-//     });
-// }
 
 
 //container card
 var toggler = document.getElementsByClassName("container-card");
 var i;
 for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function() {
-    this.parentElement.querySelector(".containermanagement__nested-card").classList.toggle("active");
-  });
+    toggler[i].addEventListener("click", function () {
+        this.parentElement.querySelector(".containermanagement__nested-card").classList.toggle("active");
+    });
 }

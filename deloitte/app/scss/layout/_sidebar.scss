@@ -10,7 +10,6 @@
     box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.03);
     // overflow-y: scroll;
 
-
     @include breakpoint(mobile-max) {
         z-index: 2;
     }

@@ -12,7 +12,9 @@
 .tabcontent {
     border-left: none;
     height: 300px;
-    padding: 1.25rem 0 0 0;
+    // padding: 1.25rem 0 0 0;
+    // position: absolute;
+    // top: 40px;
 }
 
 .tabcontent-title {
@@ -50,10 +52,16 @@
     width: 112px;
 }
 
+.tabcontent-title.active {
+    padding-left: 126px;
+    transition: 0.3s ease
+}
+
 .tabcontent-title {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding-left: 256px;
 
     @include breakpoint(desktop-max) {
         flex-wrap: nowrap;
@@ -340,7 +348,8 @@
 
     &__operational-control-wrapper {
 
-        &::after,&::before{
+        &::after,
+        &::before {
             content: "";
             position: absolute;
             border: 1px solid rgba(0, 0, 0, 0.5);
@@ -620,7 +629,8 @@
     .container-third-card {
         position: relative;
 
-        &::before,&::after{
+        &::before,
+        &::after {
             content: "";
             position: absolute;
             border: 1px solid #86BC24;
