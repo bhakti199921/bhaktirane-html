@@ -31,31 +31,36 @@ function openIcon(evt, verticalTabs) {
     document.getElementById(verticalTabs).style.display = "block";
     evt.currentTarget.className += " active";
     setTitle(verticalTabs);
+    setButton(verticalTabs);
 };
 
 function setTitle(sectionName) {
     var title = document.getElementById("pTitle");
     var subTitle = document.getElementById("pSubTitle");
-    // var leftArrow = document.getElementsById("header-left-arrow");
+    var sub = document.getElementById("pArrow");
 
     if (sectionName == "dashboard") {
+        sub.classList = "none";
         title.textContent = "Hello Kinjal";
-
         subTitle.textContent = "Have a great day ahead.";
     } else if (sectionName == "user") {
+        sub.classList = "fas fa-angle-left";
         title.textContent = "User Management";
-        // leftArrow.style.display="";
         subTitle.textContent = "Have a great day ahead.";
     } else if (sectionName == "asset") {
+        sub.classList = "fas fa-angle-left";
         title.textContent = "Asset Management";
         subTitle.textContent = "Have a great day ahead.";
     } else if (sectionName == "container") {
+        sub.classList = "fas fa-angle-left";
         title.textContent = "Container Management";
         subTitle.textContent = "Checkout the Structure";
     } else if (sectionName == "assessment") {
+        sub.classList = "fas fa-angle-left";
         title.textContent = "Assessment Master";
         subTitle.textContent = "2 Assessment Domains in list";
     } else if (sectionName == "status") {
+        sub.classList = "fas fa-angle-left";
         title.textContent = "ITC Assest A - Runtime Status Update";
         subTitle.textContent = "Checkout the status of the project";
     }
@@ -63,6 +68,31 @@ function setTitle(sectionName) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+function setButton(headerButton) {
+    var assessmentBtn = document.getElementById("assessmentButton");
+    var accordionBtn = document.getElementById("accordionButton");
+
+    if (headerButton == "dashboard") {
+        assessmentBtn.style.display = "block";
+        accordionBtn.style.display = "none";
+    } else if (headerButton == "user") {
+        assessmentBtn.style.display = "block";
+        accordionBtn.style.display = "none";
+    } else if (headerButton == "asset") {
+        assessmentBtn.style.display = "block";
+        accordionBtn.style.display = "none";
+    } else if (headerButton == "container") {
+        assessmentBtn.style.display = "none";
+        accordionBtn.style.display = "block";
+    } else if (headerButton == "assessment") {
+        assessmentBtn.style.display = "block";
+        accordionBtn.style.display = "none";
+    } else if (headerButton == "status") {
+        assessmentBtn.style.display = "block";
+        accordionBtn.style.display = "none";
+    }
+}
 
 
 //notification
@@ -145,3 +175,9 @@ for (i = 0; i < toggler.length; i++) {
         this.parentElement.querySelector(".containermanagement__nested-card").classList.toggle("active");
     });
 }
+
+//searchbar
+
+function mySearchBar() {
+    document.getElementById("searchBarWindow").classList.toggle("showsearchbar");
+  }

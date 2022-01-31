@@ -51,8 +51,7 @@
                 <span class="sidebar__tooltip">Asset Management</span>
             </li>
             <li class="sidebar__link-item">
-                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'container')"
-                    id="defaultOpen">
+                <a href="javascript:void(0)" class="sidebar__link tablinks" onclick="openIcon(event, 'container')">
                     <img src="app/images/container.jpg" alt="icon-img" class="sidebar__icon-img">
                     <span class="sidebar__link-name">Container Management</span>
                 </a>
@@ -73,51 +72,52 @@
                 </a>
                 <span class="sidebar__tooltip">Project Status Report</span>
             </li>
-        </ul>
-        <div class="sidebar__profile-content">
-            <div class="sidebar__profile">
-                <div class="sidebar__profile-details">
-                    <img src="app/images/administrator-img.png" alt="icon-img" class="sidebar__profile-img">
-                    <div class="sidebar__name-job">
-                        <span class="sidebar__admin-name">kinjal Jain</span>
-                        <p class="sidebar__designation"> Administrator</p>
+            <li class="sidebar__profile-content" onclick="openIcon(event, 'dashboard')">
+                <div class="sidebar__profile">
+                    <div class="sidebar__profile-details">
+                        <img src="app/images/administrator-img.png" alt="icon-img" class="sidebar__profile-img">
+                        <div class="sidebar__name-job">
+                            <span class="sidebar__admin-name">kinjal Jain</span>
+                            <p class="sidebar__designation"> Administrator</p>
+                        </div>
+                    </div>
+                    <div class="btn-group dropup">
+                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-angle-up" class="up-arrow"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0)" class="sidebar__dropdown-link tablinks"
+                                    onclick="openIcon(event, 'profile')">
+                                    My Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="sidebar__dropdown-link tablinks"
+                                    onclick="openIcon(event, 'settings')">
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="sidebar__dropdown-link tablinks"
+                                    onclick="openIcon(event, 'logout')">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="btn-group dropup">
-                    <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-angle-up" class="up-arrow"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="javascript:void(0)" class="sidebar__dropdown-link tablinks"
-                                onclick="openIcon(event, 'profile')">
-                                My Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="sidebar__dropdown-link tablinks"
-                                onclick="openIcon(event, 'settings')">
-                                Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="login.html" class="sidebar__dropdown-link tablinks"
-                                onclick="openIcon(event, 'logout')">
-                                Logout
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </li>
+        </ul>
+      
     </div>
     <!--header-->
     <header>
         <div class="header">
             <div class="header__section">
                 <div class="tabcontent-title" id="divTitle">
-                    <div href="javascript:void(0)">
-                        <i class="fas fa-angle-left" id="header-left-arrow"></i>
+                    <div id="pArrow">
+                        <i></i>
                     </div>
                     <div>
                         <h2 class="header-title" id="pTitle">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <!--Assessment-->
-                    <div class="assessment-btn-wrapper">
+                    <div class="assessment-btn-wrapper" id="assessmentButton">
                         <a href="javascript:void(0)" class="header__assessment-btn">
                             Add New Assessment</a>
                         <div id="my_form" class="header__assessment-form">
@@ -218,8 +218,9 @@
                             </form>
                         </div>
                     </div>
+                    <!--accordion btn-->
+                    <a href="#" id="accordionButton" class="button button--accordion">Switch to accordion View</a>
                     <!--notification-->
-
                     <div>
                         <button class="open-bell-icon">
                             <img src="app/images/bell.png" alt="bell-img" class="header__bell-img">
@@ -247,8 +248,8 @@
                                     </select>
                                     <div class="header__search-wrapper">
                                         <div class="header__search-box">
-                                            <input type="text" class="header__search-txt" name="" placeholder="Search">
-                                            <a href="#" class="header__search-btn">
+                                            <input type="text" class="header__search-txt" id="searchBarWindow" placeholder="Search">
+                                            <a href="#" class="header__search-btn" id="searchBtn" onclick="mySearchBar()">
                                                 <i class="fas fa-search search-icon"></i>
                                             </a>
                                         </div>
@@ -418,10 +419,14 @@
 
         <!--user-->
         <section class="tabcontent" id="user">
+            <h6>
+                User
+            </h6>
         </section>
 
         <!--asset-->
         <section class="tabcontent" id="asset">
+            <h6>assest</h6>
         </section>
 
         <!--container-->
@@ -787,21 +792,21 @@
 
         <!--profile-->
         <section class="tabcontent" id="profile">
-            <div>
-                <h1>my profile</h1>
-            </div>
+    
+                <h2>my profile</h2>
+          
         </section>
         <!--settings-->
         <section class="tabcontent" id="settings">
-            <div>
-                <h1>settings</h1>
-            </div>
+      
+                <h2>settings</h2>
+     
         </section>
         <!--logout-->
         <section class="tabcontent" id="logout">
-            <div>
-                <h1>logout</h1>
-            </div>
+     
+                <h2>logout</h2>
+           
         </section>
         <!-- </div> -->
     </main>
