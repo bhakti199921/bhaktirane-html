@@ -192,6 +192,7 @@
         border-radius: 0.75rem;
         border-radius: 50%;
         border: 1px solid #fff;
+        cursor: pointer;
     }
 
     &__name-job {
@@ -283,11 +284,12 @@
 .dropdown-menu {
     position: absolute;
     inset: unset !important;
-    padding: 0 0 0.625rem 0.938rem !important;
+    padding: 10px 0 0.625rem 0.938rem !important;
     left: 0 !important;
     bottom: 0;
     border: none !important;
-    transform: translate(-105px, -130px) !important;
+    transform: translate(-105px, -142px) !important;
+    border-radius: 0.55rem !important;
 
     &::before {
         content: "";
