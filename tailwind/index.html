@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/images/tailwind-img.jpg" type="image/x-icon">
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <title>TailwindCSS Demo</title>
+</head>
+
+<body>
+  <header class="fixed z-[99]">
+    <nav class="pt-[16.5px] pb-[13.5px]">
+      <div class="container">
+        <div class="flex justify-between">
+          <div>
+            <a href="javascript:void(0)" class="logoname">VMX</a>
+          </div>
+          <button class="block mx-2 text-3xl cursor-pointer md:hidden">
+            <ion-icon name="menu-outline" onclick="Menu(this)" class="text-white"></ion-icon>
+          </button>
+          <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute
+           mobile:w-full mobile:bg-black/[0.3] left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100
+            opacity-0 top=[-400px] tran">
+            <li class="mx-4 my-6 md:my-0">
+              <a href="javascript:void(0)" class="nav-link">Products</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ">
+              <a href="javascript:void(0)" class="nav-link">Services</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ">
+              <a href="javascript:void(0)" class="nav-link">Case Study</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ">
+              <a href="javascript:void(0)" class="nav-link">About Us</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ">
+              <a href="javascript:void(0)" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="herobanner">
+      <img src="src/images/vmx-banner.png" alt="vmx-banner" class="w-full">
+      <div class="container">
+        <div class="headings">
+          <p class="desc">65% IT Leaders have already accelerated
+            cloud adoption, running more applications
+            in public & private clouds.
+          </p>
+          <h2 class="title">
+            Web Werks VMX
+            Cloud Engineering
+            PLATFORM
+          </h2>
+          <button class="btn-primary">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="vmxservicessection mt-[81px]">
+      <div class="container">
+        <div class="flex flex-wrap mobile:block">
+          <div class="tab">
+            <button class="tablinks" onclick="vmxDepartment(event, 'vmxDepartmentfirst')" id="defaultOpen">
+              <div class="flex vmx-content">
+                <img src="src/images/management.JPG" alt="vmxsevice-img" class="vmxservice-img">
+                <p class="vmx-title">Manage Your Business IT
+                  Infrastructure like a PRO</p>
+
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'ecosystem')">
+              <div class="flex vmx-content">
+                <img src="src/images/ecosystem.jpg" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  Rich Interconnection
+                  Ecosystem
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'migration')">
+              <div class="flex vmx-content">
+                <img src="src/images/easeofmigration.JPG" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  Experience Ease of Migration
+
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'colocation')">
+              <div class="flex vmx-content">
+                <img src="src/images/colocation-service.jpg" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  World-class Colocation Services
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'Compliance')">
+              <div class="flex vmx-content">
+                <img src="src/images/complaince.jpg" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  Unlock The Best Of Compliance Programs
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'Clouds')">
+              <div class="flex vmx-content">
+                <img src="src/images/manage-cloud.jpg" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  Effortlessly Manage Clouds
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'Infrastructure')">
+              <div class="flex vmx-content">
+                <img src="src/images/infrastucture.jpg" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  Stay In Sync With Hyperconverged Infrastructure
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+            <button class="tablinks" onclick="vmxDepartment(event, 'Support')">
+              <div class="flex vmx-content">
+                <img src="src/images/unconditional-support.JPG" alt="vmxsevice-img" class="vmxservice-img">
+                <P class="vmx-title">
+                  Unconditional Support
+                </P>
+                <i class="fas fa-angle-right right-arrow"></i>
+              </div>
+            </button>
+          </div>
+          <div class="vmxsevivces-desc-wrapper">
+            <div class="mt-[36px]">
+              <div id="vmxDepartmentfirst" class="tabcontent">
+                <h3 class="vmxcontent-heading">Manage Your Business IT Infrastructure like a PRO</h3>
+                <p class="vmxcontent-desc">Set yourself free from the cost of IT legacy, challenges,
+                  and complexities while you house, protect and connect your company’s
+                  critical IT infrastructure and integrate all storage,
+                  compute, and other networking assets to run any app.</p>
+                <img src="src/images/vmx-department.png" alt="vmx-department-img" class="vmx-department-img">
+              </div>
+              <div id="ecosystem" class="tabcontent">
+                <h3>ecosystem</h3>
+              </div>
+              <div id="migration" class="tabcontent">
+                <h3>migration</h3>
+              </div>
+              <div id="colocation" class="tabcontent">
+                <h3>colocation</h3>
+              </div>
+              <div id="Compliance" class="tabcontent">
+                <h3>Compliance</h3>
+              </div>
+              <div id="Clouds" class="tabcontent">
+                <h3>Clouds</h3>
+              </div>
+              <div id="Infrastructure" class="tabcontent">
+                <h3>Infrastructure</h3>
+              </div>
+              <div id="Support" class="tabcontent">
+                <h3>Support</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ourproduct">
+      <div class="container">
+        <h4 class="hidden mobile:block text-[24px] font-bold pb-[20px]">Our Services</h4>
+        <div class="ourproduct-box">
+          <div class="ourproduct-box-item top-left">
+            <img src="src/images/private-cloud.jpg" alt="private-cloud" class="ourproduct-icon">
+            <h3 class="ourproduct-title">
+              VMX Infinite : Hosted Private Cloud
+            </h3>
+            <p class="ourproducts-desc">
+              Experience utmost flexibility of
+              the hosted private cloud in your
+              data center, colocations, and
+              at the edge!
+            </p>
+            <button class="btn--reverse">Explore</button>
+          </div>
+          <div class="ourproduct-box-item top-right">
+            <img src="src/images/disaster.jpg" alt="disaster" class="ourproduct-icon">
+            <h3 class="ml-auto ourproduct-title">
+              VMX-DR : Disaster Recovery-as-a-Service
+            </h3>
+            <p class="ml-auto ourproducts-desc">
+              Making disaster recovery a
+              hassle-free task for your
+              modern business!
+            </p>
+            <button class="btn--reverse">Explore</button>
+          </div>
+          <div class="ourproduct-box-item bottom-left">
+            <img src="src/images/public-cloud.jpg" alt="public-cloud" class="ourproduct-icon">
+            <h3 class="ourproduct-title">
+              Public Cloud as a Service
+            </h3>
+            <p class="ourproducts-desc">
+              Acquire the agility and a flexible cloud
+              experience to scale your business faster
+            </p>
+            <button class="btn--reverse">Explore</button>
+          </div>
+          <div class="ourproduct-box-item bottom-right">
+            <img src="src/images/bare-metal.jpg" alt="bare-metal" class="ourproduct-icon">
+            <h3 class="ml-auto ourproduct-title">
+              Connected Bare Metals
+            </h3>
+            <p class="ml-auto ourproducts-desc">
+              Build a secure infrastructure and experience
+              great value-for-money with WW VMX connected bare metals
+            </p>
+            <button class="btn--reverse">Explore</button>
+          </div>
+          <div class="ourproduct-circle">
+            <p class="w-[225px] text-white text-[35px] text-center font-bold">Our Products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutwwvmx">
+      <div class="container">
+        <h2 class="aboutwwvmx-heading">
+          Why Count on WW VMX?
+        </h2>
+        <div class="flex flex-wrap justify-between aboutwwvmx-deparmentwrapper">
+          <div class="aboutwwvmx-item">
+            <img src="src/images/next-gen.jpg" alt="next-gen" class="aboutwwvmx-img">
+            <div>
+              <h4 class="aboutwwvmx-title">
+                Next-Gen Innovation
+              </h4>
+              <p class="aboutwwvmx-desc">
+                We leverage cutting-edge technologies that merge
+                global innovations with local offerings in the long run
+              </p>
+            </div>
+          </div>
+          <div class="aboutwwvmx-item">
+            <img src="src/images/full-stack.jpg" alt="full-stack" class="aboutwwvmx-img">
+            <div>
+              <h4 class="aboutwwvmx-title">
+                Full Stack Data Center Soln
+              </h4>
+              <p class="aboutwwvmx-desc">
+                Explore a comprehensive range of data center ICT
+                solutions backed by cloud infrastructure, security solutions,
+                and managed networks.
+              </p>
+            </div>
+          </div>
+          <div class="aboutwwvmx-item">
+            <img src="src/images/service-provider.jpg" alt="service-provider" class="aboutwwvmx-img">
+            <div>
+              <h4 class="aboutwwvmx-title">
+                #1 Cloud Service Provider
+              </h4>
+              <p class="aboutwwvmx-desc">
+                WW VMX has assisted global businesses to
+                transform their digital journey while they
+                connect, analyze, protect, and act on all sorts of data,
+                right from edge to cloud.
+              </p>
+            </div>
+          </div>
+          <div class="aboutwwvmx-item">
+            <img src="src/images/service-provider.jpg" alt="service-provider" class="aboutwwvmx-img">
+            <div>
+              <h4 class="aboutwwvmx-title">
+                Decades of Expertise
+              </h4>
+              <p class="aboutwwvmx-desc">
+                WW VMX holds more than two decades of industrial
+                experience with 3 data centers in India and 6 worldwide POPs.
+              </p>
+            </div>
+          </div>
+          <div class="aboutwwvmx-item">
+            <img src="src/images/customized-solution.jpg" alt="customized-solution" class="aboutwwvmx-img">
+            <div>
+              <h4 class="aboutwwvmx-title">
+                Customized Solutions
+              </h4>
+              <p class="aboutwwvmx-desc">
+                We emphasize delivering a superior user
+                experience backed by a plethora of
+                customized solutions no matter how diverse or complex the customer
+                business is
+              </p>
+            </div>
+          </div>
+          <div class="aboutwwvmx-item">
+            <img src="src/images/world-class-support.jpg" alt="world-class-support" class="aboutwwvmx-img">
+            <div>
+              <h4 class="aboutwwvmx-title">
+                World-Class Support
+              </h4>
+              <p class="aboutwwvmx-desc">
+                No matter your business is a startup, SMB,
+                leading enterprise, or a global leader,
+                our dexterous team of industry experts holds immense experience and market
+                exposure to take your HCI hyper converged infrastructure to new heights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative mt-[82px]">
+      <img src="src/images/maincontent_sixth-banner.png" alt="banner" class="w-full h-[244px] portait-mobile:h-[200px]">
+      <div class="container">
+        <div class="absolute top-0 text-center pt-[56.5px] pb-[41px] portait-mobile:pt-[30px]">
+          <h2 class="w-[741px] text-white font-bold text-[28px] mb-[38.5px] ipad:w-[100%] mobile:w-[99%] mobile:text-[22px] 
+          portait-mobile:w-[99%] portait-mobile:mb-[10px] portait-mobile:text-[20px]">
+            Speed Up Business Agility And Modernize Your
+            Apps With A Next-Gen Cloud Approach
+          </h2>
+          <a href="javascript:void(0)" class="btn-consultation">Book a Free Consultation Today!</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="bg-[#000A2D]">
+      <div class="container">
+        <div class="flex flex-wrap pt-[48px] pb-[26px] mobile:block">
+          <h2 class="w-[155.5px] text-[#F58025] text-[19px] font-bold mobile:mb-[15px]">VMX</h2>
+          <div class="w-[309px] mobile:mb-[15px] custom-mobile:w-[284px]">
+            <h3 class="footercontents-title">
+              Products
+            </h3>
+            <ul class="mt-2">
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">VMX Infinite : Hosted Private Cloud</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">VMX-DR : Disaster
+                  Recovery-as-a-Service</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">Public Cloud as a Service</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">Connected Bare Metals</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[120.5px] mobile:mb-[15px]">
+            <h3 class="footercontents-title">
+              Links
+            </h3>
+            <ul class="mt-2">
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">Services</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">Case Study</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">About Us</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footercontents-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[207.5px]">
+            <h3 class="footercontents-title">
+              Contacts
+            </h3>
+            <p class="mt-2 mb-4 footercontents-link">
+              Feel free get in touch with us via phone or send us a message
+            </p>
+            <p class="text-[13px] text-[#BDBFC9]">
+              +1 234 567 89 10
+            </p>
+            <p class="text-[13px] text-[#BDBFC9]">
+              support@vmx.com
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#2D2D2D]">
+        <div class="container">
+          <div class="flex flex-wrap justify-between pt-[10px]">
+            <div>
+              <i class="text-white fab fa-facebook-f mr-[15px]"></i>
+              <i class="text-white fab fa-twitter mr-[15px]"></i>
+              <i class="text-white fab fa-invision"></i>
+            </div>
+            <p class="text-white text-[11px] font-light">
+              © 2021 VMX. All rights reserved..
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  
+  <script src="src/custom.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://kit.fontawesome.com/80d91804c8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

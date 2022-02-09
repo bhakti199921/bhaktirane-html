@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply font-[Montserrat];
+}
+
+.container {
+    @apply max-w-[855px] px-3 mx-auto my-0;
+}
+
+/*header*/
+
+header {
+    @apply w-full bg-black/[0.3];
+}
+
+.logoname {
+    @apply text-[17px] text-orange m-0 p-0 font-bold font-[montserrat];
+}
+
+.nav-item {
+    @apply mr-[39px];
+}
+
+.nav-link {
+    @apply text-[15px] text-white duration-500 hover:text-orange font-normal mobile:font-bold;
+}
+
+/*header end*/
+
+
+/*main section*/
+/*herobanner*/
+
+.herobanner {
+    @apply relative;
+}
+
+.headings {
+    @apply absolute top-56 w-[364px] desktop:top-32
+     ipad:top-20 mobile:top-14 portait-mobile:top-4 portait-mobile:w-[280px] portait-mobile:left-[8%]
+      custom-mobile:w-[278px];
+}
+
+.desc {
+    @apply mb-2 text-base font-normal text-white portait-mobile:text-sm custom-mobile:text-[0.87rem];
+}
+
+.title {
+    @apply w-[372px] text-[32px] text-white font-bold uppercase mb-[30px]
+     ipad:text-3xl ipad:leading-[1] mobile:text-[24px] portait-mobile:text-[15px] portait-mobile:mb-[15px] 
+     portait-mobile:w-[315px] custom-mobile:mb-[0] custom-mobile:w-[277px];
+}
+
+.btn-primary {
+    @apply text-sm font-medium border-solid border-orange text-orange border-[1px] 
+    rounded-[48px] py-1.5 px-[30px] hover:bg-orange transition-colors hover:text-white portait-mobile:py-1;
+}
+
+/*herobanner end*/
+
+
+/*vmx services*/
+
+.tab {
+    @apply flex flex-col pr-8;
+}
+
+.tablinks {
+    @apply text-sm text-left border-b-[1px] border-[#BDBFC9] text-black transition-all 
+    cursor-pointer bg-inherit relative ml-[26px] last:border-b-[0];
+}
+
+.active {
+    @apply after:absolute after:left-[-22px]
+     after:top-0 after:bottom-0 after:w-[2px] after:h-full after:border-[orange] 
+     after:border-l-[3px] after:rounded-tr-xl after:rounded-br-xl;
+}
+
+.active .vmx-title {
+    @apply text-orange;
+}
+
+.right-arrow {
+    @apply absolute right-0 text-base text-[#494949];
+}
+
+.active .right-arrow {
+    @apply text-orange;
+}
+
+.tabcontent {
+    @apply w-[419px] ipad:w-[332px] mobile:w-full;
+}
+
+.tabcontent .active {
+    @apply bg-slate-400;
+}
+
+.vmxservice-img {
+    @apply w-[28px] h-[28px];
+}
+
+.vmx-content {
+    @apply py-3.5;
+}
+
+.vmx-title {
+    @apply w-[256px] pl-5 text-[#494949] text-[15px];
+}
+
+.vmxcontent-heading {
+    @apply text-[28px] text-[#2D2D2D] font-medium ipad:text-[26px];
+}
+
+.vmxcontent-desc {
+    @apply w-[88%] text-[15px] ipad:w-[105%] mobile:w-full;
+}
+
+.vmx-department-img {
+    @apply w-[406px] h-[209px] mt-4 mb-[56px] mobile:w-full mobile:mb-[24px];
+}
+
+.vmxsevivces-desc-wrapper {
+    @apply relative border-r-4 border-[orange] pr-[49px] h-full 
+    after:absolute after:right-0 after:w-[30%] after:h-[4px] 
+    after:bg-amber-500 before:absolute before:right-0 before:w-[30%] before:h-[4px]
+     before:bg-amber-500 mobile:border-b-4 mobile:border-r-0 mobile:before:bottom-0
+      mobile:before:w-[3px] mobile:before:h-[98px] mobile:before:bg-orange
+       mobile:after:bottom-0 mobile:after:w-[3px] mobile:after:h-[98px] mobile:after:left-0
+        mobile:after:bg-[orange] mobile:after:border-r-0 mobile:pr-[10px] mobile:pl-[10px];
+}
+
+/*vmx services end*/
+
+/*ourproduct*/
+.ourproduct {
+    @apply mt-[96px] bg-[#FAFBFF] pt-[77px] pb-[84px];
+}
+
+.ourproduct-box {
+    @apply relative flex flex-wrap justify-between portait-mobile:block;
+}
+
+.ourproduct-box-item {
+    @apply w-[48%] bg-white shadow-33xl portait-mobile:shadow-34xl
+     mb-[24px] rounded-[46.12px] portait-mobile:w-full;
+}
+
+.ourproduct-title {
+    @apply text-[#2D2D2D] text-[22px] font-semibold w-[250px] mt-[32px] mb-[19px] 
+    leading-[1.2] mobile:ml-0 mobile:w-[232px] portait-mobile:w-full;
+}
+
+.ourproducts-desc {
+    @apply text-[#2D2D2D] font-normal text-[15px] w-[238px] mb-[24px] leading-[1.1] 
+    mobile:ml-0 mobile:w-[217px] portait-mobile:w-full;
+}
+
+.top-left {
+    @apply pt-[58px] pr-[41px] pb-[52px] pl-[41px] relative
+     before:absolute before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500
+      before:rounded-tl-[100%] before:w-[192px] before:h-[192px] before:right-0 before:bottom-0
+       after:absolute after:bg-gradient-to-t after:from-[#0000d1] after:to-[#0b2372]
+        after:right-0 after:bottom-0 after:w-[182.13px] after:h-[182.13px] after:rounded-tl-[358%] 
+        before:mobile:hidden after:mobile:hidden mobile:pt-[42px] mobile:pb-[42px] mobile:pl-[36px];
+}
+
+.top-right {
+    @apply relative pt-[58px] pr-[41px] pb-[52px] pl-[41px] text-right before:absolute before:bg-gradient-to-r
+     before:from-cyan-500 before:to-blue-500 before:rounded-tr-[100%] before:w-[192px] before:h-[192px] 
+     before:left-0 before:bottom-0 after:absolute after:bg-gradient-to-t after:from-[#0000d1] after:to-[#0026A5]
+      after:left-0 after:bottom-0 after:w-[182.13px] after:h-[182.13px] after:rounded-tr-[358%]
+       before:mobile:hidden after:mobile:hidden mobile:pt-[42px] mobile:pb-[42px] mobile:pl-[36px] 
+       mobile:pr-0 mobile:text-left;
+}
+
+.bottom-left {
+    @apply relative pt-[52px] pr-[41px] pb-[65px] pl-[41px] before:absolute before:bg-gradient-to-r 
+    before:from-cyan-500 before:to-blue-500 before:rounded-bl-[100%] before:w-[192px] before:h-[192px] 
+    before:right-0 before:top-0 after:absolute after:bg-gradient-to-t after:from-[#5F7AFF] after:to-[#0000d1] 
+    after:right-0 after:top-0 after:w-[182.3px] after:h-[182.3px] after:rounded-bl-[358%] before:mobile:hidden 
+    after:mobile:hidden mobile:pt-[42px] mobile:pb-[42px] mobile:pl-[36px];
+}
+
+.bottom-right {
+    @apply relative pt-[52px] pr-[41px] pb-[65px] pl-[41px] text-right before:absolute before:top-0
+     before:left-0 before:w-[194px] before:h-[194px] before:rounded-br-[100%] before:bg-gradient-to-tr 
+     before:from-[#000eff] before:to-[#0012b6] after:absolute after:top-0 after:left-0 after:w-[182.13px] 
+     after:h-[182.13px] after:bg-gradient-to-tr after:from-[#0E00FF] after:to-[#0E00FF] 
+     after:rounded-br-[358%] before:mobile:hidden after:mobile:hidden mobile:pt-[42px] mobile:pb-[42px]
+      mobile:pl-[36px] mobile:pr-0 mobile:text-left;
+}
+
+.ourproduct-icon {
+    @apply inline-block mobile:w-[65px];
+}
+
+.ourproduct-circle {
+    @apply absolute top-[48.5%] right-0 left-0 w-[289.56px] h-[289.56px]
+     bg-[#09098f] rounded-full translate-y-[-50%] my-0 mx-auto border-[12px] border-white 
+     flex items-center justify-center mobile:hidden;
+}
+
+.btn--reverse {
+    @apply text-sm font-medium border-solid border-orange text-orange border-[1px] 
+    rounded-[48px] py-1.5 px-[30px] hover:bg-orange transition-colors hover:text-white;
+}
+
+/*ourproduct end*/
+
+/*aboutwwvmx*/
+.aboutwwvmx-item {
+    @apply flex min-h-[220px] w-[49%] p-[25px] border-[1px] border-[#f5f0f0] mt-[16px] rounded-[8px]
+     mobile:w-full;
+}
+
+.aboutwwvmx-img {
+    @apply w-[35px] h-[43px] mt-[14px] mr-[32px];
+}
+
+.aboutwwvmx-title {
+    @apply text-[19px] text-[#2D2D2D] font-semibold mb-2;
+}
+
+.aboutwwvmx-desc {
+    @apply text-[15px] font-normal text-[#494949];
+}
+
+.aboutwwvmx {
+    @apply mt-[94.5px];
+}
+
+.aboutwwvmx-heading {
+    @apply text-[36px] text-[#494949] text-center font-bold mb-[76.5px] relative after:absolute 
+    after:w-[11%] after:left-[44%] after:mt-[10px] after:block after:rounded-[7.5px] after:border-b-[7px]
+     after:border-[#F58025];
+}
+
+/*aboutwwvmx end*/
+
+
+/*"vmxconsultation*/
+
+.btn-consultation {
+    @apply text-sm font-medium border-solid border-orange text-white border-[1px] 
+    rounded-[48px] py-1.5 px-[30px] bg-orange hover:bg-white transition-colors hover:text-orange;
+}
+
+/*"vmxconsultation end*/
+
+/*footer*/
+.footercontents-title {
+    @apply relative text-[#BDBFC9] text-[14px] font-medium uppercase pb-[7px] after:absolute 
+    after:w-[27px] after:h-[3px] after:bottom-0 after:block after:bg-orange;
+}
+
+.footercontents-link {
+    @apply text-[13px] text-[#BDBFC9];
+}
+
+/*footer end*/
