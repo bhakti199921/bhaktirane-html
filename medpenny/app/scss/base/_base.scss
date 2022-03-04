@@ -1,0 +1,48 @@
+html {
+    font-size: 1rem;
+    font-family: $primary-font;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $primary-font ;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+a,
+li {
+    text-decoration: none ;
+    list-style-type: none;
+}
+
+.dashboardsection {
+    position: relative;
+    width: 100%;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: white;
+    outline: none ;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}

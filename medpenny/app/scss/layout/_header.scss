@@ -1,0 +1,144 @@
+.header {
+    width: 100%;
+    background-color: #FFF;
+    display: table;
+    margin-bottom: 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 21px 0 15px 0;
+
+    &__logoname {
+        text-transform: uppercase;
+        margin-right: 42px;
+    }
+
+    &__logonamefirstletters {
+        color: $color-cinnabar;
+        font-weight: 700;
+    }
+
+    &__logonamesecondletters {
+        color: $color-seal-brown;
+        font-weight: 700;
+    }
+
+    &__nav-wrapper {
+        display: flex;
+    }
+
+    &__toggle-menu {
+        display: none;
+
+        @include breakpoint(ipad-max) {
+            position: absolute;
+            right: 1%;
+            top: 25%;
+            padding: 8px 0px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            padding: 5px 0px;
+        }
+    }
+
+    &__header-hamberger-menu {
+        display: table;
+        width: 25px;
+    }
+
+    &__menu-item {
+        width: 100%;
+        height: 3px;
+        background-color: #002e5b;
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__togglebtn {
+        display: none;
+
+        @include breakpoint(ipad-max) {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            background: none;
+
+            &:fous {
+                background: none;
+            }
+
+            &:checked~.navbar {
+                display: block;
+            }
+        }
+    }
+
+    &__nav-link {
+        color: $color-nero;
+        font-size: 13px;
+        padding-right: 39px;
+        font-weight: 400;
+
+        &:hover {
+            color: #e91256;
+            font-weight: 700;
+            transition: all 0.5s ease 0s;
+        }
+
+        @include breakpoint(ipad-max) {
+            color: #FFF;
+            display: block;
+            border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+        }
+
+        &::last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__navbar-link-wrapper {
+        display: flex;
+
+        @include breakpoint(ipad-max) {
+            display: block;
+            width: auto;
+        }
+    }
+
+    &__nav-item {
+        float: left;
+
+        @include breakpoint(ipad-max) {
+            float: none;
+            padding: 10px 0 10px 10px;
+            width: 100%;
+            display: table;
+        }
+
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
+}
+
+.navbar {
+    @include breakpoint(ipad-max) {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 53px;
+        background-color: #002e5b;
+        padding: 0px;
+        z-index: 99;
+    }
+
+    @include breakpoint(portrait-mobile-max) {
+        top: 47px;
+    }
+}

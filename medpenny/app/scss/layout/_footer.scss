@@ -1,0 +1,137 @@
+.footer {
+    margin-top: 62px;
+
+    &__link-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 23px 0;
+
+        @include breakpoint(mobile-max) {
+            display: block;
+        }
+    }
+
+    &__logo-link-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint(mobile-max) {
+            display: block;
+        }
+    }
+
+    &__link-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint(mobile-max) {
+            margin-top: 10px;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__social-link-wrapper {
+
+        @include breakpoint(mobile-max) {
+            margin-top: 10px;
+        }
+    }
+
+    &__link-item {
+        margin-right: 46px;
+
+        @include breakpoint(portrait-mobile-max) {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__logoname {
+        margin-right: 55px;
+        text-transform: uppercase;
+    }
+
+    &__logoname-firstletter {
+        color: #E44240;
+        font-weight: 700;
+    }
+
+    &__logoname-lastletter {
+        color: #131313;
+        font-weight: 700;
+    }
+
+    &__link {
+        color: $color-nero;
+        font-size: 12px;
+        font-weight: 400;
+
+        &:hover {
+            color: orangered;
+            font-weight: 700;
+            transition: all 1s;
+        }
+    }
+
+    &__social-link {
+        width: 22px;
+        height: 22px;
+        margin-right: 17px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__copyright-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0 0 0;
+        border-top: 1px solid #EFDDDD;
+        margin: 0 0 32px 0;
+    }
+
+    &__copyright-item {
+        color: $color-neor-second;
+        font-size: 12px;
+        font-weight: 400;
+        border-right: 1px solid #262626;
+        padding: 0 7px 0 7px;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__copyright-link-item{
+        color: $color-neor-second;
+
+        &:hover{
+            color: $color-cinnabar;
+            transition: all 0.5s ease 0s;
+        }
+    }
+
+    &__desc {
+        color: $color-neor-second;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
+
+    &__additional-info {
+        color: $color-cinnabar;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
