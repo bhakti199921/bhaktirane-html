@@ -2,7 +2,9 @@ const plugin=require('tailwindcss/plugin')
 
 module.exports = {
   mode:'jit',
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}",
+            "*"],
+
   theme: {
     extend: {
       screens:{

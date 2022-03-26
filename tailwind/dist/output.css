@@ -599,6 +599,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 207.5px;
 }
 
+.rotate-1{
+  --tw-rotate: 1deg;
+  transform: var(--tw-transform);
+}
+
 .transform{
   transform: var(--tw-transform);
 }
@@ -728,6 +733,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-100{
   opacity: 1;
+}
+
+.scale-1{
+  transform: scale(1);
+}
+
+.rotate-1{
+  transform: rotate(1);
 }
 
 body{
