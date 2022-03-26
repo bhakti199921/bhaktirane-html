@@ -1,0 +1,53 @@
+
+//titles
+
+.title{
+    color: $color-white;
+    font-size: 34px;
+    font-family: $ternery-font;
+    display: block;
+
+    &--third-title{
+        font-size: 49px;
+
+        @include breakpoint(portrait-mobile-max){
+            font-size: 40px;
+        }
+    }
+
+    &--third-sub-title{
+        font-size: 49px;
+        color: $color-neon-caret;
+        
+        @include breakpoint(portrait-mobile-max){
+            font-size: 40px;
+        }
+    }
+}
+
+.herobanner__title {
+    color: $color-white;
+    font-size: 55px;
+    font-weight: 400;
+    font-family:$ternery-font;
+    // width: 253px;
+    width: 334px;
+    margin-bottom: 42px;
+
+    @include breakpoint(portrait-mobile-max){
+        width: 100%;
+        font-size: 50px;
+    }
+}
+
+.text-secondary{
+    color: $color-vivid-orange !important;
+}
+
+.herobanner__sub-text{
+    color: $color-white;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: $secondary-font;
+}
+

@@ -1,0 +1,54 @@
+.btn{
+    color: $color-black;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: $color-vivid-orange;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 7px 15px 7px 15px;
+   
+
+    &--primary{
+        padding: 9px 28px 8px 17px;
+        margin-left: 52px;
+
+        &:hover{
+            color: $color-carrot-org;
+            background-color: $color-white;
+        }
+
+        @include breakpoint(desktop-max){
+            font-size: 11px;
+            padding: 10px 10px 10px 18px;
+        }
+
+        @include breakpoint(ipad-max){
+            margin-top: 10px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &--secondary{
+
+        &:hover{
+            color: $color-mango;
+            background-color: $color-white;
+        }
+    }
+
+    &--ternery{
+        color: $color-white;
+        font-size: 15px;
+        font-family: $primary-font;
+        background-color: rgba(0,0,0,63%);
+        border: 1px solid rgba(255,255,255,63%);
+        text-transform:none;
+
+        &:hover{
+            background-color:$color-white;
+        }
+    }
+}

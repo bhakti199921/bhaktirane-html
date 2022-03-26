@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="902.789" height="1080.698" viewBox="0 0 902.789 1080.698">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="902.789" height="1080.698" transform="translate(-61)" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="880.789" height="1080.698" transform="translate(-39)" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="836.391" height="826.229" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="542.651" height="877.533" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_12" data-name="Group 12" transform="translate(61)">
+    <g id="Group_11" data-name="Group 11" clip-path="url(#clip-path)">
+      <g id="Group_10" data-name="Group 10">
+        <g id="Group_9" data-name="Group 9" clip-path="url(#clip-path-2)">
+          <g id="Group_5" data-name="Group 5" transform="translate(1.441 228.094)" style="mix-blend-mode: overlay;isolation: isolate">
+            <g id="Group_4" data-name="Group 4">
+              <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path-3)" opacity="0.6">
+                <path id="Path_11" data-name="Path 11" d="M1.054,966.563s249.067-40.526,512.609-232.287C652.731,633.085,770.1,414.339,808.429,166.816c0,0,118.685,480.158-124,688.738,0,0-188.734,209.9-683.37,111.008" transform="translate(-1.054 -166.817)" fill="#f58f00" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+              </g>
+            </g>
+          </g>
+          <path id="Path_12" data-name="Path 12" d="M1.563,773.212l1.393.276v-.5c-.919.152-1.393.224-1.393.224" transform="translate(0.574 283.944)" fill="#f6f5f5" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+          <path id="Path_13" data-name="Path 13" d="M2.855,929.72V909.557c493.391,98.086,681.7-107.321,681.7-107.321C797.811,696.989,831.283,552.118,835.295,412.042l1.589-65.089v-.029c.767,147.563-29.979,328.124-153.022,442.471,0,0-188.2,209.3-681.279,111.422V929.5c1.138-.189.273.224.273.224" transform="translate(0.948 127.437)" fill="#f6f5f5" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+          <path id="Path_14" data-name="Path 14" d="M0,773.212l1.393.276v-.5c-.919.152-1.393.224-1.393.224" transform="translate(0 283.944)" fill="#f6f5f5" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+          <path id="Path_15" data-name="Path 15" d="M-22.237,902.586c507.922,108.6,704.11-93.775,704.11-93.775C789.489,715.875,832.03,552.14,836.042,412.063l1.572-65.091v-.029c.767,147.563-21.356,311.928-155.741,442.472,0,0-188.2,209.3-681.279,111.423" transform="translate(0.218 127.444)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+          <g id="Group_8" data-name="Group 8" transform="translate(295.65 21.657)" opacity="0.3">
+            <g id="Group_7" data-name="Group 7">
+              <g id="Group_6" data-name="Group 6" clip-path="url(#clip-path-4)">
+                <path id="Path_16" data-name="Path 16" d="M758.875,15.839S731.18,713.9,271.239,893.372c0,0-138.367-288.957,23.771-478.4S633.961,222.275,758.875,15.839" transform="translate(-216.224 -15.839)" fill="#040506" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+              </g>
+            </g>
+          </g>
+          <path id="Path_17" data-name="Path 17" d="M758.685,11.725s-10.95,681-489.3,883.158c0,0-138.367-286.545,23.771-475.991S641.414,218.925,758.685,11.725Z" transform="translate(78.744 4.307)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
+          <path id="Path_18" data-name="Path 18" d="M-23.279,789.447S160.36,748.769,346.312,654.378l10.542,4.437S197.874,743.033,2.582,787.879Z" transform="translate(0.948 240.375)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

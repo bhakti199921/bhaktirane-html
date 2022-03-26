@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="405" height="405" viewBox="0 0 405 405">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="187.89" height="81.42" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_15" data-name="Group 15" transform="translate(-267 -1262)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="202.5" cy="202.5" r="202.5" transform="translate(267 1262)" fill="#f58f24"/>
+    <text id="ABOUT_NEOSMILE" data-name="ABOUT 
+NEOSMILE" transform="translate(471 1405)" font-size="60" font-family="SegoeUI, Segoe UI"><tspan x="-103.711" y="0">ABOUT </tspan><tspan x="-140.391" y="65">NEOSMILE</tspan></text>
+    <g id="Group_14" data-name="Group 14" transform="translate(376.543 1523.337)">
+      <g id="Group_13" data-name="Group 13" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_19" data-name="Path 19" d="M0,48.407S117.42,84.492,187.89,0c0,0-40.083,144.593-187.89,48.407" transform="translate(0 -0.001)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

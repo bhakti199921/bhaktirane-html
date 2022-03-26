@@ -1,0 +1,66 @@
+.card {
+    background-color: $color-carrot-orange;
+    border-radius: 0;
+    border: none;
+    padding: 57px 32px 0 32px;
+    // height:60vh;
+    height: 368px;
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+        background-color: $color-light-red;
+    }
+
+    &:nth-child(3) {
+        background-color: $color-carrot-org;
+    }
+
+    &:nth-child(5) {
+        background-color: $color-mango;
+    }
+
+    @include breakpoint(desktop-max){
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    @include breakpoint(ipad-max){
+        padding-bottom: 30px;
+      
+    }
+
+    @include breakpoint(portrait-mobile-max){
+        height: fit-content;
+    }
+}
+
+.ourvalues__card-title {
+    color: $color-black;
+    font-size: 25px;
+    font-family: $ternery-font;
+    margin-bottom: 29px;
+
+    @include breakpoint(desktop-max) {
+        font-size: 18px;
+    }
+}
+
+.ourvalues__card-desc {
+    color: $color-black;
+    font-size: 15px;
+}
+
+.ourvalues__cards-wrapper{
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include breakpoint(ipad-max) {
+        width: 100%;
+    }
+
+    @include breakpoint(portrait-mobile-max) {
+        display: block;
+    }
+}

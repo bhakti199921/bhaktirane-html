@@ -1,0 +1,535 @@
+.herobanner {
+    position: relative;
+    height: 100vh;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        // height: 792px;
+        // height: 630px;
+
+        object-fit: cover;
+    }
+
+    &__hero-shape {
+        position: absolute;
+        top: 0;
+        right: 7%;
+        bottom: 0;
+        width: 630px;
+        // height: 768px;
+        height: 630px;
+
+        @include breakpoint(desktop-max) {
+            top: unset;
+            right: 0;
+          
+        }
+
+        @include breakpoint(ipad-max) {
+            display: none;
+        }
+
+        @include breakpoint(mobile-max) {
+            width: 366px;
+            height: 525px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 317px;
+            height: 450px;
+        }
+    }
+
+    &__desc {
+        position: absolute;
+        top: 30%;
+        left: 9%;
+
+        @include breakpoint(custom-small-mobile-max) {
+            left: 7%;
+        }
+    }
+}
+
+.about-us {
+    background-image: url('#{$image-path}/smile.svg');
+    background-size: auto 50%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    @include breakpoint(portrait-mobile-max) {
+        height: auto;
+    }
+
+    &__content-wrapper {
+        padding: 210px 0 203px 0;
+
+        @include breakpoint(ipad-max) {
+            padding: 120px 0 120px 0;
+        }
+    }
+
+    & .col-md-4 {
+        @include breakpoint(mobile-max) {
+            margin: 0 auto 0 auto;
+            text-align: center;
+
+        }
+    }
+
+    &__content {
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint(ipad-max) {
+            flex-direction: column-reverse;
+            align-items: center;
+            // padding: 80px 0 40px 0;
+        }
+
+        // @include breakpoint(portrait-mobile-max) {
+        //     padding: 50px 0 50px 0;
+        // }
+    }
+
+    &__title {
+        color: $color-black;
+        font-size: 31px;
+        font-family: $ternery-font;
+        margin-bottom: 39px;
+    }
+
+    &__img {
+        width: 288px;
+        height: 288px;
+
+        @include breakpoint(ipad-max) {
+            margin-top: 20px;
+        }
+    }
+
+    &__desc {
+        color: $color-black;
+        font-size: 15px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+        }
+    }
+
+    &__desc-wrapper {
+        @include breakpoint(ipad-max) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.ourvalues {
+    background-image: url('#{$image-path}/our-values-img.jpg');
+    width: 100%;
+    position: relative;
+    // height: 734px !important;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    @include breakpoint(ipad-max) {
+        height: 100%;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 57%);
+    }
+
+    &__content-wrapper {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        position: relative;
+        color: $color-white;
+        font-size: 54px;
+        font-family: $ternery-font;
+        max-width: 172px;
+        margin-bottom: 42px;
+        padding: 0 0 25px 0;
+
+        @include breakpoint(ipad-max) {
+            font-size: 48px;
+        }
+
+        @include breakpoint(ipad-max) {
+            max-width: unset;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            background-color: $color-neon-caret;
+            width: 135px;
+            height: 3px;
+            left: 5%;
+
+            @include breakpoint(ipad-max) {
+                left: 1%;
+            }
+        }
+    }
+
+    &__desc {
+        color: $color-white;
+        font-size: 15px;
+        max-width: 402px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+
+    &__left-content {
+        width: 40%;
+        padding: 126px 50px 0px 65px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+            padding: 40px;
+        }
+    }
+}
+
+.programs {
+    background-color: $color-vivid-orange;
+    position: relative;
+
+    &__tree-graph {
+        width: 579px;
+        height: 569px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__left-title {
+        color: $color-black;
+        font-size: 35px;
+        font-family: $ternery-font;
+        max-width: 318px;
+        margin-bottom: 30px;
+
+        @include breakpoint(ipad-max) {
+            font-size: 26px;
+            max-width: unset;
+            width: 100%;
+            text-align: center;
+        }
+
+        @include breakpoint(portrait-mobile-max){
+            font-size: 23px;
+        }
+    }
+
+    &__left-desc {
+        color: $color-black;
+        font-size: 15px;
+        max-width: 317px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+
+    &__content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 82px 0 0 0;
+
+        @include breakpoint(ipad-max) {
+            display: block;
+            padding: 67px 0 0 0;
+        }
+
+        @include breakpoint(portrait-mobile-max){
+            padding: 0;
+        }
+    }
+
+    &__left-content {
+        width: 36%;
+        margin: 43px 0 121px;
+        border: 11px solid $color-orange;
+        padding: 73px 43px 90px 43px;
+
+        @include breakpoint(ipad-max) {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include breakpoint(portrait-mobile-max){
+            padding: 50px 43px 50px 43px;
+        }
+    }
+
+    &__right-content {
+        width: 55%;
+        position: relative;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+        }
+    }
+
+    &__tree-graph-wrapper {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @include breakpoint(ipad-max) {
+            position: unset;
+        }
+    }
+
+    &__right-title {
+        font-size: 42px;
+        padding-left: 126px;
+        font-family: $ternery-font;
+
+        @include breakpoint(ipad-max) {
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(portrait-mobile-max){
+            font-size: 39px;
+        }
+    }
+
+    &__right-animalcare-icon,
+    &__right-healthcare-icon,
+    &__right-disaster-response-icon,
+    &__right-covid-icon,
+    &__right-education-icon,
+    &__right-envmt-sust-icon,
+    &__right-development-icon {
+        position: absolute;
+    }
+
+    &__right-animalcare-icon {
+        right: 65%;
+        top: 20%;
+    }
+
+    &__right-healthcare-icon {
+        right: 38%;
+        top: 20%;
+    }
+
+    &__right-disaster-response-icon {
+        right: 6%;
+        top: 25%;
+    }
+
+    &__right-covid-icon {
+        right: 65%;
+        top: 37%;
+
+        @include breakpoint(portrait-mobile-max) {
+            right: 75%;
+        }
+    }
+
+    &__right-education-icon {
+        top: 41%;
+        right: 41%;
+    }
+
+    &__right-envmt-sust-icon {
+        top: 56%;
+        right: 54%;
+
+        @include breakpoint(portrait-mobile-max) {
+            right: 55%;
+        }
+    }
+
+    &__right-development-icon {
+        top: 54%;
+        right: 10%;
+    }
+
+    .fa-icon {
+        width: 60px;
+        height: 60px;
+        color: $color-vivid-orange;
+        font-size: 30px;
+        background-color: $color-white;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin: 0 auto;
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+    }
+
+    &__icon-box {
+        color: $color-black;
+        font-size: 17px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 12px;
+        }
+    }
+}
+
+.ourpartners {
+    background-color: $color-nero;
+    // height: 125px;
+    // height: unset !important;
+    padding: 20px 0;
+
+    &__web-work,
+    &__ntsl,
+    &__ruby,
+    &__neosoft {
+        width: 135px;
+        height: 45px;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+
+        @include breakpoint(desktop-max) {
+            width: 125px;
+        }
+
+        @include breakpoint(ipad-max) {
+            width: 88px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link-list {
+        // margin-right: 50px;
+
+        @include breakpoint(desktop-max) {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__link-list-wrapper {
+        @include breakpoint(mobile-max) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        position: relative;
+        color: $color-white;
+        font-size: 37px;
+        font-family: $ternery-font;
+        border-right: 1px solid $color-gray-44;
+        display: inline-block;
+        padding: 5px 40px 5px 0;
+
+        @include breakpoint(desktop-max) {
+            font-size: 33px;
+        }
+
+        @include breakpoint(ipad-max) {
+            font-size: 24px;
+            padding: 5px 36px 5px 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            border-right: none;
+            margin-bottom: 20px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 100%;
+            top: 50%;
+            border-top: 8px solid transparent;
+            border-left: 8px solid $color-gray-44;
+            border-bottom: 8px solid transparent;
+            transform: translateY(-50%);
+
+            @include breakpoint(mobile-max) {
+                display: none;
+            }
+        }
+    }
+
+    &__title-wrapper {
+        @include breakpoint(mobile-max) {
+            text-align: center;
+        }
+    }
+}
+
+.fp-tableCell {
+    vertical-align: inherit;
+    // height: unset !important;
+}
+
+// .fp-slidesContainer{
+//     width: unset !important;
+// }
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background-color: $color-gray;
+}
+
+#fp-nav {
+    right: 1%;
+}
+
+#fp-nav ul li .fp-tooltip {
+    right: 15px;
+}
+
+#fp-nav ul,
+.fp-slidesNav ul {
+    @include breakpoint(desktop-max) {
+        display: none;
+    }
+}

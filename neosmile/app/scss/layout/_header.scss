@@ -1,0 +1,139 @@
+.header {
+    position: absolute;
+    // height: unset !important;
+    width: 100%;
+    z-index: 99;
+    // top: 0;
+
+    @include breakpoint(ipad-max) {
+        background-color: $color-black;
+    }
+
+    &__logo {
+        width: 180px;
+        height: 52px;
+    }
+
+    .navbar {
+        padding: 39px 0 0 0;
+
+        @include breakpoint(ipad-max){
+            padding: 23px 0 0 0;
+        }
+    }
+
+    .navbar-nav {
+        margin-left: 68px;
+        align-items: center;
+
+        @include breakpoint(ipad-max) {
+            background-color: $color-black;
+            width: 100%;
+            // margin-left: 0;
+            margin: 15px 0 0 0;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        margin-bottom: 7px;
+
+        &:focus,
+        &:active {
+            outline: none;
+            box-shadow: none;
+            border: 0
+        }
+
+        .top-bar {
+            transform: rotate(45deg);
+            transform-origin: 10% 10%;
+        }
+
+        .middle-bar {
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .bottom-bar {
+            transform: rotate(-45deg);
+            transform-origin: 10% 10%;
+        }
+
+        &.collapsed {
+            .top-bar {
+                transform: rotate(0);
+            }
+
+            .middle-bar {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+            .bottom-bar {
+                transform: rotate(0);
+            }
+
+            .toggler-icon {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+
+    .toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: $color-white;
+        display: block;
+        transition: all 0.2s;
+    }
+
+    .middle-bar {
+        margin: 5px auto;
+    }
+
+    &__navbar-links {
+        color: $color-white;
+        font-size: 18px;
+        text-transform: capitalize;
+        transition: all 1.5s;
+
+        &:hover {
+            color: $color-mango;
+        }
+    }
+
+    &__navbar-item {
+        margin-right: 31px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        @include breakpoint(desktop-max) {
+            margin-right: 24px;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin: 0 0 10px 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .navbar-collapse{
+        @include breakpoint(ipad-max){
+            padding-bottom: 20px;
+        }
+    }
+}
+
