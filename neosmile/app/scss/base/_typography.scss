@@ -36,7 +36,7 @@
 
     @include breakpoint(portrait-mobile-max){
         width: 100%;
-        font-size: 50px;
+        font-size: 46px;
     }
 }
 
@@ -44,10 +44,18 @@
     color: $color-vivid-orange !important;
 }
 
-.herobanner__sub-text{
+.herobanner__sub-text,.herobanner__first-subtext{
     color: $color-white;
     font-size: 21px;
     font-weight: 400;
     font-family: $secondary-font;
+
 }
 
+.herobanner__sub-text{
+    counter-increment: myIndex;
+    &::before{
+        content: counter(myIndex) ".";
+        padding-right: 5px;
+    }
+}

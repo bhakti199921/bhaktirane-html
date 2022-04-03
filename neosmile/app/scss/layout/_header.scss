@@ -5,7 +5,14 @@
     z-index: 99;
     // top: 0;
 
+    @include breakpoint(desktop-max){
+        display: flex;
+        justify-content: center;
+    }
+
     @include breakpoint(ipad-max) {
+        display: unset;
+        justify-content: unset;
         background-color: $color-black;
     }
 
@@ -18,7 +25,7 @@
         padding: 39px 0 0 0;
 
         @include breakpoint(ipad-max){
-            padding: 23px 0 0 0;
+            padding: 20px 0 20px 0;
         }
     }
 

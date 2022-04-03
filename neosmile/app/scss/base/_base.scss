@@ -16,6 +16,7 @@ body {
     font-family: $primary-font ;
     font-size: 16px;
     font-weight: 400;
+    // counter-reset: my-sec-counter;
 
     @include breakpoint(desktop-max){
         overflow: auto !important;
